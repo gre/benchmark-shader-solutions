@@ -1,0 +1,75 @@
+diff --git a/node_modules/react-native-webgpu/apple/WebGPUView.mm b/node_modules/react-native-webgpu/apple/WebGPUView.mm
+index 651030b..8ffa5a7 100644
+--- a/node_modules/react-native-webgpu/apple/WebGPUView.mm
++++ b/node_modules/react-native-webgpu/apple/WebGPUView.mm
+@@ -11,12 +11,29 @@
+ 
+ using namespace facebook::react;
+ 
++static const std::shared_ptr<const WebGPUViewProps> &defaultWebGPUViewProps() {
++  static const auto props = std::make_shared<const WebGPUViewProps>();
++  return props;
++}
++
+ @implementation WebGPUView
+ 
+ + (ComponentDescriptorProvider)componentDescriptorProvider {
+   return concreteComponentDescriptorProvider<WebGPUViewComponentDescriptor>();
+ }
+ 
++- (instancetype)initWithFrame:(CGRect)frame {
++  if (self = [super initWithFrame:frame]) {
++    /*
++      The base class initializes _props with a plain ViewProps instance;
++      updateProps: casts _props to WebGPUViewProps, so it must hold our
++      concrete props type from the start (RN 0.87+ asserts on this).
++    */
++    _props = defaultWebGPUViewProps();
++  }
++  return self;
++}
++
+ - (void)prepareForRecycle {
+   [super prepareForRecycle];
+   /*
+@@ -25,6 +42,11 @@ using namespace facebook::react;
+     the last usage in the new context.
+   */
+   self.contentView = nil;
++  /*
++    Reset to the default props (contextId == 0) so the next mount always
++    detects a contextId change and configures a fresh Metal layer.
++  */
++  _props = defaultWebGPUViewProps();
+ }
+ 
+ - (MetalView *)getContentView {
+diff --git a/node_modules/react-native-webgpu/src/external/reanimated/registerWebGPUForReanimated.ts b/node_modules/react-native-webgpu/src/external/reanimated/registerWebGPUForReanimated.ts
+index 04feb39..dd6c8c6 100644
+--- a/node_modules/react-native-webgpu/src/external/reanimated/registerWebGPUForReanimated.ts
++++ b/node_modules/react-native-webgpu/src/external/reanimated/registerWebGPUForReanimated.ts
+@@ -26,7 +26,23 @@ export const registerWebGPUForReanimated = () => {
+       name: "WebGPU",
+       determine: (value: object): value is object => {
+         "worklet";
+-        return __webgpuIsWebGPUObject(value);
++        // @shader-bench/webgpu patch: __webgpuIsWebGPUObject() accepts ANY
++        // object with native state + a Symbol.toStringTag on its prototype,
++        // which also matches @shopify/react-native-skia's objects: with both
++        // libs in one app, Skia's objects were boxed as WebGPU objects and
++        // RN Skia's Reanimated integration broke ("undefined is not a
++        // function" in its mapper). Only claim WebGPU's own classes.
++        if (!__webgpuIsWebGPUObject(value)) {
++          return false;
++        }
++        const tag = Object.prototype.toString.call(value).slice(8, -1);
++        return (
++          tag.startsWith("GPU") ||
++          tag === "RNWebGPU" ||
++          tag === "ImageBitmap" ||
++          tag === "NativeVideoFrame" ||
++          tag === "VideoPlayer"
++        );
+       },
+       pack: (value: object) => {
+         "worklet";

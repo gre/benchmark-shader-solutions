@@ -1,0 +1,433 @@
+{
+  "generatedAt": "2026-10-03T08:10:45.909Z",
+  "apps": {
+    "web-baseline": {
+      "categories": {
+        "js": {
+          "n": 1,
+          "raw": 191905,
+          "gzip": 59853,
+          "brotli": 51623
+        },
+        "wasm": {
+          "n": 0,
+          "raw": 0,
+          "gzip": 0,
+          "brotli": 0
+        },
+        "css": {
+          "n": 0,
+          "raw": 0,
+          "gzip": 0,
+          "brotli": 0
+        },
+        "other": {
+          "n": 1,
+          "raw": 433,
+          "gzip": 300,
+          "brotli": 163
+        }
+      },
+      "total": {
+        "raw": 192338,
+        "gzip": 60153,
+        "brotli": 51786
+      },
+      "files": [
+        {
+          "file": "assets/index-m0ffXbis.js",
+          "cat": "js",
+          "raw": 191905,
+          "gzip": 59853,
+          "brotli": 51623
+        },
+        {
+          "file": "index.html",
+          "cat": "other",
+          "raw": 433,
+          "gzip": 300,
+          "brotli": 163
+        }
+      ],
+      "buildMs": 2388,
+      "loc": {
+        "integration": {
+          "lines": 127,
+          "nonBlank": 114,
+          "files": {
+            "src/Effect.tsx": 42,
+            "src/FpsOverlay.tsx": 40,
+            "src/main.tsx": 27,
+            "src/time.ts": 18
+          }
+        },
+        "shader": {
+          "lines": 0,
+          "nonBlank": 0,
+          "files": {}
+        }
+      },
+      "nodeModules": {
+        "lockfilePackages": 68,
+        "bytes": 71562640,
+        "installedPackages": 24
+      }
+    },
+    "web-gl-react": {
+      "categories": {
+        "js": {
+          "n": 1,
+          "raw": 318579,
+          "gzip": 98243,
+          "brotli": 83962
+        },
+        "wasm": {
+          "n": 0,
+          "raw": 0,
+          "gzip": 0,
+          "brotli": 0
+        },
+        "css": {
+          "n": 0,
+          "raw": 0,
+          "gzip": 0,
+          "brotli": 0
+        },
+        "other": {
+          "n": 1,
+          "raw": 433,
+          "gzip": 302,
+          "brotli": 171
+        }
+      },
+      "total": {
+        "raw": 319012,
+        "gzip": 98545,
+        "brotli": 84133
+      },
+      "files": [
+        {
+          "file": "assets/index-DxQWksnr.js",
+          "cat": "js",
+          "raw": 318579,
+          "gzip": 98243,
+          "brotli": 83962
+        },
+        {
+          "file": "index.html",
+          "cat": "other",
+          "raw": 433,
+          "gzip": 302,
+          "brotli": 171
+        }
+      ],
+      "buildMs": 2256,
+      "loc": {
+        "integration": {
+          "lines": 151,
+          "nonBlank": 135,
+          "files": {
+            "src/Effect.tsx": 66,
+            "src/FpsOverlay.tsx": 40,
+            "src/main.tsx": 27,
+            "src/time.ts": 18
+          }
+        },
+        "shader": {
+          "lines": 149,
+          "nonBlank": 135,
+          "files": {
+            "src/shaders/silk.glsl.ts": 149
+          }
+        }
+      },
+      "nodeModules": {
+        "lockfilePackages": 111,
+        "bytes": 73535804,
+        "installedPackages": 68
+      },
+      "deltaVsBaseline": {
+        "total": {
+          "raw": 126674,
+          "gzip": 38392,
+          "brotli": 32347
+        },
+        "js": {
+          "raw": 126674,
+          "gzip": 38390,
+          "brotli": 32339
+        },
+        "nodeModulesBytes": 1973164
+      }
+    },
+    "web-skia": {
+      "categories": {
+        "js": {
+          "n": 1,
+          "raw": 319139,
+          "gzip": 98659,
+          "brotli": 85335
+        },
+        "wasm": {
+          "n": 1,
+          "raw": 7317345,
+          "gzip": 2960611,
+          "brotli": 2275862
+        },
+        "css": {
+          "n": 0,
+          "raw": 0,
+          "gzip": 0,
+          "brotli": 0
+        },
+        "other": {
+          "n": 1,
+          "raw": 429,
+          "gzip": 301,
+          "brotli": 169
+        }
+      },
+      "total": {
+        "raw": 7636913,
+        "gzip": 3059571,
+        "brotli": 2361366
+      },
+      "files": [
+        {
+          "file": "assets/canvaskit-SCAxUyCS.wasm",
+          "cat": "wasm",
+          "raw": 7317345,
+          "gzip": 2960611,
+          "brotli": 2275862
+        },
+        {
+          "file": "assets/index-DKyWys8J.js",
+          "cat": "js",
+          "raw": 319139,
+          "gzip": 98659,
+          "brotli": 85335
+        },
+        {
+          "file": "index.html",
+          "cat": "other",
+          "raw": 429,
+          "gzip": 301,
+          "brotli": 169
+        }
+      ],
+      "buildMs": 2123,
+      "loc": {
+        "integration": {
+          "lines": 208,
+          "nonBlank": 187,
+          "files": {
+            "src/Effect.tsx": 114,
+            "src/FpsOverlay.tsx": 40,
+            "src/canvaskit.ts": 9,
+            "src/main.tsx": 27,
+            "src/time.ts": 18
+          }
+        },
+        "shader": {
+          "lines": 129,
+          "nonBlank": 116,
+          "files": {
+            "src/shaders/silk.sksl.ts": 129
+          }
+        }
+      },
+      "nodeModules": {
+        "lockfilePackages": 70,
+        "bytes": 98349443,
+        "installedPackages": 27
+      },
+      "deltaVsBaseline": {
+        "total": {
+          "raw": 7444575,
+          "gzip": 2999418,
+          "brotli": 2309580
+        },
+        "js": {
+          "raw": 127234,
+          "gzip": 38806,
+          "brotli": 33712
+        },
+        "nodeModulesBytes": 26786803
+      }
+    },
+    "web-webgpu": {
+      "categories": {
+        "js": {
+          "n": 1,
+          "raw": 200272,
+          "gzip": 63328,
+          "brotli": 54605
+        },
+        "wasm": {
+          "n": 0,
+          "raw": 0,
+          "gzip": 0,
+          "brotli": 0
+        },
+        "css": {
+          "n": 0,
+          "raw": 0,
+          "gzip": 0,
+          "brotli": 0
+        },
+        "other": {
+          "n": 1,
+          "raw": 431,
+          "gzip": 301,
+          "brotli": 176
+        }
+      },
+      "total": {
+        "raw": 200703,
+        "gzip": 63629,
+        "brotli": 54781
+      },
+      "files": [
+        {
+          "file": "assets/index-VReseL8F.js",
+          "cat": "js",
+          "raw": 200272,
+          "gzip": 63328,
+          "brotli": 54605
+        },
+        {
+          "file": "index.html",
+          "cat": "other",
+          "raw": 431,
+          "gzip": 301,
+          "brotli": 176
+        }
+      ],
+      "buildMs": 2107,
+      "loc": {
+        "integration": {
+          "lines": 236,
+          "nonBlank": 215,
+          "files": {
+            "src/Effect.tsx": 151,
+            "src/FpsOverlay.tsx": 40,
+            "src/main.tsx": 27,
+            "src/time.ts": 18
+          }
+        },
+        "shader": {
+          "lines": 129,
+          "nonBlank": 115,
+          "files": {
+            "src/shaders/silk.wgsl.ts": 129
+          }
+        }
+      },
+      "nodeModules": {
+        "lockfilePackages": 69,
+        "bytes": 71861022,
+        "installedPackages": 26
+      },
+      "deltaVsBaseline": {
+        "total": {
+          "raw": 8365,
+          "gzip": 3476,
+          "brotli": 2995
+        },
+        "js": {
+          "raw": 8367,
+          "gzip": 3475,
+          "brotli": 2982
+        },
+        "nodeModulesBytes": 298382
+      }
+    },
+    "web-webgl": {
+      "categories": {
+        "js": {
+          "n": 1,
+          "raw": 201544,
+          "gzip": 64004,
+          "brotli": 55080
+        },
+        "wasm": {
+          "n": 0,
+          "raw": 0,
+          "gzip": 0,
+          "brotli": 0
+        },
+        "css": {
+          "n": 0,
+          "raw": 0,
+          "gzip": 0,
+          "brotli": 0
+        },
+        "other": {
+          "n": 1,
+          "raw": 433,
+          "gzip": 304,
+          "brotli": 172
+        }
+      },
+      "total": {
+        "raw": 201977,
+        "gzip": 64308,
+        "brotli": 55252
+      },
+      "files": [
+        {
+          "file": "assets/index-DvS4mTkK.js",
+          "cat": "js",
+          "raw": 201544,
+          "gzip": 64004,
+          "brotli": 55080
+        },
+        {
+          "file": "index.html",
+          "cat": "other",
+          "raw": 433,
+          "gzip": 304,
+          "brotli": 172
+        }
+      ],
+      "buildMs": 1887,
+      "loc": {
+        "integration": {
+          "lines": 214,
+          "nonBlank": 197,
+          "files": {
+            "src/Effect.tsx": 129,
+            "src/FpsOverlay.tsx": 40,
+            "src/main.tsx": 27,
+            "src/time.ts": 18
+          }
+        },
+        "shader": {
+          "lines": 148,
+          "nonBlank": 134,
+          "files": {
+            "src/shaders/silk.glsl.ts": 148
+          }
+        }
+      },
+      "nodeModules": {
+        "lockfilePackages": 68,
+        "bytes": 71735833,
+        "installedPackages": 25
+      },
+      "deltaVsBaseline": {
+        "total": {
+          "raw": 9639,
+          "gzip": 4155,
+          "brotli": 3466
+        },
+        "js": {
+          "raw": 9639,
+          "gzip": 4151,
+          "brotli": 3457
+        },
+        "nodeModulesBytes": 173193
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+// @shader-bench/native-compatible-dynamic — Android library module (autolinked
+// by the React Native CLI: android/ + a ReactPackage, codegen from package.json
+// codegenConfig via the com.facebook.react plugin).
+//
+// Shaders: nothing to package. The GLSL ES 1.00 source comes from JS (the
+// `source` prop, src/shaders/<name>/sources.android.ts) and is compiled at
+// runtime with OpenGL ES 2.0, so adding or editing a shader needs no Android
+// rebuild.
+//
+// Floor: minSdk 25 (Android 7.1), tested on API 25 and 34; uses only
+// EGL14 / GLES20 / TextureView (all API <= 17).
+
+buildscript {
+  repositories {
+    google()
+    mavenCentral()
+  }
+}
+
+def safeExtGet(name, fallback) {
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : fallback
+}
+
+apply plugin: "com.android.library"
+apply plugin: "org.jetbrains.kotlin.android"
+apply plugin: "com.facebook.react"
+
+android {
+  namespace "com.shaderbench.compatdynamic"
+  compileSdk safeExtGet("compileSdkVersion", 36)
+
+  defaultConfig {
+    minSdkVersion 25
+  }
+}
+
+dependencies {
+  implementation("com.facebook.react:react-android")
+}

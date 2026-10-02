@@ -1,0 +1,1447 @@
+{
+  "generatedAt": "2026-10-03T08:18:04.007Z",
+  "apps": {
+    "web-baseline": {
+      "url": "http://127.0.0.1:5180/",
+      "chromium": "153.0.8010.12",
+      "flags": [
+        "--enable-unsafe-webgpu",
+        "--enable-gpu",
+        "--ignore-gpu-blocklist",
+        "--use-angle=metal"
+      ],
+      "seconds": 10,
+      "reps": 3,
+      "runs": [
+        {
+          "viewport": "1280x800@1",
+          "canvas": null,
+          "firstFrameMs": 55.4,
+          "nav": {
+            "domContentLoaded": 39.20000000298023,
+            "load": 39.29999999701977
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.334030100334449,
+            "p50": 8.300000000000182,
+            "p95": 9.299999999999272,
+            "p99": 9.400000000000091,
+            "max": 11.600000000000364,
+            "fpsAvg": 119.9899673940306
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 2530799,
+          "cpuPercentOfOneCore": {
+            "browser": 1.8,
+            "renderer": 3.1,
+            "GPU": 1.9,
+            "network.mojom.NetworkService": 0.2,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 1
+        },
+        {
+          "viewport": "1280x800@1",
+          "canvas": null,
+          "firstFrameMs": 50.5,
+          "nav": {
+            "domContentLoaded": 38.29999999701977,
+            "load": 38.5
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333026755852844,
+            "p50": 8.300000000000182,
+            "p95": 9.299999999999272,
+            "p99": 9.400000000000091,
+            "max": 12.600000000000364,
+            "fpsAvg": 120.00441487813931
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 2462043,
+          "cpuPercentOfOneCore": {
+            "browser": 0.4,
+            "renderer": 3.7,
+            "GPU": 2,
+            "network.mojom.NetworkService": 0.1,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 2
+        },
+        {
+          "viewport": "1280x800@1",
+          "canvas": null,
+          "firstFrameMs": 37,
+          "nav": {
+            "domContentLoaded": 30.700000002980232,
+            "load": 30.700000002980232
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333361204013379,
+            "p50": 8.300000000000182,
+            "p95": 9.200000000000728,
+            "p99": 9.399999999999636,
+            "max": 9.800000000000182,
+            "fpsAvg": 119.9995986635496
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 2440324,
+          "cpuPercentOfOneCore": {
+            "browser": 0.5,
+            "renderer": 3.8,
+            "GPU": 2.1,
+            "network.mojom.NetworkService": 0.1,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 3
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": null,
+          "firstFrameMs": 44.9,
+          "nav": {
+            "domContentLoaded": 27.599999994039536,
+            "load": 27.700000002980232
+          },
+          "frame": {
+            "n": 1197,
+            "avg": 8.333333333333336,
+            "p50": 8.300000000000182,
+            "p95": 9.299999999999272,
+            "p99": 9.400000000000546,
+            "max": 10.699999999999818,
+            "fpsAvg": 119.99999999999997
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 2489932,
+          "cpuPercentOfOneCore": {
+            "browser": 0.1,
+            "renderer": 3.6,
+            "GPU": 1.9,
+            "network.mojom.NetworkService": 0,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 1
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": null,
+          "firstFrameMs": 48.6,
+          "nav": {
+            "domContentLoaded": 25.799999997019768,
+            "load": 25.899999991059303
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.332608695652175,
+            "p50": 8.300000000000182,
+            "p95": 9.200000000000728,
+            "p99": 9.400000000000091,
+            "max": 13.300000000000182,
+            "fpsAvg": 120.01043569005999
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 2462288,
+          "cpuPercentOfOneCore": {
+            "browser": 0.2,
+            "renderer": 4.2,
+            "GPU": 2.3,
+            "network.mojom.NetworkService": 0.1,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 2
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": null,
+          "firstFrameMs": 44.8,
+          "nav": {
+            "domContentLoaded": 41.900000005960464,
+            "load": 41.900000005960464
+          },
+          "frame": {
+            "n": 1195,
+            "avg": 8.340334728033472,
+            "p50": 8.300000000000182,
+            "p95": 9.200000000000728,
+            "p99": 9.399999999999636,
+            "max": 16.700000000000728,
+            "fpsAvg": 119.89926455095468
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 2459560,
+          "cpuPercentOfOneCore": {
+            "browser": 0.2,
+            "renderer": 4.3,
+            "GPU": 2.4,
+            "network.mojom.NetworkService": 0,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 3
+        }
+      ],
+      "timeToFirstFrameMs": {
+        "median": 48.7,
+        "samples": [
+          64.7,
+          48.7,
+          47.3
+        ],
+        "note": "performance.now() at first drawn frame, ms since navigation start, localhost (no network), warm disk cache, fresh context each"
+      },
+      "renderer": {
+        "webgl": {
+          "vendor": "Google Inc. (Apple)",
+          "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+        },
+        "webgpu": {
+          "vendor": "apple",
+          "architecture": "metal-3",
+          "description": ""
+        }
+      }
+    },
+    "web-gl-react": {
+      "url": "http://127.0.0.1:5181/",
+      "chromium": "153.0.8010.12",
+      "flags": [
+        "--enable-unsafe-webgpu",
+        "--enable-gpu",
+        "--ignore-gpu-blocklist",
+        "--use-angle=metal"
+      ],
+      "seconds": 10,
+      "reps": 3,
+      "runs": [
+        {
+          "viewport": "1280x800@1",
+          "canvas": {
+            "w": 1280,
+            "h": 800
+          },
+          "firstFrameMs": 72.2,
+          "nav": {
+            "domContentLoaded": 52.5,
+            "load": 52.5
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.332943143812708,
+            "p50": 8.300000000000182,
+            "p95": 9.200000000000045,
+            "p99": 9.399999999999636,
+            "max": 9.700000000000273,
+            "fpsAvg": 120.00561899219363
+          },
+          "appFramesCounted": 1204,
+          "jsHeapBytes": 4860435,
+          "cpuPercentOfOneCore": {
+            "browser": 0.9,
+            "renderer": 11.2,
+            "GPU": 15.8,
+            "network.mojom.NetworkService": 0.3,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 1
+        },
+        {
+          "viewport": "1280x800@1",
+          "canvas": {
+            "w": 1280,
+            "h": 800
+          },
+          "firstFrameMs": 76,
+          "nav": {
+            "domContentLoaded": 59.599999994039536,
+            "load": 59.70000000298023
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333361204013379,
+            "p50": 8.300000000000182,
+            "p95": 9.299999999999272,
+            "p99": 9.399999999999636,
+            "max": 10.399999999999636,
+            "fpsAvg": 119.9995986635496
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 4764315,
+          "cpuPercentOfOneCore": {
+            "browser": 0.4,
+            "renderer": 11.9,
+            "GPU": 16.6,
+            "network.mojom.NetworkService": 0.1,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 2
+        },
+        {
+          "viewport": "1280x800@1",
+          "canvas": {
+            "w": 1280,
+            "h": 800
+          },
+          "firstFrameMs": 55.9,
+          "nav": {
+            "domContentLoaded": 41.79999999701977,
+            "load": 41.79999999701977
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333361204013377,
+            "p50": 8.300000000000182,
+            "p95": 9.200000000000273,
+            "p99": 9.399999999999636,
+            "max": 14.899999999999636,
+            "fpsAvg": 119.99959866354963
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 4833646,
+          "cpuPercentOfOneCore": {
+            "browser": 0.5,
+            "renderer": 12.2,
+            "GPU": 17.4,
+            "network.mojom.NetworkService": 0.1,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 3
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": {
+            "w": 2560,
+            "h": 1600
+          },
+          "firstFrameMs": 68.5,
+          "nav": {
+            "domContentLoaded": 41.20000000298023,
+            "load": 41.30000001192093
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333946488294314,
+            "p50": 8.300000000000182,
+            "p95": 9.300000000000182,
+            "p99": 9.400000000001455,
+            "max": 11.5,
+            "fpsAvg": 119.99117121817123
+          },
+          "appFramesCounted": 1203,
+          "jsHeapBytes": 4877634,
+          "cpuPercentOfOneCore": {
+            "browser": 0.1,
+            "renderer": 11,
+            "GPU": 16.1,
+            "network.mojom.NetworkService": 0,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 1
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": {
+            "w": 2560,
+            "h": 1600
+          },
+          "firstFrameMs": 60.8,
+          "nav": {
+            "domContentLoaded": 46.29999999701977,
+            "load": 46.3999999910593
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.334113712374583,
+            "p50": 8.300000000000182,
+            "p95": 9.199999999999818,
+            "p99": 9.400000000000091,
+            "max": 12.599999999999909,
+            "fpsAvg": 119.9887635940447
+          },
+          "appFramesCounted": 1201,
+          "jsHeapBytes": 4758279,
+          "cpuPercentOfOneCore": {
+            "browser": 0.2,
+            "renderer": 11.9,
+            "GPU": 17.2,
+            "network.mojom.NetworkService": 0,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 2
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": {
+            "w": 2560,
+            "h": 1600
+          },
+          "firstFrameMs": 61.3,
+          "nav": {
+            "domContentLoaded": 44.20000000298023,
+            "load": 44.30000001192093
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333277591973244,
+            "p50": 8.300000000000182,
+            "p95": 9.200000000000273,
+            "p99": 9.399999999999636,
+            "max": 9.5,
+            "fpsAvg": 120.00080268095438
+          },
+          "appFramesCounted": 1201,
+          "jsHeapBytes": 4847699,
+          "cpuPercentOfOneCore": {
+            "browser": 0.1,
+            "renderer": 12.1,
+            "GPU": 17,
+            "network.mojom.NetworkService": 0,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 3
+        }
+      ],
+      "timeToFirstFrameMs": {
+        "median": 98.6,
+        "samples": [
+          159.6,
+          98.6,
+          85
+        ],
+        "note": "performance.now() at first drawn frame, ms since navigation start, localhost (no network), warm disk cache, fresh context each"
+      },
+      "renderer": {
+        "webgl": {
+          "vendor": "Google Inc. (Apple)",
+          "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+        },
+        "webgpu": {
+          "vendor": "apple",
+          "architecture": "metal-3",
+          "description": ""
+        }
+      }
+    },
+    "web-skia": {
+      "url": "http://127.0.0.1:5182/",
+      "chromium": "153.0.8010.12",
+      "flags": [
+        "--enable-unsafe-webgpu",
+        "--enable-gpu",
+        "--ignore-gpu-blocklist",
+        "--use-angle=metal"
+      ],
+      "seconds": 10,
+      "reps": 3,
+      "runs": [
+        {
+          "viewport": "1280x800@1",
+          "canvas": {
+            "w": 1280,
+            "h": 800
+          },
+          "firstFrameMs": 136.5,
+          "nav": {
+            "domContentLoaded": 36.79999999701977,
+            "load": 36.79999999701977
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333361204013379,
+            "p50": 8.300000000000182,
+            "p95": 9.199999999999818,
+            "p99": 9.399999999999636,
+            "max": 10.199999999999818,
+            "fpsAvg": 119.9995986635496
+          },
+          "appFramesCounted": 1203,
+          "jsHeapBytes": 4544536,
+          "cpuPercentOfOneCore": {
+            "browser": 1.4,
+            "renderer": 11.4,
+            "GPU": 16.9,
+            "network.mojom.NetworkService": 0.2,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 1
+        },
+        {
+          "viewport": "1280x800@1",
+          "canvas": {
+            "w": 1280,
+            "h": 800
+          },
+          "firstFrameMs": 137,
+          "nav": {
+            "domContentLoaded": 39.099999994039536,
+            "load": 39.099999994039536
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333277591973243,
+            "p50": 8.300000000000182,
+            "p95": 9.199999999998909,
+            "p99": 9.399999999999636,
+            "max": 14.300000000000182,
+            "fpsAvg": 120.00080268095441
+          },
+          "appFramesCounted": 1201,
+          "jsHeapBytes": 4531374,
+          "cpuPercentOfOneCore": {
+            "browser": 0.4,
+            "renderer": 10.3,
+            "GPU": 15.6,
+            "network.mojom.NetworkService": 0.1,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 2
+        },
+        {
+          "viewport": "1280x800@1",
+          "canvas": {
+            "w": 1280,
+            "h": 800
+          },
+          "firstFrameMs": 134,
+          "nav": {
+            "domContentLoaded": 35.400000005960464,
+            "load": 35.5
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333444816053511,
+            "p50": 8.300000000000182,
+            "p95": 9.199999999999818,
+            "p99": 9.399999999999636,
+            "max": 10.600000000000364,
+            "fpsAvg": 119.99839467030543
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 4488176,
+          "cpuPercentOfOneCore": {
+            "browser": 0.6,
+            "renderer": 10.7,
+            "GPU": 15.9,
+            "network.mojom.NetworkService": 0.1,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 3
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": {
+            "w": 2560,
+            "h": 1600
+          },
+          "firstFrameMs": 176.1,
+          "nav": {
+            "domContentLoaded": 37.599999994039536,
+            "load": 37.70000000298023
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333026755852842,
+            "p50": 8.300000000000182,
+            "p95": 9.199999999998909,
+            "p99": 9.399999999999636,
+            "max": 9.5,
+            "fpsAvg": 120.00441487813934
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 3876265,
+          "cpuPercentOfOneCore": {
+            "browser": 0.1,
+            "renderer": 10.6,
+            "GPU": 15.4,
+            "network.mojom.NetworkService": 0,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 1
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": {
+            "w": 2560,
+            "h": 1600
+          },
+          "firstFrameMs": 142.8,
+          "nav": {
+            "domContentLoaded": 33.70000000298023,
+            "load": 33.79999999701977
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333277591973244,
+            "p50": 8.300000000000182,
+            "p95": 9.200000000000728,
+            "p99": 9.400000000000091,
+            "max": 10.900000000000546,
+            "fpsAvg": 120.00080268095438
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 3835289,
+          "cpuPercentOfOneCore": {
+            "browser": 0.2,
+            "renderer": 11.2,
+            "GPU": 16.9,
+            "network.mojom.NetworkService": 0,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 2
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": {
+            "w": 2560,
+            "h": 1600
+          },
+          "firstFrameMs": 138.2,
+          "nav": {
+            "domContentLoaded": 38.1000000089407,
+            "load": 38.1000000089407
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333361204013377,
+            "p50": 8.300000000000182,
+            "p95": 9.200000000000273,
+            "p99": 9.300000000001091,
+            "max": 12.399999999999636,
+            "fpsAvg": 119.99959866354963
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 3838528,
+          "cpuPercentOfOneCore": {
+            "browser": 0.2,
+            "renderer": 11.4,
+            "GPU": 16.6,
+            "network.mojom.NetworkService": 0,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 3
+        }
+      ],
+      "timeToFirstFrameMs": {
+        "median": 141.7,
+        "samples": [
+          184.3,
+          130.1,
+          141.7
+        ],
+        "note": "performance.now() at first drawn frame, ms since navigation start, localhost (no network), warm disk cache, fresh context each"
+      },
+      "renderer": {
+        "webgl": {
+          "vendor": "Google Inc. (Apple)",
+          "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+        },
+        "webgpu": {
+          "vendor": "apple",
+          "architecture": "metal-3",
+          "description": ""
+        }
+      }
+    },
+    "web-webgpu": {
+      "url": "http://127.0.0.1:5183/",
+      "chromium": "153.0.8010.12",
+      "flags": [
+        "--enable-unsafe-webgpu",
+        "--enable-gpu",
+        "--ignore-gpu-blocklist",
+        "--use-angle=metal"
+      ],
+      "seconds": 10,
+      "reps": 3,
+      "runs": [
+        {
+          "viewport": "1280x800@1",
+          "canvas": {
+            "w": 1280,
+            "h": 800
+          },
+          "firstFrameMs": 58.2,
+          "nav": {
+            "domContentLoaded": 24.700000002980232,
+            "load": 24.799999997019768
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333361204013377,
+            "p50": 8.300000000000182,
+            "p95": 9.200000000000273,
+            "p99": 9.399999999999636,
+            "max": 11.299999999999272,
+            "fpsAvg": 119.99959866354963
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 2670868,
+          "cpuPercentOfOneCore": {
+            "browser": 1.3,
+            "renderer": 10.3,
+            "GPU": 20.5,
+            "network.mojom.NetworkService": 0.2,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 1
+        },
+        {
+          "viewport": "1280x800@1",
+          "canvas": {
+            "w": 1280,
+            "h": 800
+          },
+          "firstFrameMs": 63.6,
+          "nav": {
+            "domContentLoaded": 30.900000005960464,
+            "load": 31
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333361204013379,
+            "p50": 8.300000000000182,
+            "p95": 9.200000000000045,
+            "p99": 9.399999999999636,
+            "max": 10.5,
+            "fpsAvg": 119.9995986635496
+          },
+          "appFramesCounted": 1203,
+          "jsHeapBytes": 2661163,
+          "cpuPercentOfOneCore": {
+            "browser": 0.3,
+            "renderer": 9.8,
+            "GPU": 18.6,
+            "network.mojom.NetworkService": 0.1,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 2
+        },
+        {
+          "viewport": "1280x800@1",
+          "canvas": {
+            "w": 1280,
+            "h": 800
+          },
+          "firstFrameMs": 60.5,
+          "nav": {
+            "domContentLoaded": 29.200000002980232,
+            "load": 29.30000001192093
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333277591973244,
+            "p50": 8.300000000000182,
+            "p95": 9.200000000000273,
+            "p99": 9.399999999999636,
+            "max": 10.5,
+            "fpsAvg": 120.00080268095438
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 2669424,
+          "cpuPercentOfOneCore": {
+            "browser": 0.5,
+            "renderer": 10.1,
+            "GPU": 19.6,
+            "network.mojom.NetworkService": 0.1,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 3
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": {
+            "w": 2560,
+            "h": 1600
+          },
+          "firstFrameMs": 88.1,
+          "nav": {
+            "domContentLoaded": 30.700000002980232,
+            "load": 30.700000002980232
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333361204013379,
+            "p50": 8.300000000000182,
+            "p95": 9.200000000000728,
+            "p99": 9.399999999999636,
+            "max": 10,
+            "fpsAvg": 119.9995986635496
+          },
+          "appFramesCounted": 1203,
+          "jsHeapBytes": 2674132,
+          "cpuPercentOfOneCore": {
+            "browser": 0.1,
+            "renderer": 10.9,
+            "GPU": 25.5,
+            "network.mojom.NetworkService": 0,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 1
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": {
+            "w": 2560,
+            "h": 1600
+          },
+          "firstFrameMs": 52.7,
+          "nav": {
+            "domContentLoaded": 37.79999999701977,
+            "load": 37.8999999910593
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333695652173914,
+            "p50": 8.300000000000182,
+            "p95": 9.200000000000728,
+            "p99": 9.399999999999636,
+            "max": 9.699999999998909,
+            "fpsAvg": 119.99478283552888
+          },
+          "appFramesCounted": 1201,
+          "jsHeapBytes": 2661196,
+          "cpuPercentOfOneCore": {
+            "browser": 0.1,
+            "renderer": 11.1,
+            "GPU": 27.8,
+            "network.mojom.NetworkService": 0,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 2
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": {
+            "w": 2560,
+            "h": 1600
+          },
+          "firstFrameMs": 64.8,
+          "nav": {
+            "domContentLoaded": 33,
+            "load": 33
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333277591973243,
+            "p50": 8.300000000000182,
+            "p95": 9.299999999999272,
+            "p99": 9.400000000000091,
+            "max": 10.600000000000364,
+            "fpsAvg": 120.00080268095441
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 2661747,
+          "cpuPercentOfOneCore": {
+            "browser": 0.1,
+            "renderer": 10.8,
+            "GPU": 25.6,
+            "network.mojom.NetworkService": 0.1,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 3
+        }
+      ],
+      "timeToFirstFrameMs": {
+        "median": 52.1,
+        "samples": [
+          123.8,
+          48.2,
+          52.1
+        ],
+        "note": "performance.now() at first drawn frame, ms since navigation start, localhost (no network), warm disk cache, fresh context each"
+      },
+      "renderer": {
+        "webgl": {
+          "vendor": "Google Inc. (Apple)",
+          "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+        },
+        "webgpu": {
+          "vendor": "apple",
+          "architecture": "metal-3",
+          "description": ""
+        }
+      }
+    },
+    "web-webgl": {
+      "url": "http://127.0.0.1:5184/",
+      "chromium": "153.0.8010.12",
+      "flags": [
+        "--enable-unsafe-webgpu",
+        "--enable-gpu",
+        "--ignore-gpu-blocklist",
+        "--use-angle=metal"
+      ],
+      "seconds": 10,
+      "reps": 3,
+      "runs": [
+        {
+          "viewport": "1280x800@1",
+          "canvas": {
+            "w": 1280,
+            "h": 800
+          },
+          "firstFrameMs": 62.2,
+          "nav": {
+            "domContentLoaded": 30.899999991059303,
+            "load": 31
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.33277591973244,
+            "p50": 8.300000000000182,
+            "p95": 10,
+            "p99": 10.399999999999636,
+            "max": 11.300000000000182,
+            "fpsAvg": 120.00802729279553
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 2422500,
+          "cpuPercentOfOneCore": {
+            "browser": 1.2,
+            "renderer": 7.5,
+            "GPU": 14.6,
+            "network.mojom.NetworkService": 0.2,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 1
+        },
+        {
+          "viewport": "1280x800@1",
+          "canvas": {
+            "w": 1280,
+            "h": 800
+          },
+          "firstFrameMs": 53.5,
+          "nav": {
+            "domContentLoaded": 30,
+            "load": 30.099999994039536
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.332190635451504,
+            "p50": 8.300000000000182,
+            "p95": 9.5,
+            "p99": 10.199999999999818,
+            "max": 11,
+            "fpsAvg": 120.01645710615838
+          },
+          "appFramesCounted": 1201,
+          "jsHeapBytes": 2465575,
+          "cpuPercentOfOneCore": {
+            "browser": 0.8,
+            "renderer": 7.7,
+            "GPU": 14.7,
+            "network.mojom.NetworkService": 0.1,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 2
+        },
+        {
+          "viewport": "1280x800@1",
+          "canvas": {
+            "w": 1280,
+            "h": 800
+          },
+          "firstFrameMs": 52.3,
+          "nav": {
+            "domContentLoaded": 34.1000000089407,
+            "load": 34.1000000089407
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.331187290969899,
+            "p50": 8.300000000000182,
+            "p95": 9.299999999999272,
+            "p99": 9.400000000000546,
+            "max": 10.300000000000182,
+            "fpsAvg": 120.03091097038369
+          },
+          "appFramesCounted": 1202,
+          "jsHeapBytes": 2360199,
+          "cpuPercentOfOneCore": {
+            "browser": 0.7,
+            "renderer": 7.3,
+            "GPU": 14.1,
+            "network.mojom.NetworkService": 0.1,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 3
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": {
+            "w": 2560,
+            "h": 1600
+          },
+          "firstFrameMs": 49.2,
+          "nav": {
+            "domContentLoaded": 30.200000002980232,
+            "load": 30.200000002980232
+          },
+          "frame": {
+            "n": 1193,
+            "avg": 8.350712489522213,
+            "p50": 8.300000000000182,
+            "p95": 9.299999999999272,
+            "p99": 9.699999999999818,
+            "max": 24,
+            "fpsAvg": 119.75026098128966
+          },
+          "appFramesCounted": 1201,
+          "jsHeapBytes": 2445215,
+          "cpuPercentOfOneCore": {
+            "browser": 1.7,
+            "renderer": 8.6,
+            "GPU": 15.7,
+            "network.mojom.NetworkService": 0.2,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 1
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": {
+            "w": 2560,
+            "h": 1600
+          },
+          "firstFrameMs": 56.7,
+          "nav": {
+            "domContentLoaded": 38,
+            "load": 38.20000000298023
+          },
+          "frame": {
+            "n": 1197,
+            "avg": 8.329824561403509,
+            "p50": 8.300000000000182,
+            "p95": 9.299999999999727,
+            "p99": 9.400000000000546,
+            "max": 10.700000000000728,
+            "fpsAvg": 120.05054759898904
+          },
+          "appFramesCounted": 1203,
+          "jsHeapBytes": 2457556,
+          "cpuPercentOfOneCore": {
+            "browser": 0.8,
+            "renderer": 9.2,
+            "GPU": 16.6,
+            "network.mojom.NetworkService": 0,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 2
+        },
+        {
+          "viewport": "2560x1600@1",
+          "canvas": {
+            "w": 2560,
+            "h": 1600
+          },
+          "firstFrameMs": 59,
+          "nav": {
+            "domContentLoaded": 32.5,
+            "load": 32.599999994039536
+          },
+          "frame": {
+            "n": 1196,
+            "avg": 8.333695652173914,
+            "p50": 8.300000000000182,
+            "p95": 9.299999999999272,
+            "p99": 9.599999999999909,
+            "max": 12.200000000000273,
+            "fpsAvg": 119.99478283552888
+          },
+          "appFramesCounted": 1201,
+          "jsHeapBytes": 2449200,
+          "cpuPercentOfOneCore": {
+            "browser": 0.7,
+            "renderer": 8.4,
+            "GPU": 15.4,
+            "network.mojom.NetworkService": 0,
+            "storage.mojom.StorageService": 0
+          },
+          "gpuInfo": {
+            "webgl": {
+              "vendor": "Google Inc. (Apple)",
+              "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+            },
+            "webgpu": {
+              "vendor": "apple",
+              "architecture": "metal-3",
+              "description": ""
+            }
+          },
+          "pageErrors": [],
+          "rep": 3
+        }
+      ],
+      "timeToFirstFrameMs": {
+        "median": 54.1,
+        "samples": [
+          69.3,
+          54.1,
+          46.2
+        ],
+        "note": "performance.now() at first drawn frame, ms since navigation start, localhost (no network), warm disk cache, fresh context each"
+      },
+      "renderer": {
+        "webgl": {
+          "vendor": "Google Inc. (Apple)",
+          "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M1 Pro, Unspecified Version)"
+        },
+        "webgpu": {
+          "vendor": "apple",
+          "architecture": "metal-3",
+          "description": ""
+        }
+      }
+    }
+  }
+}

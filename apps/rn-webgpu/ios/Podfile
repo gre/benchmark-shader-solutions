@@ -1,0 +1,54 @@
+# Resolve react_native_pods.rb with node to allow for hoisting
+require Pod::Executable.execute_command('node', ['-p',
+  'require.resolve(
+    "react-native/scripts/react_native_pods.rb",
+    {paths: [process.argv[1]]},
+  )', __dir__]).strip
+
+platform :ios, min_ios_version_supported
+prepare_react_native_project!
+
+linkage = ENV['USE_FRAMEWORKS']
+if linkage != nil
+  Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
+  use_frameworks! :linkage => linkage.to_sym
+end
+
+target 'RnBaseline' do
+  config = use_native_modules!
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # An absolute path to your application root.
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+
+  post_install do |installer|
+    react_native_post_install(
+      installer,
+      config[:reactNativePath],
+      :mac_catalyst_enabled => false,
+      # :ccache_enabled => true
+    )
+    # rn-webgpu: react-native-webgpu 0.5.17 includes its own "ArrayBuffer.h"
+    # (cpp/rnwgpu/ArrayBuffer.h), but Xcode's project header map resolves that
+    # quoted include to React Native 0.87's react/bridging/ArrayBuffer.h
+    # (React-bridging target in the same Pods project) -> "unknown type name
+    # 'ArrayBuffer'". Disabling header maps for that pod makes the include go
+    # through HEADER_SEARCH_PATHS (Headers/Private/react-native-webgpu) instead;
+    # The two headers apple/WebGPUView.mm imported unprefixed through the header
+    # map get explicit search paths: RCTFabricComponentsPlugins.h, and "Utils.h",
+    # which the header map resolved (case-insensitively!) to RN's
+    # react/renderer/animations/utils.h — nothing from it is used, but the
+    # #import must resolve.
+    installer.pods_project.targets.each do |t|
+      next unless t.name == 'react-native-webgpu'
+      t.build_configurations.each do |c|
+        c.build_settings['USE_HEADERMAP'] = 'NO'
+        c.build_settings['HEADER_SEARCH_PATHS'] =
+          ['$(inherited)', '"${PODS_ROOT}/Headers/Public/React-RCTFabric/React"',
+           '"${PODS_ROOT}/React-Core-prebuilt/Headers/react/renderer/animations"']
+      end
+    end
+  end
+end

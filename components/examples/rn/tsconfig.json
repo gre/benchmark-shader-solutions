@@ -1,0 +1,10 @@
+{
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    // linked @shader-bench/* sources resolve react / react-native from this
+    // app's node_modules (they have none of their own)
+    "preserveSymlinks": true
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["**/node_modules", "**/Pods"]
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Silk WGSL check</title>
+<style>html,body{margin:0;height:100%;background:#000;overflow:hidden}canvas{display:block;width:100%;height:100%}#err{position:fixed;bottom:0;color:#f88;font:12px monospace;white-space:pre-wrap}</style></head>
+<body><canvas id="c"></canvas><div id="err"></div>
+<script type="module">
+// Throwaway verification page for silk.wgsl (raw WebGPU). ?t=<seconds> freezes time.
+const Q = new URLSearchParams(location.search);
+const PERIODS = [41, 59, 23, 53];
+const t0 = performance.now(), frozen = Q.has('t') ? parseFloat(Q.get('t')) : null;
+const fail = (m) => { document.getElementById('err').textContent = m; window.__error = m; };
+try {
+  if (!navigator.gpu) throw new Error('WebGPU not available');
+  const adapter = await navigator.gpu.requestAdapter();
+  if (!adapter) throw new Error('no WebGPU adapter');
+  const device = await adapter.requestDevice();
+  const canvas = document.getElementById('c');
+  canvas.width = canvas.clientWidth; canvas.height = canvas.clientHeight;
+  const ctx = canvas.getContext('webgpu');
+  const format = navigator.gpu.getPreferredCanvasFormat();
+  ctx.configure({ device, format, alphaMode: 'opaque' });
+  const code = await (await fetch('../silk.wgsl', { cache: 'no-store' })).text();
+  const module = device.createShaderModule({ code });
+  const info = await module.getCompilationInfo();
+  const errors = info.messages.filter(m => m.type === 'error');
+  if (errors.length) throw new Error(errors.map(m => `${m.lineNum}:${m.linePos} ${m.message}`).join('\n'));
+  const pipeline = device.createRenderPipeline({
+    layout: 'auto',
+    vertex: { module, entryPoint: 'vs_main' },
+    fragment: { module, entryPoint: 'fs_main', targets: [{ format }] },
+    primitive: { topology: 'triangle-list' },
+  });
+  const ubo = device.createBuffer({ size: 32, usage: GPUBufferUsage.UNIFORM | GPUBufferUsage.COPY_DST });
+  const bind = device.createBindGroup({ layout: pipeline.getBindGroupLayout(0), entries: [{ binding: 0, resource: { buffer: ubo } }] });
+  const data = new Float32Array(8);
+  function frame() {
+    const t = frozen ?? (performance.now() - t0) / 1000;
+    data.set([canvas.width, canvas.height, 0, 0, ...PERIODS.map(P => ((t / P) % 1 + 1) % 1)]);
+    device.queue.writeBuffer(ubo, 0, data);
+    const enc = device.createCommandEncoder();
+    const pass = enc.beginRenderPass({ colorAttachments: [{ view: ctx.getCurrentTexture().createView(), loadOp: 'clear', storeOp: 'store', clearValue: [0, 0, 0, 1] }] });
+    pass.setPipeline(pipeline); pass.setBindGroup(0, bind); pass.draw(3); pass.end();
+    device.queue.submit([enc.finish()]);
+    window.__frames = (window.__frames || 0) + 1;
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+} catch (e) { fail(String(e.message || e)); }
+</script>
+</body></html>

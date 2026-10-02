@@ -1,0 +1,54 @@
+{
+  "name": "@shader-bench/webgpu",
+  "version": "0.1.0",
+  "description": "<Effect> shader component: raw WebGPU on the web, react-native-webgpu (Dawn) on React Native (WGSL)",
+  "license": "MIT",
+  "private": true,
+  "main": "src/Effect.web.tsx",
+  "browser": "src/Effect.web.tsx",
+  "react-native": "src/Effect.native.tsx",
+  "types": "src/Effect.web.tsx",
+  "exports": {
+    ".": {
+      "react-native": "./src/Effect.native.tsx",
+      "browser": "./src/Effect.web.tsx",
+      "types": "./src/Effect.web.tsx",
+      "default": "./src/Effect.web.tsx"
+    },
+    "./shaders": "./src/schema.ts",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "consumer",
+    "README.md"
+  ],
+  "sideEffects": [
+    "./src/shaders/index.ts"
+  ],
+  "peerDependencies": {
+    "@webgpu/types": "0.1.74",
+    "react": "19.2.3",
+    "react-native": "0.87.1",
+    "react-native-reanimated": "4.7.1",
+    "react-native-webgpu": "0.5.17",
+    "react-native-worklets": "0.13.0"
+  },
+  "peerDependenciesMeta": {
+    "@webgpu/types": {
+      "optional": true
+    },
+    "react-native": {
+      "optional": true
+    },
+    "react-native-reanimated": {
+      "optional": true
+    },
+    "react-native-webgpu": {
+      "optional": true
+    },
+    "react-native-worklets": {
+      "optional": true
+    }
+  }
+}

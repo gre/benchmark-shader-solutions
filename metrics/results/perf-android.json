@@ -1,0 +1,4493 @@
+{
+  "generatedAt": "2026-10-04T15:45:55.842Z",
+  "apps": {
+    "rn-baseline@s21-r1": {
+      "device": "AVD Pixel_3a_API_34_extension_level_7_arm64-v8a",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnb-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 10.836520578365514,
+        "min": 10.836520578365514,
+        "max": 10.836520578365514,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 110.00263671875,
+        "min": 110.00263671875,
+        "max": 110.00263671875,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 110.357421875,
+        "min": 110.357421875,
+        "max": 110.357421875,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 285,
+        "min": 285,
+        "max": 285,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 58,
+        "min": 58,
+        "max": 58,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 6.9,
+        "min": 6.9,
+        "max": 6.9,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 11,
+        "min": 11,
+        "max": 11,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 1249,
+        "min": 1249,
+        "max": 1249,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 3.475332280214988,
+        "min": 3.475332280214988,
+        "max": 3.475332280214988,
+        "n": 1
+      },
+      "note": "emulator (host GPU) on Apple M1 Pro, not a device; CPU % of one core from /proc/<pid>/stat",
+      "runs": [
+        {
+          "rep": 1,
+          "amStartTotalTimeMs": 1249,
+          "firstFrameMs": 285,
+          "shaderSetupMs": null,
+          "cpuAvg": 10.836520578365514,
+          "surfaceFlingerCpuAvg": 3.475332280214988,
+          "pssAvgMB": 110.00263671875,
+          "pssMaxMB": 110.357421875,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "tstudy.baseline",
+              "cpu": 5.58
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 2.37
+            },
+            {
+              "thread": "binder:29053_",
+              "cpu": 1.88
+            },
+            {
+              "thread": "RenderThread",
+              "cpu": 0.45
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.31
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 0.22
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.18
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.13
+            }
+          ],
+          "gfxinfo": {
+            "frames": 58,
+            "jankyPercent": 6.9,
+            "p50Ms": 5,
+            "p90Ms": 10,
+            "p95Ms": 11,
+            "p99Ms": 19
+          }
+        }
+      ]
+    },
+    "rn-native@s21-r1": {
+      "device": "AVD Pixel_3a_API_34_extension_level_7_arm64-v8a",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnn-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 59.65775505403052,
+        "min": 59.65775505403052,
+        "max": 59.65775505403052,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 125.6884765625,
+        "min": 125.6884765625,
+        "max": 125.6884765625,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 127.828125,
+        "min": 127.828125,
+        "max": 127.828125,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 77,
+        "min": 77,
+        "max": 77,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 4559,
+        "min": 4559,
+        "max": 4559,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 22.77,
+        "min": 22.77,
+        "max": 22.77,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 9,
+        "min": 9,
+        "max": 9,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 220,
+        "min": 220,
+        "max": 220,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 41.59143543253204,
+        "min": 41.59143543253204,
+        "max": 41.59143543253204,
+        "n": 1
+      },
+      "note": "emulator (host GPU) on Apple M1 Pro, not a device; CPU % of one core from /proc/<pid>/stat",
+      "runs": [
+        {
+          "rep": 1,
+          "amStartTotalTimeMs": 220,
+          "firstFrameMs": 77,
+          "shaderSetupMs": null,
+          "cpuAvg": 59.65775505403052,
+          "surfaceFlingerCpuAvg": 41.59143543253204,
+          "pssAvgMB": 125.6884765625,
+          "pssMaxMB": 127.828125,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 26.46
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 14.09
+            },
+            {
+              "thread": "ectstudy.native",
+              "cpu": 8.79
+            },
+            {
+              "thread": "SilkRender",
+              "cpu": 5.64
+            },
+            {
+              "thread": "binder:6423_",
+              "cpu": 4.67
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 0.17
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.17
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.17
+            }
+          ],
+          "gfxinfo": {
+            "frames": 4559,
+            "jankyPercent": 22.77,
+            "p50Ms": 5,
+            "p90Ms": 8,
+            "p95Ms": 9,
+            "p99Ms": 10
+          }
+        }
+      ]
+    },
+    "rn-native-compatible-static@s21-r1": {
+      "device": "AVD Pixel_3a_API_34_extension_level_7_arm64-v8a",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnncs-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 72.94223402121311,
+        "min": 72.94223402121311,
+        "max": 72.94223402121311,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 128.4462890625,
+        "min": 128.4462890625,
+        "max": 128.4462890625,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 129.9775390625,
+        "min": 129.9775390625,
+        "max": 129.9775390625,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 98,
+        "min": 98,
+        "max": 98,
+        "n": 1
+      },
+      "shaderSetupMs": {
+        "median": 36.8,
+        "min": 36.8,
+        "max": 36.8,
+        "n": 1
+      },
+      "gfxFrames": {
+        "median": 2880,
+        "min": 2880,
+        "max": 2880,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 4.1,
+        "min": 4.1,
+        "max": 4.1,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 11,
+        "min": 11,
+        "max": 11,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 197,
+        "min": 197,
+        "max": 197,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 51.149833578274134,
+        "min": 51.149833578274134,
+        "max": 51.149833578274134,
+        "n": 1
+      },
+      "note": "emulator (host GPU) on Apple M1 Pro, not a device; CPU % of one core from /proc/<pid>/stat",
+      "runs": [
+        {
+          "rep": 1,
+          "amStartTotalTimeMs": 197,
+          "firstFrameMs": 98,
+          "shaderSetupMs": 36.8,
+          "cpuAvg": 72.94223402121311,
+          "surfaceFlingerCpuAvg": 51.149833578274134,
+          "pssAvgMB": 128.4462890625,
+          "pssMaxMB": 129.9775390625,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 24.33
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 17.53
+            },
+            {
+              "thread": "SilkGL",
+              "cpu": 14.43
+            },
+            {
+              "thread": "dy.nativecompat",
+              "cpu": 10.74
+            },
+            {
+              "thread": "binder:16081_",
+              "cpu": 5.83
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.21
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.17
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.17
+            }
+          ],
+          "gfxinfo": {
+            "frames": 2880,
+            "jankyPercent": 4.1,
+            "p50Ms": 6,
+            "p90Ms": 11,
+            "p95Ms": 11,
+            "p99Ms": 13
+          }
+        }
+      ]
+    },
+    "rn-native-compatible-dynamic@s21-r1": {
+      "device": "AVD Pixel_3a_API_34_extension_level_7_arm64-v8a",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnncd-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 73.8045626106709,
+        "min": 73.8045626106709,
+        "max": 73.8045626106709,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 132.7806640625,
+        "min": 132.7806640625,
+        "max": 132.7806640625,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 136.1494140625,
+        "min": 136.1494140625,
+        "max": 136.1494140625,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 78,
+        "min": 78,
+        "max": 78,
+        "n": 1
+      },
+      "shaderSetupMs": {
+        "median": 27.1,
+        "min": 27.1,
+        "max": 27.1,
+        "n": 1
+      },
+      "gfxFrames": {
+        "median": 2884,
+        "min": 2884,
+        "max": 2884,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 5.03,
+        "min": 5.03,
+        "max": 5.03,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 12,
+        "min": 12,
+        "max": 12,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 190,
+        "min": 190,
+        "max": 190,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 52.844630941212316,
+        "min": 52.844630941212316,
+        "max": 52.844630941212316,
+        "n": 1
+      },
+      "note": "emulator (host GPU) on Apple M1 Pro, not a device; CPU % of one core from /proc/<pid>/stat",
+      "runs": [
+        {
+          "rep": 1,
+          "amStartTotalTimeMs": 190,
+          "firstFrameMs": 78,
+          "shaderSetupMs": 27.1,
+          "cpuAvg": 73.8045626106709,
+          "surfaceFlingerCpuAvg": 52.844630941212316,
+          "pssAvgMB": 132.7806640625,
+          "pssMaxMB": 136.1494140625,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 24.45
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 17.74
+            },
+            {
+              "thread": "SilkGL",
+              "cpu": 14.3
+            },
+            {
+              "thread": "nativecompatdyn",
+              "cpu": 10.82
+            },
+            {
+              "thread": "binder:16703_",
+              "cpu": 6.38
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.21
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.21
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.21
+            }
+          ],
+          "gfxinfo": {
+            "frames": 2884,
+            "jankyPercent": 5.03,
+            "p50Ms": 6,
+            "p90Ms": 11,
+            "p95Ms": 12,
+            "p99Ms": 13
+          }
+        }
+      ]
+    },
+    "rn-native-compatible-dynamic@s21-r2": {
+      "device": "AVD Pixel_3a_API_34_extension_level_7_arm64-v8a",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnncd-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 73.44387045365703,
+        "min": 73.44387045365703,
+        "max": 73.44387045365703,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 123.26533203125,
+        "min": 123.26533203125,
+        "max": 123.26533203125,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 124.7490234375,
+        "min": 124.7490234375,
+        "max": 124.7490234375,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 92,
+        "min": 92,
+        "max": 92,
+        "n": 1
+      },
+      "shaderSetupMs": {
+        "median": 1.6,
+        "min": 1.6,
+        "max": 1.6,
+        "n": 1
+      },
+      "gfxFrames": {
+        "median": 3051,
+        "min": 3051,
+        "max": 3051,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 4,
+        "min": 4,
+        "max": 4,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 11,
+        "min": 11,
+        "max": 11,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 179,
+        "min": 179,
+        "max": 179,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 51.18115463667517,
+        "min": 51.18115463667517,
+        "max": 51.18115463667517,
+        "n": 1
+      },
+      "note": "emulator (host GPU) on Apple M1 Pro, not a device; CPU % of one core from /proc/<pid>/stat",
+      "runs": [
+        {
+          "rep": 1,
+          "amStartTotalTimeMs": 179,
+          "firstFrameMs": 92,
+          "shaderSetupMs": 1.6,
+          "cpuAvg": 73.44387045365703,
+          "surfaceFlingerCpuAvg": 51.18115463667517,
+          "pssAvgMB": 123.26533203125,
+          "pssMaxMB": 124.7490234375,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 24.34
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 17.4
+            },
+            {
+              "thread": "SilkGL",
+              "cpu": 14.04
+            },
+            {
+              "thread": "nativecompatdyn",
+              "cpu": 10.77
+            },
+            {
+              "thread": "binder:20225_",
+              "cpu": 6.19
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.2
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 0.2
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.16
+            }
+          ],
+          "gfxinfo": {
+            "frames": 3051,
+            "jankyPercent": 4,
+            "p50Ms": 6,
+            "p90Ms": 11,
+            "p95Ms": 11,
+            "p99Ms": 13
+          }
+        }
+      ]
+    },
+    "rn-native-compatible-static@s21-r2": {
+      "device": "AVD Pixel_3a_API_34_extension_level_7_arm64-v8a",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnncs-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 72.47746267989925,
+        "min": 72.47746267989925,
+        "max": 72.47746267989925,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 124.5830078125,
+        "min": 124.5830078125,
+        "max": 124.5830078125,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 133.2646484375,
+        "min": 133.2646484375,
+        "max": 133.2646484375,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 55,
+        "min": 55,
+        "max": 55,
+        "n": 1
+      },
+      "shaderSetupMs": {
+        "median": 0.8,
+        "min": 0.8,
+        "max": 0.8,
+        "n": 1
+      },
+      "gfxFrames": {
+        "median": 2845,
+        "min": 2845,
+        "max": 2845,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 6.85,
+        "min": 6.85,
+        "max": 6.85,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 12,
+        "min": 12,
+        "max": 12,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 167,
+        "min": 167,
+        "max": 167,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 50.39176898138251,
+        "min": 50.39176898138251,
+        "max": 50.39176898138251,
+        "n": 1
+      },
+      "note": "emulator (host GPU) on Apple M1 Pro, not a device; CPU % of one core from /proc/<pid>/stat",
+      "runs": [
+        {
+          "rep": 1,
+          "amStartTotalTimeMs": 167,
+          "firstFrameMs": 55,
+          "shaderSetupMs": 0.8,
+          "cpuAvg": 72.47746267989925,
+          "surfaceFlingerCpuAvg": 50.39176898138251,
+          "pssAvgMB": 124.5830078125,
+          "pssMaxMB": 133.2646484375,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 23.24
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 16.52
+            },
+            {
+              "thread": "SilkGL",
+              "cpu": 13.51
+            },
+            {
+              "thread": "dy.nativecompat",
+              "cpu": 11.44
+            },
+            {
+              "thread": "binder:20754_",
+              "cpu": 6.15
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 1.14
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.28
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.16
+            }
+          ],
+          "gfxinfo": {
+            "frames": 2845,
+            "jankyPercent": 6.85,
+            "p50Ms": 6,
+            "p90Ms": 11,
+            "p95Ms": 12,
+            "p99Ms": 14
+          }
+        }
+      ]
+    },
+    "rn-native@s21-r2": {
+      "device": "AVD Pixel_3a_API_34_extension_level_7_arm64-v8a",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnn-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 59.78742526313571,
+        "min": 59.78742526313571,
+        "max": 59.78742526313571,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 113.7951171875,
+        "min": 113.7951171875,
+        "max": 113.7951171875,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 116.470703125,
+        "min": 116.470703125,
+        "max": 116.470703125,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 47,
+        "min": 47,
+        "max": 47,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 4796,
+        "min": 4796,
+        "max": 4796,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 21.71,
+        "min": 21.71,
+        "max": 21.71,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 9,
+        "min": 9,
+        "max": 9,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 167,
+        "min": 167,
+        "max": 167,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 39.673719899150946,
+        "min": 39.673719899150946,
+        "max": 39.673719899150946,
+        "n": 1
+      },
+      "note": "emulator (host GPU) on Apple M1 Pro, not a device; CPU % of one core from /proc/<pid>/stat",
+      "runs": [
+        {
+          "rep": 1,
+          "amStartTotalTimeMs": 167,
+          "firstFrameMs": 47,
+          "shaderSetupMs": null,
+          "cpuAvg": 59.78742526313571,
+          "surfaceFlingerCpuAvg": 39.673719899150946,
+          "pssAvgMB": 113.7951171875,
+          "pssMaxMB": 116.470703125,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 25.85
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 14.17
+            },
+            {
+              "thread": "ectstudy.native",
+              "cpu": 9.23
+            },
+            {
+              "thread": "SilkRender",
+              "cpu": 5.62
+            },
+            {
+              "thread": "binder:21338_",
+              "cpu": 4.3
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.2
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.16
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.16
+            }
+          ],
+          "gfxinfo": {
+            "frames": 4796,
+            "jankyPercent": 21.71,
+            "p50Ms": 5,
+            "p90Ms": 8,
+            "p95Ms": 9,
+            "p99Ms": 10
+          }
+        }
+      ]
+    },
+    "rn-baseline@s21-r2": {
+      "device": "AVD Pixel_3a_API_34_extension_level_7_arm64-v8a",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnb-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 18.80727279124423,
+        "min": 18.80727279124423,
+        "max": 18.80727279124423,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 103.36337890625,
+        "min": 103.36337890625,
+        "max": 103.36337890625,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 103.8876953125,
+        "min": 103.8876953125,
+        "max": 103.8876953125,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 92,
+        "min": 92,
+        "max": 92,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 59,
+        "min": 59,
+        "max": 59,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 8.47,
+        "min": 8.47,
+        "max": 8.47,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 17,
+        "min": 17,
+        "max": 17,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 175,
+        "min": 175,
+        "max": 175,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 8.847513613319016,
+        "min": 8.847513613319016,
+        "max": 8.847513613319016,
+        "n": 1
+      },
+      "note": "emulator (host GPU) on Apple M1 Pro, not a device; CPU % of one core from /proc/<pid>/stat",
+      "runs": [
+        {
+          "rep": 1,
+          "amStartTotalTimeMs": 175,
+          "firstFrameMs": 92,
+          "shaderSetupMs": null,
+          "cpuAvg": 18.80727279124423,
+          "surfaceFlingerCpuAvg": 8.847513613319016,
+          "pssAvgMB": 103.36337890625,
+          "pssMaxMB": 103.8876953125,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "tstudy.baseline",
+              "cpu": 8.44
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 5.57
+            },
+            {
+              "thread": "binder:22210_",
+              "cpu": 2.45
+            },
+            {
+              "thread": "RenderThread",
+              "cpu": 1.01
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 0.59
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.42
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.25
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.21
+            }
+          ],
+          "gfxinfo": {
+            "frames": 59,
+            "jankyPercent": 8.47,
+            "p50Ms": 12,
+            "p90Ms": 15,
+            "p95Ms": 17,
+            "p99Ms": 36
+          }
+        }
+      ]
+    },
+    "rn-baseline@s21-a1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnb-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 16.92763875314527,
+        "min": 16.92763875314527,
+        "max": 16.92763875314527,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 101.1796875,
+        "min": 101.1796875,
+        "max": 101.1796875,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 101.1796875,
+        "min": 101.1796875,
+        "max": 101.1796875,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 80,
+        "min": 80,
+        "max": 80,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 56,
+        "min": 56,
+        "max": 56,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 7.14,
+        "min": 7.14,
+        "max": 7.14,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 179,
+        "min": 179,
+        "max": 179,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 11.745372476379858,
+        "min": 11.745372476379858,
+        "max": 11.745372476379858,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 36.7,
+        "min": 36.7,
+        "max": 36.7,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 36.7,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 179,
+          "firstFrameMs": 80,
+          "shaderSetupMs": null,
+          "cpuAvg": 16.92763875314527,
+          "surfaceFlingerCpuAvg": 11.745372476379858,
+          "pssAvgMB": 101.1796875,
+          "pssMaxMB": 101.1796875,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "tstudy.baseline",
+              "cpu": 8.43
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 5.65
+            },
+            {
+              "thread": "RenderThread",
+              "cpu": 0.94
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 0.64
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.47
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.21
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.17
+            },
+            {
+              "thread": "binder:30112_",
+              "cpu": 0.09
+            }
+          ],
+          "gfxinfo": {
+            "frames": 56,
+            "jankyPercent": 7.14,
+            "p50Ms": 14,
+            "p90Ms": 16,
+            "p95Ms": 16,
+            "p99Ms": 18
+          }
+        }
+      ]
+    },
+    "rn-native@s21-a1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnn-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 58.5356532880091,
+        "min": 58.5356532880091,
+        "max": 58.5356532880091,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 109.447265625,
+        "min": 109.447265625,
+        "max": 109.447265625,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 109.447265625,
+        "min": 109.447265625,
+        "max": 109.447265625,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 48,
+        "min": 48,
+        "max": 48,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 4619,
+        "min": 4619,
+        "max": 4619,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 24.16,
+        "min": 24.16,
+        "max": 24.16,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 9,
+        "min": 9,
+        "max": 9,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 186,
+        "min": 186,
+        "max": 186,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 44.55610642944147,
+        "min": 44.55610642944147,
+        "max": 44.55610642944147,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 36.6,
+        "min": 36.6,
+        "max": 36.6,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 36.6,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 120,
+          "amStartTotalTimeMs": 186,
+          "firstFrameMs": 48,
+          "shaderSetupMs": null,
+          "cpuAvg": 58.5356532880091,
+          "surfaceFlingerCpuAvg": 44.55610642944147,
+          "pssAvgMB": 109.447265625,
+          "pssMaxMB": 109.447265625,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 26.46
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 14.32
+            },
+            {
+              "thread": "ectstudy.native",
+              "cpu": 9.2
+            },
+            {
+              "thread": "SilkRender",
+              "cpu": 5.84
+            },
+            {
+              "thread": "binder:30604_",
+              "cpu": 2.14
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 0.21
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.17
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.17
+            }
+          ],
+          "gfxinfo": {
+            "frames": 4619,
+            "jankyPercent": 24.16,
+            "p50Ms": 5,
+            "p90Ms": 8,
+            "p95Ms": 9,
+            "p99Ms": 10
+          }
+        }
+      ]
+    },
+    "rn-native-compatible-static@s21-a1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnncs-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 72.34952657272058,
+        "min": 72.34952657272058,
+        "max": 72.34952657272058,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 116.9443359375,
+        "min": 116.9443359375,
+        "max": 116.9443359375,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 116.9443359375,
+        "min": 116.9443359375,
+        "max": 116.9443359375,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 53,
+        "min": 53,
+        "max": 53,
+        "n": 1
+      },
+      "shaderSetupMs": {
+        "median": 0.7,
+        "min": 0.7,
+        "max": 0.7,
+        "n": 1
+      },
+      "gfxFrames": {
+        "median": 2970,
+        "min": 2970,
+        "max": 2970,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 5.62,
+        "min": 5.62,
+        "max": 5.62,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 12,
+        "min": 12,
+        "max": 12,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 192,
+        "min": 192,
+        "max": 192,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 53.131398685982404,
+        "min": 53.131398685982404,
+        "max": 53.131398685982404,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 37.1,
+        "min": 37.1,
+        "max": 37.1,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 37.1,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 120,
+          "amStartTotalTimeMs": 192,
+          "firstFrameMs": 53,
+          "shaderSetupMs": 0.7,
+          "cpuAvg": 72.34952657272058,
+          "surfaceFlingerCpuAvg": 53.131398685982404,
+          "pssAvgMB": 116.9443359375,
+          "pssMaxMB": 116.9443359375,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 24.56
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 17.67
+            },
+            {
+              "thread": "SilkGL",
+              "cpu": 14.61
+            },
+            {
+              "thread": "dy.nativecompat",
+              "cpu": 11.26
+            },
+            {
+              "thread": "binder:30926_",
+              "cpu": 3.96
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.24
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.2
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.2
+            }
+          ],
+          "gfxinfo": {
+            "frames": 2970,
+            "jankyPercent": 5.62,
+            "p50Ms": 6,
+            "p90Ms": 11,
+            "p95Ms": 12,
+            "p99Ms": 13
+          }
+        }
+      ]
+    },
+    "rn-native-compatible-dynamic@s21-a1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnncd-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 73.76894871114258,
+        "min": 73.76894871114258,
+        "max": 73.76894871114258,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 121.787109375,
+        "min": 121.787109375,
+        "max": 121.787109375,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 121.787109375,
+        "min": 121.787109375,
+        "max": 121.787109375,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 72,
+        "min": 72,
+        "max": 72,
+        "n": 1
+      },
+      "shaderSetupMs": {
+        "median": 1.6,
+        "min": 1.6,
+        "max": 1.6,
+        "n": 1
+      },
+      "gfxFrames": {
+        "median": 2975,
+        "min": 2975,
+        "max": 2975,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 4.4,
+        "min": 4.4,
+        "max": 4.4,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 12,
+        "min": 12,
+        "max": 12,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 177,
+        "min": 177,
+        "max": 177,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 54.36539090310657,
+        "min": 54.36539090310657,
+        "max": 54.36539090310657,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 37.3,
+        "min": 37.3,
+        "max": 37.3,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 37.3,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 120,
+          "amStartTotalTimeMs": 177,
+          "firstFrameMs": 72,
+          "shaderSetupMs": 1.6,
+          "cpuAvg": 73.76894871114258,
+          "surfaceFlingerCpuAvg": 54.36539090310657,
+          "pssAvgMB": 121.787109375,
+          "pssMaxMB": 121.787109375,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 25.3
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 17.71
+            },
+            {
+              "thread": "SilkGL",
+              "cpu": 14.77
+            },
+            {
+              "thread": "nativecompatdyn",
+              "cpu": 11.26
+            },
+            {
+              "thread": "binder:31645_",
+              "cpu": 4.2
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.2
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 0.2
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.16
+            }
+          ],
+          "gfxinfo": {
+            "frames": 2975,
+            "jankyPercent": 4.4,
+            "p50Ms": 6,
+            "p90Ms": 11,
+            "p95Ms": 12,
+            "p99Ms": 13
+          }
+        }
+      ]
+    },
+    "rn-skia@s21-a1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rn-skia-release-arm64.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 37.85093809280902,
+        "min": 37.85093809280902,
+        "max": 37.85093809280902,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 162.310546875,
+        "min": 162.310546875,
+        "max": 162.310546875,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 162.310546875,
+        "min": 162.310546875,
+        "max": 162.310546875,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 49,
+        "min": 49,
+        "max": 49,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 4950,
+        "min": 4950,
+        "max": 4950,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 177,
+        "min": 177,
+        "max": 177,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 52.8269332375962,
+        "min": 52.8269332375962,
+        "max": 52.8269332375962,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 37.9,
+        "min": 37.9,
+        "max": 37.9,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 37.9,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 120,
+          "amStartTotalTimeMs": 177,
+          "firstFrameMs": 49,
+          "shaderSetupMs": null,
+          "cpuAvg": 37.85093809280902,
+          "surfaceFlingerCpuAvg": 52.8269332375962,
+          "pssAvgMB": 162.310546875,
+          "pssMaxMB": 162.310546875,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "ffectstudy.skia",
+              "cpu": 24.13
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 9.61
+            },
+            {
+              "thread": "binder:31994_",
+              "cpu": 3.43
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.17
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.17
+            }
+          ],
+          "gfxinfo": {
+            "frames": 0,
+            "jankyPercent": 0,
+            "p50Ms": 4950,
+            "p90Ms": 4950,
+            "p95Ms": 4950,
+            "p99Ms": 4950
+          }
+        }
+      ]
+    },
+    "rn-webgpu@s21-a1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rn-webgpu-release-arm64.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 41.21922098634953,
+        "min": 41.21922098634953,
+        "max": 41.21922098634953,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 142.6259765625,
+        "min": 142.6259765625,
+        "max": 142.6259765625,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 142.6259765625,
+        "min": 142.6259765625,
+        "max": 142.6259765625,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 105,
+        "min": 105,
+        "max": 105,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 4950,
+        "min": 4950,
+        "max": 4950,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 206,
+        "min": 206,
+        "max": 206,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 56.19661757352043,
+        "min": 56.19661757352043,
+        "max": 56.19661757352043,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 38.2,
+        "min": 38.2,
+        "max": 38.2,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 38.2,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 120,
+          "amStartTotalTimeMs": 206,
+          "firstFrameMs": 105,
+          "shaderSetupMs": null,
+          "cpuAvg": 41.21922098634953,
+          "surfaceFlingerCpuAvg": 56.19661757352043,
+          "pssAvgMB": 142.6259765625,
+          "pssMaxMB": 142.6259765625,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "ectstudy.webgpu",
+              "cpu": 28.12
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 9.18
+            },
+            {
+              "thread": "binder:32468_",
+              "cpu": 3.58
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.16
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.16
+            }
+          ],
+          "gfxinfo": {
+            "frames": 0,
+            "jankyPercent": 0,
+            "p50Ms": 4950,
+            "p90Ms": 4950,
+            "p95Ms": 4950,
+            "p99Ms": 4950
+          }
+        }
+      ]
+    },
+    "rn-gl-react@s21-a1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rn-gl-react-release-arm64.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 91.19392196468962,
+        "min": 91.19392196468962,
+        "max": 91.19392196468962,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 157.2744140625,
+        "min": 157.2744140625,
+        "max": 157.2744140625,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 157.2744140625,
+        "min": 157.2744140625,
+        "max": 157.2744140625,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 72,
+        "min": 72,
+        "max": 72,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 3082,
+        "min": 3082,
+        "max": 3082,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0.16,
+        "min": 0.16,
+        "max": 0.16,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 13,
+        "min": 13,
+        "max": 13,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 181,
+        "min": 181,
+        "max": 181,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 50.18640983691306,
+        "min": 50.18640983691306,
+        "max": 50.18640983691306,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 38.3,
+        "min": 38.3,
+        "max": 38.3,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 38.3,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 120,
+          "amStartTotalTimeMs": 181,
+          "firstFrameMs": 72,
+          "shaderSetupMs": null,
+          "cpuAvg": 91.19392196468962,
+          "surfaceFlingerCpuAvg": 50.18640983691306,
+          "pssAvgMB": 157.2744140625,
+          "pssMaxMB": 157.2744140625,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 23.34
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 19.41
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 18.96
+            },
+            {
+              "thread": "Thread",
+              "cpu": 13.53
+            },
+            {
+              "thread": "ctstudy.glreact",
+              "cpu": 11.13
+            },
+            {
+              "thread": "binder:595_",
+              "cpu": 4.39
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.25
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.17
+            }
+          ],
+          "gfxinfo": {
+            "frames": 3082,
+            "jankyPercent": 0.16,
+            "p50Ms": 5,
+            "p90Ms": 12,
+            "p95Ms": 13,
+            "p99Ms": 13
+          }
+        }
+      ]
+    },
+    "rn-gl-react@s21-a2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rn-gl-react-release-arm64.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 93.25354199628234,
+        "min": 93.25354199628234,
+        "max": 93.25354199628234,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 161.697265625,
+        "min": 161.697265625,
+        "max": 161.697265625,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 161.697265625,
+        "min": 161.697265625,
+        "max": 161.697265625,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 92,
+        "min": 92,
+        "max": 92,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 3112,
+        "min": 3112,
+        "max": 3112,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0.35,
+        "min": 0.35,
+        "max": 0.35,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 12,
+        "min": 12,
+        "max": 12,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 204,
+        "min": 204,
+        "max": 204,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 49.49101083837556,
+        "min": 49.49101083837556,
+        "max": 49.49101083837556,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 38.8,
+        "min": 38.8,
+        "max": 38.8,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 38.8,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 120,
+          "amStartTotalTimeMs": 204,
+          "firstFrameMs": 92,
+          "shaderSetupMs": null,
+          "cpuAvg": 93.25354199628234,
+          "surfaceFlingerCpuAvg": 49.49101083837556,
+          "pssAvgMB": 161.697265625,
+          "pssMaxMB": 161.697265625,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 24.12
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 19.8
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 18.5
+            },
+            {
+              "thread": "Thread",
+              "cpu": 13.95
+            },
+            {
+              "thread": "ctstudy.glreact",
+              "cpu": 11.51
+            },
+            {
+              "thread": "binder:1649_",
+              "cpu": 4.84
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.2
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.16
+            }
+          ],
+          "gfxinfo": {
+            "frames": 3112,
+            "jankyPercent": 0.35,
+            "p50Ms": 5,
+            "p90Ms": 11,
+            "p95Ms": 12,
+            "p99Ms": 14
+          }
+        }
+      ]
+    },
+    "rn-webgpu@s21-a2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rn-webgpu-release-arm64.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 41.972716447914046,
+        "min": 41.972716447914046,
+        "max": 41.972716447914046,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 143.123046875,
+        "min": 143.123046875,
+        "max": 143.123046875,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 143.123046875,
+        "min": 143.123046875,
+        "max": 143.123046875,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 133,
+        "min": 133,
+        "max": 133,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 4950,
+        "min": 4950,
+        "max": 4950,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 231,
+        "min": 231,
+        "max": 231,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 55.76676504187153,
+        "min": 55.76676504187153,
+        "max": 55.76676504187153,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 39,
+        "min": 39,
+        "max": 39,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 39,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 120,
+          "amStartTotalTimeMs": 231,
+          "firstFrameMs": 133,
+          "shaderSetupMs": null,
+          "cpuAvg": 41.972716447914046,
+          "surfaceFlingerCpuAvg": 55.76676504187153,
+          "pssAvgMB": 143.123046875,
+          "pssMaxMB": 143.123046875,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "ectstudy.webgpu",
+              "cpu": 28.43
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 9.63
+            },
+            {
+              "thread": "binder:2750_",
+              "cpu": 3.61
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.2
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.16
+            }
+          ],
+          "gfxinfo": {
+            "frames": 0,
+            "jankyPercent": 0,
+            "p50Ms": 4950,
+            "p90Ms": 4950,
+            "p95Ms": 4950,
+            "p99Ms": 4950
+          }
+        }
+      ]
+    },
+    "rn-skia@s21-a2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rn-skia-release-arm64.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 37.542359270065916,
+        "min": 37.542359270065916,
+        "max": 37.542359270065916,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 160.310546875,
+        "min": 160.310546875,
+        "max": 160.310546875,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 160.310546875,
+        "min": 160.310546875,
+        "max": 160.310546875,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 46,
+        "min": 46,
+        "max": 46,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 4950,
+        "min": 4950,
+        "max": 4950,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 184,
+        "min": 184,
+        "max": 184,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 56.797522155387924,
+        "min": 56.797522155387924,
+        "max": 56.797522155387924,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 39.3,
+        "min": 39.3,
+        "max": 39.3,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 39.3,
+          "refreshRateBefore": 120,
+          "refreshRateAfter": 120,
+          "amStartTotalTimeMs": 184,
+          "firstFrameMs": 46,
+          "shaderSetupMs": null,
+          "cpuAvg": 37.542359270065916,
+          "surfaceFlingerCpuAvg": 56.797522155387924,
+          "pssAvgMB": 160.310546875,
+          "pssMaxMB": 160.310546875,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "ffectstudy.skia",
+              "cpu": 23.7
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 9.54
+            },
+            {
+              "thread": "binder:3480_",
+              "cpu": 3.89
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.17
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.13
+            }
+          ],
+          "gfxinfo": {
+            "frames": 0,
+            "jankyPercent": 0,
+            "p50Ms": 4950,
+            "p90Ms": 4950,
+            "p95Ms": 4950,
+            "p99Ms": 4950
+          }
+        }
+      ]
+    },
+    "rn-native-compatible-dynamic@s21-a2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnncd-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 73.71973636682229,
+        "min": 73.71973636682229,
+        "max": 73.71973636682229,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 117.580078125,
+        "min": 117.580078125,
+        "max": 117.580078125,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 117.580078125,
+        "min": 117.580078125,
+        "max": 117.580078125,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 55,
+        "min": 55,
+        "max": 55,
+        "n": 1
+      },
+      "shaderSetupMs": {
+        "median": 0.8,
+        "min": 0.8,
+        "max": 0.8,
+        "n": 1
+      },
+      "gfxFrames": {
+        "median": 2992,
+        "min": 2992,
+        "max": 2992,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 5.18,
+        "min": 5.18,
+        "max": 5.18,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 11,
+        "min": 11,
+        "max": 11,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 207,
+        "min": 207,
+        "max": 207,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 56.421298874943815,
+        "min": 56.421298874943815,
+        "max": 56.421298874943815,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 39.4,
+        "min": 39.4,
+        "max": 39.4,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 39.4,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 120,
+          "amStartTotalTimeMs": 207,
+          "firstFrameMs": 55,
+          "shaderSetupMs": 0.8,
+          "cpuAvg": 73.71973636682229,
+          "surfaceFlingerCpuAvg": 56.421298874943815,
+          "pssAvgMB": 117.580078125,
+          "pssMaxMB": 117.580078125,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 25.21
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 17.89
+            },
+            {
+              "thread": "SilkGL",
+              "cpu": 14.92
+            },
+            {
+              "thread": "nativecompatdyn",
+              "cpu": 11.31
+            },
+            {
+              "thread": "binder:3816_",
+              "cpu": 4.07
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.2
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.16
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.16
+            }
+          ],
+          "gfxinfo": {
+            "frames": 2992,
+            "jankyPercent": 5.18,
+            "p50Ms": 6,
+            "p90Ms": 11,
+            "p95Ms": 11,
+            "p99Ms": 12
+          }
+        }
+      ]
+    },
+    "rn-native-compatible-static@s21-a2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnncs-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 74.23876925648428,
+        "min": 74.23876925648428,
+        "max": 74.23876925648428,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 121.3623046875,
+        "min": 121.3623046875,
+        "max": 121.3623046875,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 121.3623046875,
+        "min": 121.3623046875,
+        "max": 121.3623046875,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 58,
+        "min": 58,
+        "max": 58,
+        "n": 1
+      },
+      "shaderSetupMs": {
+        "median": 0.8,
+        "min": 0.8,
+        "max": 0.8,
+        "n": 1
+      },
+      "gfxFrames": {
+        "median": 2986,
+        "min": 2986,
+        "max": 2986,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 5.09,
+        "min": 5.09,
+        "max": 5.09,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 12,
+        "min": 12,
+        "max": 12,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 190,
+        "min": 190,
+        "max": 190,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 57.09566003019702,
+        "min": 57.09566003019702,
+        "max": 57.09566003019702,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 39.5,
+        "min": 39.5,
+        "max": 39.5,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 39.5,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 120,
+          "amStartTotalTimeMs": 190,
+          "firstFrameMs": 58,
+          "shaderSetupMs": 0.8,
+          "cpuAvg": 74.23876925648428,
+          "surfaceFlingerCpuAvg": 57.09566003019702,
+          "pssAvgMB": 121.3623046875,
+          "pssMaxMB": 121.3623046875,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 25.31
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 17.92
+            },
+            {
+              "thread": "SilkGL",
+              "cpu": 15.12
+            },
+            {
+              "thread": "dy.nativecompat",
+              "cpu": 11.5
+            },
+            {
+              "thread": "binder:4180_",
+              "cpu": 4.02
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.2
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.2
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.16
+            }
+          ],
+          "gfxinfo": {
+            "frames": 2986,
+            "jankyPercent": 5.09,
+            "p50Ms": 6,
+            "p90Ms": 11,
+            "p95Ms": 12,
+            "p99Ms": 13
+          }
+        }
+      ]
+    },
+    "rn-native@s21-a2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnn-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 59.62136579323472,
+        "min": 59.62136579323472,
+        "max": 59.62136579323472,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 111.728515625,
+        "min": 111.728515625,
+        "max": 111.728515625,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 111.728515625,
+        "min": 111.728515625,
+        "max": 111.728515625,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 60,
+        "min": 60,
+        "max": 60,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 4777,
+        "min": 4777,
+        "max": 4777,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 24.16,
+        "min": 24.16,
+        "max": 24.16,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 9,
+        "min": 9,
+        "max": 9,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 219,
+        "min": 219,
+        "max": 219,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 45.82950404866949,
+        "min": 45.82950404866949,
+        "max": 45.82950404866949,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 39.7,
+        "min": 39.7,
+        "max": 39.7,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 39.7,
+          "refreshRateBefore": 120,
+          "refreshRateAfter": 120,
+          "amStartTotalTimeMs": 219,
+          "firstFrameMs": 60,
+          "shaderSetupMs": null,
+          "cpuAvg": 59.62136579323472,
+          "surfaceFlingerCpuAvg": 45.82950404866949,
+          "pssAvgMB": 111.728515625,
+          "pssMaxMB": 111.728515625,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 27.02
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 14.73
+            },
+            {
+              "thread": "ectstudy.native",
+              "cpu": 9.36
+            },
+            {
+              "thread": "SilkRender",
+              "cpu": 5.94
+            },
+            {
+              "thread": "binder:4682_",
+              "cpu": 2.08
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.2
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.16
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.16
+            }
+          ],
+          "gfxinfo": {
+            "frames": 4777,
+            "jankyPercent": 24.16,
+            "p50Ms": 5,
+            "p90Ms": 8,
+            "p95Ms": 9,
+            "p99Ms": 10
+          }
+        }
+      ]
+    },
+    "rn-baseline@s21-a2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnb-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 16.784233719054335,
+        "min": 16.784233719054335,
+        "max": 16.784233719054335,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 100.6015625,
+        "min": 100.6015625,
+        "max": 100.6015625,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 100.6015625,
+        "min": 100.6015625,
+        "max": 100.6015625,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 171,
+        "min": 171,
+        "max": 171,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 54,
+        "min": 54,
+        "max": 54,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 9.26,
+        "min": 9.26,
+        "max": 9.26,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 221,
+        "min": 221,
+        "max": 221,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 12.01522628678632,
+        "min": 12.01522628678632,
+        "max": 12.01522628678632,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 39.7,
+        "min": 39.7,
+        "max": 39.7,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 39.7,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 221,
+          "firstFrameMs": 171,
+          "shaderSetupMs": null,
+          "cpuAvg": 16.784233719054335,
+          "surfaceFlingerCpuAvg": 12.01522628678632,
+          "pssAvgMB": 100.6015625,
+          "pssMaxMB": 100.6015625,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "tstudy.baseline",
+              "cpu": 8.63
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 5.54
+            },
+            {
+              "thread": "RenderThread",
+              "cpu": 0.89
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 0.68
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.47
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.21
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.17
+            }
+          ],
+          "gfxinfo": {
+            "frames": 54,
+            "jankyPercent": 9.26,
+            "p50Ms": 13,
+            "p90Ms": 16,
+            "p95Ms": 16,
+            "p99Ms": 17
+          }
+        }
+      ]
+    },
+    "rn-baseline@s21-60hz-1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnb-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 17.728435254332933,
+        "min": 17.728435254332933,
+        "max": 17.728435254332933,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 101.236328125,
+        "min": 101.236328125,
+        "max": 101.236328125,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 101.236328125,
+        "min": 101.236328125,
+        "max": 101.236328125,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 72,
+        "min": 72,
+        "max": 72,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 60,
+        "min": 60,
+        "max": 60,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 11.67,
+        "min": 11.67,
+        "max": 11.67,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 17,
+        "min": 17,
+        "max": 17,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 171,
+        "min": 171,
+        "max": 171,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 12.028666791908892,
+        "min": 12.028666791908892,
+        "max": 12.028666791908892,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 39.5,
+        "min": 39.5,
+        "max": 39.5,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 39.5,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 171,
+          "firstFrameMs": 72,
+          "shaderSetupMs": null,
+          "cpuAvg": 17.728435254332933,
+          "surfaceFlingerCpuAvg": 12.028666791908892,
+          "pssAvgMB": 101.236328125,
+          "pssMaxMB": 101.236328125,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "tstudy.baseline",
+              "cpu": 8.79
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 6.01
+            },
+            {
+              "thread": "RenderThread",
+              "cpu": 1.09
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 0.76
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.42
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.25
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.17
+            },
+            {
+              "thread": "binder:5754_",
+              "cpu": 0.13
+            }
+          ],
+          "gfxinfo": {
+            "frames": 60,
+            "jankyPercent": 11.67,
+            "p50Ms": 13,
+            "p90Ms": 16,
+            "p95Ms": 17,
+            "p99Ms": 17
+          }
+        }
+      ]
+    },
+    "rn-native@s21-60hz-1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnn-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 40.12172825990917,
+        "min": 40.12172825990917,
+        "max": 40.12172825990917,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 110.8427734375,
+        "min": 110.8427734375,
+        "max": 110.8427734375,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 110.8427734375,
+        "min": 110.8427734375,
+        "max": 110.8427734375,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 70,
+        "min": 70,
+        "max": 70,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 2361,
+        "min": 2361,
+        "max": 2361,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0.04,
+        "min": 0.04,
+        "max": 0.04,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 10,
+        "min": 10,
+        "max": 10,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 181,
+        "min": 181,
+        "max": 181,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 30.718334508572138,
+        "min": 30.718334508572138,
+        "max": 30.718334508572138,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 39.3,
+        "min": 39.3,
+        "max": 39.3,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 39.3,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 181,
+          "firstFrameMs": 70,
+          "shaderSetupMs": null,
+          "cpuAvg": 40.12172825990917,
+          "surfaceFlingerCpuAvg": 30.718334508572138,
+          "pssAvgMB": 110.8427734375,
+          "pssMaxMB": 110.8427734375,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 18.19
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 9.59
+            },
+            {
+              "thread": "ectstudy.native",
+              "cpu": 6.35
+            },
+            {
+              "thread": "SilkRender",
+              "cpu": 3.7
+            },
+            {
+              "thread": "binder:6152_",
+              "cpu": 1.5
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.25
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 0.21
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.17
+            }
+          ],
+          "gfxinfo": {
+            "frames": 2361,
+            "jankyPercent": 0.04,
+            "p50Ms": 5,
+            "p90Ms": 9,
+            "p95Ms": 10,
+            "p99Ms": 10
+          }
+        }
+      ]
+    },
+    "rn-native-compatible-static@s21-60hz-1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnncs-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 48.87922841018569,
+        "min": 48.87922841018569,
+        "max": 48.87922841018569,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 119.033203125,
+        "min": 119.033203125,
+        "max": 119.033203125,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 119.033203125,
+        "min": 119.033203125,
+        "max": 119.033203125,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 82,
+        "min": 82,
+        "max": 82,
+        "n": 1
+      },
+      "shaderSetupMs": {
+        "median": 1.6,
+        "min": 1.6,
+        "max": 1.6,
+        "n": 1
+      },
+      "gfxFrames": {
+        "median": 1485,
+        "min": 1485,
+        "max": 1485,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 12,
+        "min": 12,
+        "max": 12,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 166,
+        "min": 166,
+        "max": 166,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 40.46919731963091,
+        "min": 40.46919731963091,
+        "max": 40.46919731963091,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 39.4,
+        "min": 39.4,
+        "max": 39.4,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 39.4,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 166,
+          "firstFrameMs": 82,
+          "shaderSetupMs": 1.6,
+          "cpuAvg": 48.87922841018569,
+          "surfaceFlingerCpuAvg": 40.46919731963091,
+          "pssAvgMB": 119.033203125,
+          "pssMaxMB": 119.033203125,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 17.54
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 11.82
+            },
+            {
+              "thread": "SilkGL",
+              "cpu": 8.94
+            },
+            {
+              "thread": "dy.nativecompat",
+              "cpu": 7.52
+            },
+            {
+              "thread": "binder:6508_",
+              "cpu": 2.34
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.21
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.21
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 0.21
+            }
+          ],
+          "gfxinfo": {
+            "frames": 1485,
+            "jankyPercent": 0,
+            "p50Ms": 9,
+            "p90Ms": 11,
+            "p95Ms": 12,
+            "p99Ms": 13
+          }
+        }
+      ]
+    },
+    "rn-native-compatible-dynamic@s21-60hz-1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnncd-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 49.83014990198507,
+        "min": 49.83014990198507,
+        "max": 49.83014990198507,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 118.4541015625,
+        "min": 118.4541015625,
+        "max": 118.4541015625,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 118.4541015625,
+        "min": 118.4541015625,
+        "max": 118.4541015625,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 64,
+        "min": 64,
+        "max": 64,
+        "n": 1
+      },
+      "shaderSetupMs": {
+        "median": 0.8,
+        "min": 0.8,
+        "max": 0.8,
+        "n": 1
+      },
+      "gfxFrames": {
+        "median": 1499,
+        "min": 1499,
+        "max": 1499,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0.2,
+        "min": 0.2,
+        "max": 0.2,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 12,
+        "min": 12,
+        "max": 12,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 213,
+        "min": 213,
+        "max": 213,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 41.19826549200148,
+        "min": 41.19826549200148,
+        "max": 41.19826549200148,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 39.5,
+        "min": 39.5,
+        "max": 39.5,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 39.5,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 213,
+          "firstFrameMs": 64,
+          "shaderSetupMs": 0.8,
+          "cpuAvg": 49.83014990198507,
+          "surfaceFlingerCpuAvg": 41.19826549200148,
+          "pssAvgMB": 118.4541015625,
+          "pssMaxMB": 118.4541015625,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 17.89
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 12.08
+            },
+            {
+              "thread": "SilkGL",
+              "cpu": 9.03
+            },
+            {
+              "thread": "nativecompatdyn",
+              "cpu": 7.61
+            },
+            {
+              "thread": "binder:6992_",
+              "cpu": 2.38
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.21
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.21
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.17
+            }
+          ],
+          "gfxinfo": {
+            "frames": 1499,
+            "jankyPercent": 0.2,
+            "p50Ms": 9,
+            "p90Ms": 11,
+            "p95Ms": 12,
+            "p99Ms": 13
+          }
+        }
+      ]
+    },
+    "rn-skia@s21-60hz-1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rn-skia-release-arm64.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 26.316803197222306,
+        "min": 26.316803197222306,
+        "max": 26.316803197222306,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 162.083984375,
+        "min": 162.083984375,
+        "max": 162.083984375,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 162.083984375,
+        "min": 162.083984375,
+        "max": 162.083984375,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 76,
+        "min": 76,
+        "max": 76,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 4950,
+        "min": 4950,
+        "max": 4950,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 171,
+        "min": 171,
+        "max": 171,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 39.848128690347735,
+        "min": 39.848128690347735,
+        "max": 39.848128690347735,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 39.7,
+        "min": 39.7,
+        "max": 39.7,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 39.7,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 171,
+          "firstFrameMs": 76,
+          "shaderSetupMs": null,
+          "cpuAvg": 26.316803197222306,
+          "surfaceFlingerCpuAvg": 39.848128690347735,
+          "pssAvgMB": 162.083984375,
+          "pssMaxMB": 162.083984375,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "ffectstudy.skia",
+              "cpu": 16.87
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 6.6
+            },
+            {
+              "thread": "binder:7392_",
+              "cpu": 2.4
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.21
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.17
+            }
+          ],
+          "gfxinfo": {
+            "frames": 0,
+            "jankyPercent": 0,
+            "p50Ms": 4950,
+            "p90Ms": 4950,
+            "p95Ms": 4950,
+            "p99Ms": 4950
+          }
+        }
+      ]
+    },
+    "rn-webgpu@s21-60hz-1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rn-webgpu-release-arm64.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 27.93525414815388,
+        "min": 27.93525414815388,
+        "max": 27.93525414815388,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 146.6630859375,
+        "min": 146.6630859375,
+        "max": 146.6630859375,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 146.6630859375,
+        "min": 146.6630859375,
+        "max": 146.6630859375,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 114,
+        "min": 114,
+        "max": 114,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 4950,
+        "min": 4950,
+        "max": 4950,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 172,
+        "min": 172,
+        "max": 172,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 40.23938821133756,
+        "min": 40.23938821133756,
+        "max": 40.23938821133756,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 39.8,
+        "min": 39.8,
+        "max": 39.8,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 39.8,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 172,
+          "firstFrameMs": 114,
+          "shaderSetupMs": null,
+          "cpuAvg": 27.93525414815388,
+          "surfaceFlingerCpuAvg": 40.23938821133756,
+          "pssAvgMB": 146.6630859375,
+          "pssMaxMB": 146.6630859375,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "ectstudy.webgpu",
+              "cpu": 18.8
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 5.75
+            },
+            {
+              "thread": "binder:7715_",
+              "cpu": 2.77
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.21
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.17
+            }
+          ],
+          "gfxinfo": {
+            "frames": 0,
+            "jankyPercent": 0,
+            "p50Ms": 4950,
+            "p90Ms": 4950,
+            "p95Ms": 4950,
+            "p99Ms": 4950
+          }
+        }
+      ]
+    },
+    "rn-gl-react@s21-60hz-1": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rn-gl-react-release-arm64.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 68.84389212437684,
+        "min": 68.84389212437684,
+        "max": 68.84389212437684,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 160.6796875,
+        "min": 160.6796875,
+        "max": 160.6796875,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 160.6796875,
+        "min": 160.6796875,
+        "max": 160.6796875,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 73,
+        "min": 73,
+        "max": 73,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 1546,
+        "min": 1546,
+        "max": 1546,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0.26,
+        "min": 0.26,
+        "max": 0.26,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 19,
+        "min": 19,
+        "max": 19,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 181,
+        "min": 181,
+        "max": 181,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 41.285137777057635,
+        "min": 41.285137777057635,
+        "max": 41.285137777057635,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 39.8,
+        "min": 39.8,
+        "max": 39.8,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 39.8,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 181,
+          "firstFrameMs": 73,
+          "shaderSetupMs": null,
+          "cpuAvg": 68.84389212437684,
+          "surfaceFlingerCpuAvg": 41.285137777057635,
+          "pssAvgMB": 160.6796875,
+          "pssMaxMB": 160.6796875,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 19.55
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 15.33
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 13.71
+            },
+            {
+              "thread": "Thread",
+              "cpu": 9.28
+            },
+            {
+              "thread": "ctstudy.glreact",
+              "cpu": 8
+            },
+            {
+              "thread": "binder:8075_",
+              "cpu": 2.61
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.21
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.21
+            }
+          ],
+          "gfxinfo": {
+            "frames": 1546,
+            "jankyPercent": 0.26,
+            "p50Ms": 10,
+            "p90Ms": 18,
+            "p95Ms": 19,
+            "p99Ms": 20
+          }
+        }
+      ]
+    },
+    "rn-gl-react@s21-60hz-2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rn-gl-react-release-arm64.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 69.16304170336113,
+        "min": 69.16304170336113,
+        "max": 69.16304170336113,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 158.2509765625,
+        "min": 158.2509765625,
+        "max": 158.2509765625,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 158.2509765625,
+        "min": 158.2509765625,
+        "max": 158.2509765625,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 77,
+        "min": 77,
+        "max": 77,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 1522,
+        "min": 1522,
+        "max": 1522,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0.33,
+        "min": 0.33,
+        "max": 0.33,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 19,
+        "min": 19,
+        "max": 19,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 183,
+        "min": 183,
+        "max": 183,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 40.5953136030396,
+        "min": 40.5953136030396,
+        "max": 40.5953136030396,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 40,
+        "min": 40,
+        "max": 40,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 40,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 183,
+          "firstFrameMs": 77,
+          "shaderSetupMs": null,
+          "cpuAvg": 69.16304170336113,
+          "surfaceFlingerCpuAvg": 40.5953136030396,
+          "pssAvgMB": 158.2509765625,
+          "pssMaxMB": 158.2509765625,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 19.52
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 15.19
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 13.93
+            },
+            {
+              "thread": "Thread",
+              "cpu": 9.35
+            },
+            {
+              "thread": "ctstudy.glreact",
+              "cpu": 8.18
+            },
+            {
+              "thread": "binder:8431_",
+              "cpu": 2.5
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.29
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.21
+            }
+          ],
+          "gfxinfo": {
+            "frames": 1522,
+            "jankyPercent": 0.33,
+            "p50Ms": 10,
+            "p90Ms": 18,
+            "p95Ms": 19,
+            "p99Ms": 21
+          }
+        }
+      ]
+    },
+    "rn-webgpu@s21-60hz-2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rn-webgpu-release-arm64.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 27.797287928234862,
+        "min": 27.797287928234862,
+        "max": 27.797287928234862,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 142.1630859375,
+        "min": 142.1630859375,
+        "max": 142.1630859375,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 142.1630859375,
+        "min": 142.1630859375,
+        "max": 142.1630859375,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 143,
+        "min": 143,
+        "max": 143,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 4950,
+        "min": 4950,
+        "max": 4950,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 188,
+        "min": 188,
+        "max": 188,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 39.022309666365466,
+        "min": 39.022309666365466,
+        "max": 39.022309666365466,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 40,
+        "min": 40,
+        "max": 40,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 40,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 188,
+          "firstFrameMs": 143,
+          "shaderSetupMs": null,
+          "cpuAvg": 27.797287928234862,
+          "surfaceFlingerCpuAvg": 39.022309666365466,
+          "pssAvgMB": 142.1630859375,
+          "pssMaxMB": 142.1630859375,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "ectstudy.webgpu",
+              "cpu": 18.71
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 5.79
+            },
+            {
+              "thread": "binder:8772_",
+              "cpu": 2.67
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.21
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.21
+            }
+          ],
+          "gfxinfo": {
+            "frames": 0,
+            "jankyPercent": 0,
+            "p50Ms": 4950,
+            "p90Ms": 4950,
+            "p95Ms": 4950,
+            "p99Ms": 4950
+          }
+        }
+      ]
+    },
+    "rn-skia@s21-60hz-2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rn-skia-release-arm64.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 26.61098105895588,
+        "min": 26.61098105895588,
+        "max": 26.61098105895588,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 162.1611328125,
+        "min": 162.1611328125,
+        "max": 162.1611328125,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 162.1611328125,
+        "min": 162.1611328125,
+        "max": 162.1611328125,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 60,
+        "min": 60,
+        "max": 60,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0,
+        "min": 0,
+        "max": 0,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 4950,
+        "min": 4950,
+        "max": 4950,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 219,
+        "min": 219,
+        "max": 219,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 39.48596698761126,
+        "min": 39.48596698761126,
+        "max": 39.48596698761126,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 40.1,
+        "min": 40.1,
+        "max": 40.1,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 40.1,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 219,
+          "firstFrameMs": 60,
+          "shaderSetupMs": null,
+          "cpuAvg": 26.61098105895588,
+          "surfaceFlingerCpuAvg": 39.48596698761126,
+          "pssAvgMB": 162.1611328125,
+          "pssMaxMB": 162.1611328125,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "ffectstudy.skia",
+              "cpu": 17.16
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 6.51
+            },
+            {
+              "thread": "binder:9125_",
+              "cpu": 2.37
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.21
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.17
+            }
+          ],
+          "gfxinfo": {
+            "frames": 0,
+            "jankyPercent": 0,
+            "p50Ms": 4950,
+            "p90Ms": 4950,
+            "p95Ms": 4950,
+            "p99Ms": 4950
+          }
+        }
+      ]
+    },
+    "rn-native-compatible-dynamic@s21-60hz-2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnncd-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 49.63955258693967,
+        "min": 49.63955258693967,
+        "max": 49.63955258693967,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 114.87109375,
+        "min": 114.87109375,
+        "max": 114.87109375,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 114.87109375,
+        "min": 114.87109375,
+        "max": 114.87109375,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 84,
+        "min": 84,
+        "max": 84,
+        "n": 1
+      },
+      "shaderSetupMs": {
+        "median": 0.7,
+        "min": 0.7,
+        "max": 0.7,
+        "n": 1
+      },
+      "gfxFrames": {
+        "median": 1538,
+        "min": 1538,
+        "max": 1538,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0.07,
+        "min": 0.07,
+        "max": 0.07,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 12,
+        "min": 12,
+        "max": 12,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 188,
+        "min": 188,
+        "max": 188,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 42.49736430048473,
+        "min": 42.49736430048473,
+        "max": 42.49736430048473,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 40.1,
+        "min": 40.1,
+        "max": 40.1,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 40.1,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 188,
+          "firstFrameMs": 84,
+          "shaderSetupMs": 0.7,
+          "cpuAvg": 49.63955258693967,
+          "surfaceFlingerCpuAvg": 42.49736430048473,
+          "pssAvgMB": 114.87109375,
+          "pssMaxMB": 114.87109375,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 17.99
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 12.04
+            },
+            {
+              "thread": "SilkGL",
+              "cpu": 8.89
+            },
+            {
+              "thread": "nativecompatdyn",
+              "cpu": 7.38
+            },
+            {
+              "thread": "binder:9436_",
+              "cpu": 2.33
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.24
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.2
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.2
+            }
+          ],
+          "gfxinfo": {
+            "frames": 1538,
+            "jankyPercent": 0.07,
+            "p50Ms": 9,
+            "p90Ms": 11,
+            "p95Ms": 12,
+            "p99Ms": 13
+          }
+        }
+      ]
+    },
+    "rn-native-compatible-static@s21-60hz-2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnncs-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 49.91584165366324,
+        "min": 49.91584165366324,
+        "max": 49.91584165366324,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 120.71875,
+        "min": 120.71875,
+        "max": 120.71875,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 120.71875,
+        "min": 120.71875,
+        "max": 120.71875,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 89,
+        "min": 89,
+        "max": 89,
+        "n": 1
+      },
+      "shaderSetupMs": {
+        "median": 1.6,
+        "min": 1.6,
+        "max": 1.6,
+        "n": 1
+      },
+      "gfxFrames": {
+        "median": 1517,
+        "min": 1517,
+        "max": 1517,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0.07,
+        "min": 0.07,
+        "max": 0.07,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 11,
+        "min": 11,
+        "max": 11,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 178,
+        "min": 178,
+        "max": 178,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 42.01687937920891,
+        "min": 42.01687937920891,
+        "max": 42.01687937920891,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 40.1,
+        "min": 40.1,
+        "max": 40.1,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 40.1,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 178,
+          "firstFrameMs": 89,
+          "shaderSetupMs": 1.6,
+          "cpuAvg": 49.91584165366324,
+          "surfaceFlingerCpuAvg": 42.01687937920891,
+          "pssAvgMB": 120.71875,
+          "pssMaxMB": 120.71875,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 18.13
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 12.06
+            },
+            {
+              "thread": "SilkGL",
+              "cpu": 9
+            },
+            {
+              "thread": "dy.nativecompat",
+              "cpu": 7.43
+            },
+            {
+              "thread": "binder:9786_",
+              "cpu": 2.44
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 0.21
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.17
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.17
+            }
+          ],
+          "gfxinfo": {
+            "frames": 1517,
+            "jankyPercent": 0.07,
+            "p50Ms": 9,
+            "p90Ms": 11,
+            "p95Ms": 11,
+            "p99Ms": 12
+          }
+        }
+      ]
+    },
+    "rn-native@s21-60hz-2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnn-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 40.05612056518122,
+        "min": 40.05612056518122,
+        "max": 40.05612056518122,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 112.8271484375,
+        "min": 112.8271484375,
+        "max": 112.8271484375,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 112.8271484375,
+        "min": 112.8271484375,
+        "max": 112.8271484375,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 82,
+        "min": 82,
+        "max": 82,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 2338,
+        "min": 2338,
+        "max": 2338,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 0.04,
+        "min": 0.04,
+        "max": 0.04,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 10,
+        "min": 10,
+        "max": 10,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 221,
+        "min": 221,
+        "max": 221,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 32.26029067623237,
+        "min": 32.26029067623237,
+        "max": 32.26029067623237,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 40.1,
+        "min": 40.1,
+        "max": 40.1,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 40.1,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 221,
+          "firstFrameMs": 82,
+          "shaderSetupMs": null,
+          "cpuAvg": 40.05612056518122,
+          "surfaceFlingerCpuAvg": 32.26029067623237,
+          "pssAvgMB": 112.8271484375,
+          "pssMaxMB": 112.8271484375,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "RenderThread",
+              "cpu": 18.05
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 9.7
+            },
+            {
+              "thread": "ectstudy.native",
+              "cpu": 6.38
+            },
+            {
+              "thread": "SilkRender",
+              "cpu": 3.78
+            },
+            {
+              "thread": "binder:10104_",
+              "cpu": 1.26
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.21
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.21
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 0.21
+            }
+          ],
+          "gfxinfo": {
+            "frames": 2338,
+            "jankyPercent": 0.04,
+            "p50Ms": 5,
+            "p90Ms": 9,
+            "p95Ms": 10,
+            "p99Ms": 11
+          }
+        }
+      ]
+    },
+    "rn-baseline@s21-60hz-2": {
+      "device": "SM-G998B",
+      "apiLevel": 35,
+      "apk": "/private/tmp/rnb-app-release-4abi.apk",
+      "reps": 1,
+      "secondsPerRep": 20,
+      "cpuPercentAvg": {
+        "median": 17.861467757776502,
+        "min": 17.861467757776502,
+        "max": 17.861467757776502,
+        "n": 1
+      },
+      "pssAvgMB": {
+        "median": 100.9677734375,
+        "min": 100.9677734375,
+        "max": 100.9677734375,
+        "n": 1
+      },
+      "pssMaxMB": {
+        "median": 100.9677734375,
+        "min": 100.9677734375,
+        "max": 100.9677734375,
+        "n": 1
+      },
+      "firstFrameMs": {
+        "median": 76,
+        "min": 76,
+        "max": 76,
+        "n": 1
+      },
+      "shaderSetupMs": null,
+      "gfxFrames": {
+        "median": 63,
+        "min": 63,
+        "max": 63,
+        "n": 1
+      },
+      "gfxJankyPercent": {
+        "median": 4.76,
+        "min": 4.76,
+        "max": 4.76,
+        "n": 1
+      },
+      "gfxP95Ms": {
+        "median": 16,
+        "min": 16,
+        "max": 16,
+        "n": 1
+      },
+      "amStartTotalTimeMs": {
+        "median": 180,
+        "min": 180,
+        "max": 180,
+        "n": 1
+      },
+      "surfaceFlingerCpuPercentAvg": {
+        "median": 12.126318311561885,
+        "min": 12.126318311561885,
+        "max": 12.126318311561885,
+        "n": 1
+      },
+      "pssOnce": true,
+      "batteryTempCBefore": {
+        "median": 40,
+        "min": 40,
+        "max": 40,
+        "n": 1
+      },
+      "note": "real device SM-G998B; CPU % of one core from /proc/<pid>/stat; PSS read once after the CPU window",
+      "runs": [
+        {
+          "rep": 1,
+          "batteryTempCBefore": 40,
+          "refreshRateBefore": 60,
+          "refreshRateAfter": 60,
+          "amStartTotalTimeMs": 180,
+          "firstFrameMs": 76,
+          "shaderSetupMs": null,
+          "cpuAvg": 17.861467757776502,
+          "surfaceFlingerCpuAvg": 12.126318311561885,
+          "pssAvgMB": 100.9677734375,
+          "pssMaxMB": 100.9677734375,
+          "samples": 20,
+          "threads": [
+            {
+              "thread": "tstudy.baseline",
+              "cpu": 8.82
+            },
+            {
+              "thread": "mqt_v_js",
+              "cpu": 5.98
+            },
+            {
+              "thread": "RenderThread",
+              "cpu": 1.06
+            },
+            {
+              "thread": "mali-cmar-backe",
+              "cpu": 0.64
+            },
+            {
+              "thread": "mali-mem-purge",
+              "cpu": 0.47
+            },
+            {
+              "thread": "Jit thread pool",
+              "cpu": 0.3
+            },
+            {
+              "thread": "HeapTaskDaemon",
+              "cpu": 0.17
+            },
+            {
+              "thread": "binder:10460_",
+              "cpu": 0.08
+            }
+          ],
+          "gfxinfo": {
+            "frames": 63,
+            "jankyPercent": 4.76,
+            "p50Ms": 12,
+            "p90Ms": 16,
+            "p95Ms": 16,
+            "p99Ms": 18
+          }
+        }
+      ]
+    }
+  }
+}

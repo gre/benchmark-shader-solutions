@@ -1,0 +1,15 @@
+pluginManagement {
+  includeBuild("../node_modules/@react-native/gradle-plugin")
+  // Expo modules autolinking (expo-gl): Expo's Gradle plugins, as in Expo's bare template
+  includeBuild("../node_modules/expo-modules-autolinking/android/expo-gradle-plugin")
+}
+plugins {
+  id("com.facebook.react.settings")
+  id("expo-autolinking-settings")
+}
+extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand(expoAutolinking.rnConfigCommand) }
+expoAutolinking.useExpoModules()
+rootProject.name = 'RnBaseline'
+expoAutolinking.useExpoVersionCatalog()
+include ':app'
+includeBuild('../node_modules/@react-native/gradle-plugin')

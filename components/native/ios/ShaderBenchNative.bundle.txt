@@ -1,0 +1,3 @@
+Resource bundle of @shader-bench/native. The podspec script phase
+"[ShaderBenchNative] Compile Metal shaders" adds <name>.metallib here for
+every src/shaders/<name>/<name>.metal (one Metal library per shader).

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Silk harness</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; font: 12px/1.4 system-ui, sans-serif; color: #ddd; }
+  #stage { position: fixed; inset: 0; display: flex; }
+  #stage > div { position: relative; flex: 1; overflow: hidden; }
+  canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  #ref { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: none; }
+  #refPane { display: none; }
+  #refPane img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  body.wipe #ref { display: block; }
+  body.side #refPane { display: block; }
+  #panel { position: fixed; top: 10px; right: 10px; width: 250px; padding: 10px 12px; background: rgba(10,10,20,.82); border-radius: 8px; }
+  #panel label { display: grid; grid-template-columns: 78px 1fr 44px; gap: 6px; align-items: center; margin: 4px 0; }
+  #panel input[type=range] { width: 100%; }
+  #panel .row { display: flex; gap: 8px; align-items: center; margin: 6px 0; }
+  #panel pre { margin: 6px 0 0; font-size: 11px; white-space: pre-wrap; user-select: all; }
+  #err { position: fixed; left: 0; right: 0; bottom: 0; color: #f88; background: #200; white-space: pre-wrap; font: 12px monospace; padding: 8px; display: none; }
+  body.clean #panel { display: none; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="glPane"><canvas id="c"></canvas><img id="ref" src="../../docs/target.png" alt=""></div>
+  <div id="refPane"><img src="../../docs/target.png" alt=""></div>
+</div>
+<div id="panel">
+  <div class="row"><b>Silk</b> <span id="fps"></span></div>
+  <label>time <input id="time" type="range" min="0" max="240" step="0.1"><span></span></label>
+  <div class="row"><button id="play">pause</button>
+    <select id="mode"><option value="">shader</option><option value="wipe">wipe vs png</option><option value="side">side by side</option></select></div>
+  <label>wipe <input id="wipe" type="range" min="0" max="1" step="0.001" value="0.5"><span></span></label>
+  <label>speed <input id="speed" type="range" min="0" max="10" step="0.1" value="1"><span></span></label>
+</div>
+<div id="err"></div>
+<script>
+// Query: ?t=<seconds> freezes time, ?clean hides the panel, ?mode=wipe|side,
+// ?speed=<x> sets the playback speed. Look parameters are baked in silk.glsl.
+const Q = new URLSearchParams(location.search);
+const PERIODS = [41, 59, 23, 53]; // must match the header of silk.glsl
+const $ = (id) => document.getElementById(id);
+if (Q.has('clean')) document.body.classList.add('clean');
+const sliders = ['speed'];
+for (const k of sliders) if (Q.has(k)) $(k).value = Q.get(k);
+$('mode').value = Q.get('mode') || '';
+const applyMode = () => { document.body.classList.remove('wipe', 'side'); if ($('mode').value) document.body.classList.add($('mode').value); onResize(); };
+$('mode').onchange = applyMode;
+
+const canvas = $('c');
+const gl = canvas.getContext('webgl', { antialias: false, preserveDrawingBuffer: true });
+const VS = 'attribute vec2 pos; void main(){ gl_Position = vec4(pos, 0.0, 1.0); }';
+function compile(type, src) {
+  const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s);
+  if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s));
+  return s;
+}
+let prog, U = {};
+async function load() {
+  const src = await (await fetch('../silk.glsl', { cache: 'no-store' })).text();
+  try {
+    const p = gl.createProgram();
+    gl.attachShader(p, compile(gl.VERTEX_SHADER, VS));
+    gl.attachShader(p, compile(gl.FRAGMENT_SHADER, src));
+    gl.bindAttribLocation(p, 0, 'pos');
+    gl.linkProgram(p);
+    if (!gl.getProgramParameter(p, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(p));
+    prog = p; U = {};
+    for (const n of ['resolution', 'phase', ...sliders]) U[n] = gl.getUniformLocation(p, n);
+    $('err').style.display = 'none';
+  } catch (e) { $('err').textContent = e.message; $('err').style.display = 'block'; }
+}
+gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
+gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+gl.enableVertexAttribArray(0);
+gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
+
+function onResize() {
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = Math.round(canvas.clientWidth * dpr);
+  canvas.height = Math.round(canvas.clientHeight * dpr);
+}
+window.addEventListener('resize', onResize);
+
+let playing = !Q.has('t');
+let t = Q.has('t') ? parseFloat(Q.get('t')) : 0;
+let last = performance.now(), frames = 0, fpsT = last;
+$('play').textContent = playing ? 'pause' : 'play';
+$('play').onclick = () => { playing = !playing; $('play').textContent = playing ? 'pause' : 'play'; };
+$('time').oninput = () => { t = parseFloat($('time').value); };
+$('wipe').oninput = () => { $('ref').style.clipPath = `inset(0 0 0 ${$('wipe').value * 100}%)`; };
+$('wipe').oninput();
+
+function frame(now) {
+  const dt = (now - last) / 1000; last = now;
+  if (playing) t += dt * parseFloat($('speed').value);
+  $('time').value = t;
+  frames++; if (now - fpsT > 1000) { $('fps').textContent = frames + ' fps'; frames = 0; fpsT = now; }
+  for (const el of document.querySelectorAll('#panel label')) el.lastElementChild.textContent = (+el.querySelector('input').value).toFixed(3).replace(/\.?0+$/, '');
+  if (prog) {
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    gl.useProgram(prog);
+    gl.uniform2f(U.resolution, canvas.width, canvas.height);
+    // phases in double precision on the CPU, shader only sees [0,1)
+    const ph = PERIODS.map(P => ((t / P) % 1 + 1) % 1);
+    gl.uniform4f(U.phase, ph[0], ph[1], ph[2], ph[3]);
+    for (const k of sliders) if (U[k]) gl.uniform1f(U[k], parseFloat($(k).value));
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+  }
+  window.__frames = (window.__frames || 0) + 1;
+  requestAnimationFrame(frame);
+}
+onResize(); applyMode();
+load().then(() => requestAnimationFrame(frame));
+// live reload of the shader file while tuning
+setInterval(load, Q.has('t') ? 1e9 : 1500);
+</script>
+</body>
+</html>

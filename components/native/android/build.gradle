@@ -1,0 +1,54 @@
+// @shader-bench/native — Android library module (autolinked by the React
+// Native CLI: android/ + a ReactPackage, codegen from package.json
+// codegenConfig via the com.facebook.react plugin).
+//
+// Shaders: every ../src/shaders/<name>/<name>.agsl is copied at build time
+// into the generated assets dir as assets/shader-bench/<name>.agsl; the view
+// loads assets/shader-bench/<shader>.agsl and compiles it at runtime
+// (RuntimeShader, API 33+).
+
+buildscript {
+  repositories {
+    google()
+    mavenCentral()
+  }
+}
+
+def safeExtGet(name, fallback) {
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : fallback
+}
+
+apply plugin: "com.android.library"
+apply plugin: "org.jetbrains.kotlin.android"
+apply plugin: "com.facebook.react"
+
+def shaderAssets = layout.buildDirectory.dir("generated/shader-bench/assets")
+
+def copyShaders = tasks.register("copyShaderBenchAgsl", Sync) {
+  from(fileTree("${projectDir}/../src/shaders").matching { include "*/*.agsl" }) {
+    eachFile { it.path = "shader-bench/${it.name}" }
+  }
+  includeEmptyDirs = false
+  into(shaderAssets)
+}
+
+android {
+  namespace "com.shaderbench.nativeview"
+  compileSdk safeExtGet("compileSdkVersion", 37)
+
+  defaultConfig {
+    minSdkVersion safeExtGet("minSdkVersion", 24)
+  }
+
+  sourceSets {
+    main {
+      assets.srcDirs += [shaderAssets.get().asFile]
+    }
+  }
+}
+
+preBuild.dependsOn(copyShaders)
+
+dependencies {
+  implementation("com.facebook.react:react-android")
+}

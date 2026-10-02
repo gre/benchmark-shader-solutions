@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Silk SkSL check</title>
+<style>html,body{margin:0;height:100%;background:#000;overflow:hidden}canvas{display:block;width:100%;height:100%}#err{position:fixed;bottom:0;color:#f88;font:12px monospace;white-space:pre-wrap}</style></head>
+<body><canvas id="c"></canvas><div id="err"></div>
+<script src="../node_modules/canvaskit-wasm/bin/canvaskit.js"></script>
+<script>
+// Throwaway verification page for silk.sksl (canvaskit-wasm). ?t=<seconds> freezes time.
+const Q = new URLSearchParams(location.search);
+const PERIODS = [41, 59, 23, 53];
+const t0 = performance.now(), frozen = Q.has('t') ? parseFloat(Q.get('t')) : null;
+(async () => {
+  const CK = await CanvasKitInit({ locateFile: f => '../node_modules/canvaskit-wasm/bin/' + f });
+  const src = await (await fetch('../silk.sksl', { cache: 'no-store' })).text();
+  const errs = [];
+  const effect = CK.RuntimeEffect.Make(src, e => errs.push(e));
+  if (!effect) { document.getElementById('err').textContent = errs.join('\n'); window.__error = errs.join('\n'); return; }
+  const canvas = document.getElementById('c');
+  canvas.width = canvas.clientWidth; canvas.height = canvas.clientHeight; // DPR 1 for checks
+  const surface = CK.MakeWebGLCanvasSurface(canvas);
+  const paint = new CK.Paint();
+  function draw(sk) {
+    const t = frozen ?? (performance.now() - t0) / 1000;
+    const ph = PERIODS.map(P => ((t / P) % 1 + 1) % 1);
+    const shader = effect.makeShader([canvas.width, canvas.height, ...ph]);
+    paint.setShader(shader);
+    sk.drawPaint(paint);
+    shader.delete();
+    window.__frames = (window.__frames || 0) + 1;
+    surface.requestAnimationFrame(draw);
+  }
+  surface.requestAnimationFrame(draw);
+})();
+</script>
+</body></html>

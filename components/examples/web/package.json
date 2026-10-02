@@ -1,0 +1,32 @@
+{
+  "name": "shader-bench-examples-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@shader-bench/gl-react": "file:../../gl-react",
+    "@shader-bench/native": "file:../../native",
+    "@shader-bench/native-compatible-dynamic": "file:../../native-compatible-dynamic",
+    "@shader-bench/native-compatible-static": "file:../../native-compatible-static",
+    "@shader-bench/skia": "file:../../skia",
+    "@shader-bench/webgpu": "file:../../webgpu",
+    "canvaskit-wasm": "0.42.0",
+    "gl-react": "6.0.0",
+    "gl-react-dom": "6.0.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@vitejs/plugin-react": "6.1.1",
+    "@webgpu/types": "0.1.74",
+    "typescript": "7.0.2",
+    "vite": "8.3.2"
+  }
+}

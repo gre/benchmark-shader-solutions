@@ -1,0 +1,54 @@
+{
+  "name": "@shader-bench/native",
+  "version": "0.1.0",
+  "description": "<Effect> shader component: raw WebGL 1 on the web, own Fabric component (Metal / AGSL) on React Native",
+  "license": "MIT",
+  "private": true,
+  "main": "src/Effect.web.tsx",
+  "browser": "src/Effect.web.tsx",
+  "react-native": "src/Effect.native.tsx",
+  "types": "src/Effect.web.tsx",
+  "exports": {
+    ".": {
+      "react-native": "./src/Effect.native.tsx",
+      "browser": "./src/Effect.web.tsx",
+      "types": "./src/Effect.web.tsx",
+      "default": "./src/Effect.web.tsx"
+    },
+    "./shaders": "./src/schema.ts",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "ios",
+    "android/build.gradle",
+    "android/src",
+    "ShaderBenchNative.podspec",
+    "README.md"
+  ],
+  "sideEffects": [
+    "./src/shaders/index.ts"
+  ],
+  "peerDependencies": {
+    "react": "19.2.3",
+    "react-native": "0.87.1"
+  },
+  "peerDependenciesMeta": {
+    "react-native": {
+      "optional": true
+    }
+  },
+  "codegenConfig": {
+    "name": "ShaderBenchNativeSpec",
+    "type": "components",
+    "jsSrcsDir": "src/specs",
+    "android": {
+      "javaPackageName": "com.shaderbench.nativeview"
+    },
+    "ios": {
+      "componentProvider": {
+        "ShaderBenchNativeView": "ShaderBenchNativeView"
+      }
+    }
+  }
+}

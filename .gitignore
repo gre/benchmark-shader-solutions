@@ -1,0 +1,8 @@
+node_modules
+dist
+ios/Pods
+ios/build
+vendor/bundle
+*.log
+.DS_Store
+shaders/out

@@ -1,0 +1,129 @@
+// Verbatim copy of shaders/silk.sksl (backticks in comments escaped for the template literal).
+export default `// silk.sksl — SkSL RuntimeEffect port of silk.glsl (the source of truth).
+// Uniforms, constants and math are identical; see silk.glsl for the docs.
+// Differences: fragCoord is already TOP-LEFT (no y flip), and it is in canvas
+// units (points on React Native), so \`resolution\` must be the canvas size in
+// those same units.
+
+uniform float2 resolution;
+uniform float4 phase;
+
+const float TAU = 6.28318530718;
+const float AMP = 0.02;      // curve undulation amplitude (ref units)
+const float GLOW = 0.25;     // rim glow breathing amount
+const float HUE_AMT = 0.5;   // hue drift amount
+const float REF_ASPECT = 1.5483870968; // 1200 / 775
+
+// Curves: x = P(s), s = 2y - 1 in [-1, 1], degree-9 polynomial, coefficients
+// low->high packed as (a.xyzw, b.xyzw, c.xy). Fitted on the target's rims.
+float poly9(float s, float4 a, float4 b, float2 c) {
+  return a.x + s * (a.y + s * (a.z + s * (a.w + s * (b.x + s * (b.y + s * (b.z + s * (b.w + s * (c.x + s * c.y))))))));
+}
+float dpoly9(float s, float4 a, float4 b, float2 c) {
+  return a.y + s * (2.0 * a.z + s * (3.0 * a.w + s * (4.0 * b.x + s * (5.0 * b.y + s * (6.0 * b.z + s * (7.0 * b.w + s * (8.0 * c.x + s * 9.0 * c.y)))))));
+}
+
+// Signed perpendicular distance from p to curve k (positive = right of it).
+// Undulation = two standing waves whose amplitude follows sin(phase), so
+// t = 0 is exactly the fitted target and neighbours move almost together.
+float curveDist(float2 p, float4 a, float4 b, float2 c, float k) {
+  float s = 2.0 * p.y - 1.0;
+  float x = poly9(s, a, b, c);
+  float dxdy = 2.0 * dpoly9(s, a, b, c);
+  float m1 = AMP * 0.6 * sin(TAU * phase.x);
+  float m2 = AMP * 0.4 * sin(TAU * phase.y);
+  float q1 = 2.3 * p.y - 0.5 * k;
+  float q2 = 3.1 * p.y + 0.8 * k;
+  x += m1 * cos(q1) + m2 * cos(q2);
+  dxdy -= m1 * 2.3 * sin(q1) + m2 * 3.1 * sin(q2);
+  return (p.x - x) / sqrt(1.0 + dxdy * dxdy);
+}
+
+// One sheet: A + V * (B * S + K * C) where S = lit amount away from the
+// sheet above (shadow at its left edge), C = curl highlight towards its own
+// right edge, V = soft light blob. L0 / L4 have no left / right edge: they
+// pass a constant 1.0 (as in the fit). sh = (shadowW, curlW, blob x-weight,
+// blob strength), blob = (center x, center y, radius). Fitted on the target.
+float3 sheet(float2 p, float dl, float dr, float3 A, float3 B, float3 K, float4 sh, float3 blob) {
+  float2 q = p - blob.xy;
+  float V = 1.0 - sh.w * (1.0 - exp(-(q.y * q.y + sh.z * q.x * q.x) / (blob.z * blob.z)));
+  float S = 1.0 - exp(-dl / sh.x);
+  float C = exp(-dr / sh.y);
+  return A + V * (B * S + K * C);
+}
+
+// Rim line of the sheet whose right edge is at signed distance d
+// (d < 0 on the sheet itself), slightly inside the sheet.
+float rim(float d, float w) {
+  float x = (d + 0.3 * w) / w;
+  return exp(-x * x) + 0.3 * exp(-abs(d) / 0.004);
+}
+
+// Out-of-focus back of the fold: a plateau right of the rim (d > 0) up to
+// \`edge\`, with a soft outer falloff (top folds of C1/C2).
+float fold(float d, float edge, float soft) {
+  return smoothstep(0.0, 0.003, d) * (1.0 - smoothstep(edge - soft, edge + soft, d));
+}
+
+float3 silk(float2 p, float px) {
+  float d1 = curveDist(p, float4(0.32007, -0.65613, -0.08730, 0.58386), float4(0.23268, 0.14888, -0.31484, -0.93669), float2(0.04529, 0.61244), 0.0);
+  float d2 = curveDist(p, float4(0.65113, -1.29628, 0.17533, 1.08321), float4(-0.93633, 0.12019, 1.29132, -1.18355), float2(-0.67237, 0.76730), 1.0);
+  float d3 = curveDist(p, float4(0.93758, -0.81075, 0.42935, 0.43317), float4(-0.50278, -0.10154, 0.21603, -0.01639), float2(0.0), 2.0);
+  float d4 = curveDist(p, float4(1.25732, -0.39139, 0.16511, 0.10852), float4(-0.18554, 0.11610, 0.08311, -0.09875), float2(0.0), 3.0);
+
+  // rim width: ~1 px of the 1200x775 framing, never thinner than ~1 screen px
+  float w = max(0.0015, 0.9 * px);
+
+  // rim envelope (dimmer towards the corners) x glow breathing travelling
+  // slowly along the curves
+  float2 e = p - float2(0.55, 0.50);
+  float env = exp(-0.6 * dot(e, e));
+  float g = TAU * phase.z;
+  float3 R1 = float3(0.62, 0.64, 0.98) * env * (1.0 + GLOW * sin(g + 3.0 * p.y));
+  float3 R2 = float3(0.66, 0.70, 1.00) * env * (1.0 + GLOW * sin(g + 3.0 * p.y + 1.7));
+  float3 R3 = float3(0.66, 0.66, 0.80) * env * (1.0 + GLOW * sin(g + 3.0 * p.y + 3.4));
+  float3 R4 = float3(0.64, 0.70, 0.94) * env * (1.0 + GLOW * sin(g + 3.0 * p.y + 5.1));
+
+  float3 c;
+  float r = 0.0;
+  float3 rc = float3(0.0);
+  if (d1 < 0.0) {
+    c = sheet(p, 1.0, -d1, float3(0.036, 0.044, 0.099), float3(0.338, 0.285, 0.373), float3(0.009, 0.048, 0.099), float4(0.150, 0.170, 0.550, 1.0), float3(0.539, 0.597, 0.446));
+    r = rim(d1, w); rc = R1;
+  } else if (d2 < 0.0) {
+    c = sheet(p, d1, -d2, float3(0.0, 0.0, 0.017), float3(0.753, 0.773, 1.0), float3(0.131, 0.122, 0.208), float4(0.961, 0.520, 0.0, 1.0), float3(2.064, 0.681, 0.829));
+    float r1 = rim(d1, w), r2 = rim(d2, w);
+    rc = r1 > r2 ? R1 : R2; r = max(r1, r2);
+    c += float3(0.10, 0.10, 0.22) * fold(d1, 0.024, 0.006) * (1.0 - smoothstep(0.10, 0.42, p.y));
+  } else if (d3 < 0.0) {
+    c = sheet(p, d2, -d3, float3(0.011, 0.014, 0.051), float3(0.466, 0.424, 0.537), float3(0.210, 0.232, 0.358), float4(0.227, 0.114, 1.0, 0.677), float3(0.403, 0.680, 0.315));
+    float r2 = rim(d2, w), r3 = rim(d3, w);
+    rc = r2 > r3 ? R2 : R3; r = max(r2, r3);
+    c += float3(0.12, 0.12, 0.26) * fold(d2, 0.011, 0.004) * (1.0 - smoothstep(0.10, 0.36, p.y));
+  } else if (d4 < 0.0) {
+    c = sheet(p, d3, -d4, float3(0.036, 0.025, 0.113), float3(0.931, 1.0, 0.966), float3(0.020, 0.257, 0.408), float4(0.283, 1.5, 1.0, 0.933), float3(1.724, 0.790, 0.380));
+    float r3 = rim(d3, w), r4 = rim(d4, w);
+    rc = r3 > r4 ? R3 : R4; r = max(r3, r4);
+  } else {
+    c = sheet(p, d4, 1.0, float3(0.069, 0.085, 0.167), float3(0.764, 0.843, 1.0), float3(0.0), float4(0.190, 1.348, 1.0, 1.0), float3(1.920, 0.425, 0.580));
+    r = rim(d4, w); rc = R4;
+  }
+  c = mix(c, rc, clamp(r, 0.0, 1.0));
+
+  // hue drift indigo <-> violet <-> blue, stronger on brighter areas
+  float h = HUE_AMT * sin(TAU * phase.w);
+  float l = dot(c, float3(0.3, 0.5, 0.2));
+  c += l * float3(0.10 * h, -0.04 * abs(h), -0.10 * h + 0.04 * abs(h));
+  return c;
+}
+
+half4 main(float2 fragCoord) {
+  float2 frag = fragCoord; // already top-left origin
+  float scale = max(resolution.x / REF_ASPECT, resolution.y);
+  float2 p = (frag - 0.5 * resolution) / scale + float2(0.5 * REF_ASPECT, 0.5);
+  float3 c = silk(p, 1.0 / scale);
+  float n = fract(52.9829189 * fract(dot(floor(frag), float2(0.06711056, 0.00583715))));
+  c += (n - 0.5) / 255.0;
+  return half4(half3(clamp(c, 0.0, 1.0)), 1.0);
+}
+`;

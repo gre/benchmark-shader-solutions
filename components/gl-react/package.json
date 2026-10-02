@@ -1,0 +1,52 @@
+{
+  "name": "@shader-bench/gl-react",
+  "version": "0.1.0",
+  "description": "<Effect> shader component: gl-react + gl-react-dom on the web, gl-react + gl-react-expo (expo-gl) on React Native (GLSL)",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.web.ts",
+  "browser": "src/index.web.ts",
+  "react-native": "src/Effect.native.tsx",
+  "types": "src/Effect.web.tsx",
+  "exports": {
+    ".": {
+      "react-native": "./src/Effect.native.tsx",
+      "browser": "./src/index.web.ts",
+      "types": "./src/Effect.web.tsx",
+      "default": "./src/index.web.ts"
+    },
+    "./shaders": "./src/schema.ts",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "consumer",
+    "README.md"
+  ],
+  "sideEffects": [
+    "./src/global-shim.ts",
+    "./src/shaders/index.ts"
+  ],
+  "peerDependencies": {
+    "expo-gl": "57.0.2",
+    "gl-react": "6.0.0",
+    "gl-react-dom": "6.0.0",
+    "gl-react-expo": "6.0.0",
+    "react": "19.2.3",
+    "react-native": "0.87.1"
+  },
+  "peerDependenciesMeta": {
+    "expo-gl": {
+      "optional": true
+    },
+    "gl-react-dom": {
+      "optional": true
+    },
+    "gl-react-expo": {
+      "optional": true
+    },
+    "react-native": {
+      "optional": true
+    }
+  }
+}

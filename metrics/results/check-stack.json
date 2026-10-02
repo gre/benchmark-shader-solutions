@@ -1,0 +1,1343 @@
+{
+  "generatedAt": "2026-10-04T10:17:09.934Z",
+  "totalSharedMismatches": 1,
+  "apps": {
+    "web-gl-react": {
+      "platform": "web",
+      "baseline": "web-baseline",
+      "sharedMismatches": [],
+      "extraNestedCopies": [],
+      "packageNamesApp": 111,
+      "instancesApp": 111,
+      "extraPackages": [
+        "add-line-numbers",
+        "atob-lite",
+        "bit-twiddle",
+        "core-util-is",
+        "cwise-compiler",
+        "dup",
+        "gl-constants",
+        "gl-format-compiler-error",
+        "gl-react",
+        "gl-react-dom",
+        "gl-shader",
+        "glsl-shader-name",
+        "glsl-tokenizer",
+        "inherits",
+        "invariant",
+        "iota-array",
+        "is-buffer",
+        "isarray",
+        "js-tokens",
+        "loose-envify",
+        "ndarray",
+        "ndarray-ops",
+        "object-assign",
+        "pad-left",
+        "performance-now",
+        "prop-types",
+        "raf",
+        "react-is",
+        "readable-stream",
+        "repeat-string",
+        "sprintf-js",
+        "string_decoder",
+        "through2",
+        "typedarray-pool",
+        "uniq",
+        "weakmap-shim",
+        "webgltexture-loader",
+        "webgltexture-loader-dom",
+        "webgltexture-loader-dom-canvas",
+        "webgltexture-loader-dom-image-url",
+        "webgltexture-loader-dom-video",
+        "webgltexture-loader-ndarray",
+        "xtend"
+      ],
+      "extraInstances": 43,
+      "missingFromBaseline": [],
+      "pods": null,
+      "packageJson": {
+        "otherFieldsDiffer": [],
+        "dependencies": {
+          "added": {
+            "gl-react": "6.0.0",
+            "gl-react-dom": "6.0.0"
+          },
+          "removed": {},
+          "changed": {}
+        },
+        "devDependencies": {
+          "added": {},
+          "removed": {},
+          "changed": {}
+        },
+        "nonExactRanges": []
+      },
+      "files": {
+        "expected": [
+          "README.md",
+          "package-lock.json",
+          "package.json",
+          "src/Effect.tsx",
+          "src/shaders/silk.glsl.ts"
+        ],
+        "renameOnly": [],
+        "unexpected": [],
+        "added": [],
+        "removed": [],
+        "documented": [
+          "vite.config.ts"
+        ],
+        "androidRemoved": false
+      }
+    },
+    "web-skia": {
+      "platform": "web",
+      "baseline": "web-baseline",
+      "sharedMismatches": [],
+      "extraNestedCopies": [],
+      "packageNamesApp": 70,
+      "instancesApp": 70,
+      "extraPackages": [
+        "@webgpu/types",
+        "canvaskit-wasm"
+      ],
+      "extraInstances": 2,
+      "missingFromBaseline": [],
+      "pods": null,
+      "packageJson": {
+        "otherFieldsDiffer": [],
+        "dependencies": {
+          "added": {
+            "canvaskit-wasm": "0.42.0"
+          },
+          "removed": {},
+          "changed": {}
+        },
+        "devDependencies": {
+          "added": {},
+          "removed": {},
+          "changed": {}
+        },
+        "nonExactRanges": []
+      },
+      "files": {
+        "expected": [
+          "README.md",
+          "package-lock.json",
+          "package.json",
+          "src/Effect.tsx",
+          "src/shaders/silk.sksl.ts"
+        ],
+        "renameOnly": [
+          "index.html",
+          "vite.config.ts"
+        ],
+        "unexpected": [],
+        "added": [],
+        "removed": [],
+        "documented": [
+          "src/canvaskit.ts"
+        ],
+        "androidRemoved": false
+      }
+    },
+    "web-webgpu": {
+      "platform": "web",
+      "baseline": "web-baseline",
+      "sharedMismatches": [],
+      "extraNestedCopies": [],
+      "packageNamesApp": 69,
+      "instancesApp": 69,
+      "extraPackages": [
+        "@webgpu/types"
+      ],
+      "extraInstances": 1,
+      "missingFromBaseline": [],
+      "pods": null,
+      "packageJson": {
+        "otherFieldsDiffer": [],
+        "dependencies": {
+          "added": {},
+          "removed": {},
+          "changed": {}
+        },
+        "devDependencies": {
+          "added": {
+            "@webgpu/types": "0.1.74"
+          },
+          "removed": {},
+          "changed": {}
+        },
+        "nonExactRanges": []
+      },
+      "files": {
+        "expected": [
+          "README.md",
+          "package-lock.json",
+          "package.json",
+          "src/Effect.tsx",
+          "src/shaders/silk.wgsl.ts"
+        ],
+        "renameOnly": [
+          "index.html",
+          "vite.config.ts"
+        ],
+        "unexpected": [],
+        "added": [],
+        "removed": [],
+        "documented": [],
+        "androidRemoved": false
+      }
+    },
+    "web-webgl": {
+      "platform": "web",
+      "baseline": "web-baseline",
+      "sharedMismatches": [],
+      "extraNestedCopies": [],
+      "packageNamesApp": 68,
+      "instancesApp": 68,
+      "extraPackages": [],
+      "extraInstances": 0,
+      "missingFromBaseline": [],
+      "pods": null,
+      "packageJson": {
+        "otherFieldsDiffer": [],
+        "dependencies": {
+          "added": {},
+          "removed": {},
+          "changed": {}
+        },
+        "devDependencies": {
+          "added": {},
+          "removed": {},
+          "changed": {}
+        },
+        "nonExactRanges": []
+      },
+      "files": {
+        "expected": [
+          "README.md",
+          "package-lock.json",
+          "package.json",
+          "src/Effect.tsx",
+          "src/shaders/silk.glsl.ts"
+        ],
+        "renameOnly": [
+          "vite.config.ts"
+        ],
+        "unexpected": [],
+        "added": [],
+        "removed": [],
+        "documented": [],
+        "androidRemoved": false
+      }
+    },
+    "rn-gl-react": {
+      "platform": "rn",
+      "baseline": "rn-baseline",
+      "sharedMismatches": [
+        {
+          "name": "zod",
+          "baseline": [
+            "4.6.5"
+          ],
+          "app": [
+            "3.25.76"
+          ]
+        }
+      ],
+      "extraNestedCopies": [
+        {
+          "name": "@react-native/babel-plugin-codegen",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.86.3",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "@react-native/codegen",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.86.3",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "@react-native/debugger-frontend",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.86.3",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "@react-native/debugger-shell",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.86.3",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "@react-native/dev-middleware",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.86.3",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "ws",
+          "baseline": [
+            "6.2.6",
+            "7.5.13"
+          ],
+          "app": [
+            "6.2.6",
+            "7.5.13",
+            "8.22.0"
+          ]
+        },
+        {
+          "name": "@react-native/normalize-colors",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.86.3",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "chalk",
+          "baseline": [
+            "4.1.2"
+          ],
+          "app": [
+            "2.4.2",
+            "4.1.2"
+          ]
+        },
+        {
+          "name": "ci-info",
+          "baseline": [
+            "3.9.0"
+          ],
+          "app": [
+            "2.0.0",
+            "3.9.0"
+          ]
+        },
+        {
+          "name": "cli-cursor",
+          "baseline": [
+            "3.1.0"
+          ],
+          "app": [
+            "2.1.0",
+            "3.1.0"
+          ]
+        },
+        {
+          "name": "commander",
+          "baseline": [
+            "12.1.0",
+            "2.20.3",
+            "9.5.0"
+          ],
+          "app": [
+            "12.1.0",
+            "2.20.3",
+            "7.2.0",
+            "9.5.0"
+          ]
+        },
+        {
+          "name": "debug",
+          "baseline": [
+            "2.6.9",
+            "4.4.3"
+          ],
+          "app": [
+            "2.6.9",
+            "3.2.7",
+            "4.4.3"
+          ]
+        },
+        {
+          "name": "hermes-estree",
+          "baseline": [
+            "0.25.1",
+            "0.36.1"
+          ],
+          "app": [
+            "0.25.1",
+            "0.35.0",
+            "0.36.0",
+            "0.36.1"
+          ]
+        },
+        {
+          "name": "hermes-parser",
+          "baseline": [
+            "0.25.1",
+            "0.36.1"
+          ],
+          "app": [
+            "0.25.1",
+            "0.35.0",
+            "0.36.0",
+            "0.36.1"
+          ]
+        },
+        {
+          "name": "fs-extra",
+          "baseline": [
+            "8.1.0"
+          ],
+          "app": [
+            "10.1.0",
+            "8.1.0"
+          ]
+        },
+        {
+          "name": "glob",
+          "baseline": [
+            "7.2.3"
+          ],
+          "app": [
+            "13.0.6",
+            "7.2.3"
+          ]
+        },
+        {
+          "name": "has-flag",
+          "baseline": [
+            "4.0.0"
+          ],
+          "app": [
+            "3.0.0",
+            "4.0.0"
+          ]
+        },
+        {
+          "name": "isarray",
+          "baseline": [
+            "2.0.5"
+          ],
+          "app": [
+            "0.0.1",
+            "2.0.5"
+          ]
+        },
+        {
+          "name": "supports-color",
+          "baseline": [
+            "7.2.0",
+            "8.1.1"
+          ],
+          "app": [
+            "5.5.0",
+            "7.2.0",
+            "8.1.1"
+          ]
+        },
+        {
+          "name": "jsonfile",
+          "baseline": [
+            "4.0.0"
+          ],
+          "app": [
+            "4.0.0",
+            "6.2.1"
+          ]
+        },
+        {
+          "name": "log-symbols",
+          "baseline": [
+            "4.1.0"
+          ],
+          "app": [
+            "2.2.0",
+            "4.1.0"
+          ]
+        },
+        {
+          "name": "lru-cache",
+          "baseline": [
+            "5.1.1"
+          ],
+          "app": [
+            "10.4.3",
+            "11.5.3",
+            "5.1.1"
+          ]
+        },
+        {
+          "name": "metro",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "metro-babel-transformer",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "metro-cache",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "metro-cache-key",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "metro-config",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "metro-core",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "metro-file-map",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "metro-minify-terser",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "metro-resolver",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "metro-runtime",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "metro-source-map",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "metro-symbolicate",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "metro-transform-plugins",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "metro-transform-worker",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "mimic-fn",
+          "baseline": [
+            "2.1.0"
+          ],
+          "app": [
+            "1.2.0",
+            "2.1.0"
+          ]
+        },
+        {
+          "name": "ob1",
+          "baseline": [
+            "0.87.1"
+          ],
+          "app": [
+            "0.84.5",
+            "0.87.1"
+          ]
+        },
+        {
+          "name": "onetime",
+          "baseline": [
+            "5.1.2"
+          ],
+          "app": [
+            "2.0.1",
+            "5.1.2"
+          ]
+        },
+        {
+          "name": "ora",
+          "baseline": [
+            "5.4.1"
+          ],
+          "app": [
+            "3.4.0",
+            "5.4.1"
+          ]
+        },
+        {
+          "name": "readable-stream",
+          "baseline": [
+            "3.6.2"
+          ],
+          "app": [
+            "1.0.34",
+            "3.6.2"
+          ]
+        },
+        {
+          "name": "restore-cursor",
+          "baseline": [
+            "3.1.0"
+          ],
+          "app": [
+            "2.0.0",
+            "3.1.0"
+          ]
+        },
+        {
+          "name": "slash",
+          "baseline": [
+            "3.0.0"
+          ],
+          "app": [
+            "2.0.0",
+            "3.0.0"
+          ]
+        },
+        {
+          "name": "string_decoder",
+          "baseline": [
+            "1.3.0"
+          ],
+          "app": [
+            "0.10.31",
+            "1.3.0"
+          ]
+        },
+        {
+          "name": "universalify",
+          "baseline": [
+            "0.1.2"
+          ],
+          "app": [
+            "0.1.2",
+            "2.0.1"
+          ]
+        }
+      ],
+      "packageNamesApp": 888,
+      "instancesApp": 1000,
+      "extraPackages": [
+        "@babel/plugin-proposal-decorators",
+        "@babel/plugin-syntax-decorators",
+        "@babel/plugin-transform-react-jsx-development",
+        "@babel/plugin-transform-react-pure-annotations",
+        "@expo/cli",
+        "@expo/code-signing-certificates",
+        "@expo/config",
+        "@expo/config-plugins",
+        "@expo/config-types",
+        "@expo/devcert",
+        "@expo/devtools",
+        "@expo/dom-webview",
+        "@expo/env",
+        "@expo/expo-modules-macros-plugin",
+        "@expo/fingerprint",
+        "@expo/image-utils",
+        "@expo/inline-modules",
+        "@expo/json-file",
+        "@expo/local-build-cache-provider",
+        "@expo/log-box",
+        "@expo/metro",
+        "@expo/metro-config",
+        "@expo/metro-file-map",
+        "@expo/osascript",
+        "@expo/package-manager",
+        "@expo/plist",
+        "@expo/prebuild-config",
+        "@expo/require-utils",
+        "@expo/router-server",
+        "@expo/schema-utils",
+        "@expo/sdk-runtime-versions",
+        "@expo/spawn-async",
+        "@expo/sudo-prompt",
+        "@expo/ws-tunnel",
+        "@expo/xcpretty",
+        "@react-native/assets-registry",
+        "@xmldom/xmldom",
+        "@yarnpkg/lockfile",
+        "add-line-numbers",
+        "agent-cli-detector",
+        "arg",
+        "atob-lite",
+        "babel-plugin-react-compiler",
+        "babel-plugin-react-native-web",
+        "babel-preset-expo",
+        "big-integer",
+        "bit-twiddle",
+        "bplist-creator",
+        "bplist-parser",
+        "core-util-is",
+        "cwise-compiler",
+        "detect-libc",
+        "dnssd-advertise",
+        "dup",
+        "expo",
+        "expo-asset",
+        "expo-constants",
+        "expo-file-system",
+        "expo-font",
+        "expo-gl",
+        "expo-keep-awake",
+        "expo-modules-autolinking",
+        "expo-modules-core",
+        "expo-modules-jsi",
+        "expo-server",
+        "fetch-nodeshim",
+        "find-yarn-workspace-root",
+        "fontfaceobserver",
+        "getenv",
+        "gl-constants",
+        "gl-format-compiler-error",
+        "gl-react",
+        "gl-react-expo",
+        "gl-shader",
+        "glsl-shader-name",
+        "glsl-tokenizer",
+        "hosted-git-info",
+        "iota-array",
+        "is-buffer",
+        "jimp-compact",
+        "json-stable-stringify",
+        "jsonify",
+        "klaw-sync",
+        "lan-network",
+        "lightningcss",
+        "lightningcss-android-arm64",
+        "lightningcss-darwin-arm64",
+        "lightningcss-darwin-x64",
+        "lightningcss-freebsd-x64",
+        "lightningcss-linux-arm-gnueabihf",
+        "lightningcss-linux-arm64-gnu",
+        "lightningcss-linux-arm64-musl",
+        "lightningcss-linux-x64-gnu",
+        "lightningcss-linux-x64-musl",
+        "lightningcss-win32-arm64-msvc",
+        "lightningcss-win32-x64-msvc",
+        "minimist",
+        "minipass",
+        "multitars",
+        "nanoid",
+        "ndarray",
+        "ndarray-ops",
+        "node-forge",
+        "npm-package-arg",
+        "pad-left",
+        "parse-png",
+        "patch-package",
+        "path-scurry",
+        "plist",
+        "pngjs",
+        "postcss",
+        "proc-log",
+        "progress",
+        "repeat-string",
+        "resolve-workspace-root",
+        "sandbox-cli-detector",
+        "sax",
+        "simple-plist",
+        "slugify",
+        "source-map-js",
+        "stream-buffers",
+        "structured-headers",
+        "supports-hyperlinks",
+        "terminal-link",
+        "through2",
+        "tmp",
+        "toqr",
+        "typedarray-pool",
+        "uniq",
+        "uuid",
+        "validate-npm-package-name",
+        "weakmap-shim",
+        "webgltexture-loader",
+        "webgltexture-loader-expo",
+        "webgltexture-loader-ndarray",
+        "whatwg-url-minimum",
+        "xcode",
+        "xml2js",
+        "xmlbuilder",
+        "xtend"
+      ],
+      "extraInstances": 190,
+      "missingFromBaseline": [],
+      "pods": {
+        "baseline": 87,
+        "app": 100,
+        "extra": [
+          "EXConstants",
+          "Expo",
+          "ExpoAsset",
+          "ExpoDomWebView",
+          "ExpoFileSystem",
+          "ExpoFont",
+          "ExpoGL",
+          "ExpoKeepAwake",
+          "ExpoLogBox",
+          "ExpoModulesCore",
+          "ExpoModulesJSI",
+          "ExpoModulesWorklets",
+          "ExpoModulesWorkletsAdapter"
+        ],
+        "missing": [],
+        "mismatches": []
+      },
+      "packageJson": {
+        "otherFieldsDiffer": [
+          "scripts",
+          "overrides"
+        ],
+        "dependencies": {
+          "added": {
+            "@react-native/assets-registry": "0.87.1",
+            "expo": "57.0.26",
+            "expo-gl": "57.0.2",
+            "expo-modules-core": "57.0.20",
+            "gl-react": "6.0.0",
+            "gl-react-expo": "6.0.0"
+          },
+          "removed": {},
+          "changed": {}
+        },
+        "devDependencies": {
+          "added": {
+            "patch-package": "8.0.1"
+          },
+          "removed": {},
+          "changed": {}
+        },
+        "nonExactRanges": []
+      },
+      "files": {
+        "expected": [
+          "README.md",
+          "ios/Podfile.lock",
+          "package-lock.json",
+          "package.json",
+          "src/Effect.tsx",
+          "src/shaders/silk.glsl.ts"
+        ],
+        "renameOnly": [],
+        "unexpected": [],
+        "added": [],
+        "removed": [],
+        "documented": [
+          "ios/Podfile",
+          "ios/RnBaseline/AppDelegate.swift",
+          "ios/RnBaseline/PrivacyInfo.xcprivacy",
+          "ios/RnBaseline.xcodeproj/project.pbxproj",
+          "package.json#overrides",
+          "patches/expo+57.0.26.patch"
+        ],
+        "androidRemoved": true
+      }
+    },
+    "rn-skia": {
+      "platform": "rn",
+      "baseline": "rn-baseline",
+      "sharedMismatches": [],
+      "extraNestedCopies": [
+        {
+          "name": "scheduler",
+          "baseline": [
+            "0.27.0"
+          ],
+          "app": [
+            "0.25.0",
+            "0.27.0"
+          ]
+        }
+      ],
+      "packageNamesApp": 756,
+      "instancesApp": 819,
+      "extraPackages": [
+        "@shopify/react-native-skia",
+        "@webgpu/types",
+        "canvaskit-wasm",
+        "react-native-skia-android",
+        "react-native-skia-apple-ios",
+        "react-native-skia-apple-macos",
+        "react-native-skia-apple-tvos",
+        "react-reconciler"
+      ],
+      "extraInstances": 9,
+      "missingFromBaseline": [],
+      "pods": {
+        "baseline": 87,
+        "app": 88,
+        "extra": [
+          "react-native-skia"
+        ],
+        "missing": [],
+        "mismatches": []
+      },
+      "packageJson": {
+        "otherFieldsDiffer": [
+          "scripts"
+        ],
+        "dependencies": {
+          "added": {
+            "@shopify/react-native-skia": "2.14.0"
+          },
+          "removed": {},
+          "changed": {}
+        },
+        "devDependencies": {
+          "added": {},
+          "removed": {},
+          "changed": {}
+        },
+        "nonExactRanges": []
+      },
+      "files": {
+        "expected": [
+          "README.md",
+          "ios/Podfile.lock",
+          "package-lock.json",
+          "package.json",
+          "src/Effect.tsx",
+          "src/shaders/silk.sksl.ts"
+        ],
+        "renameOnly": [
+          "ios/RnBaseline.xcodeproj/project.pbxproj"
+        ],
+        "unexpected": [],
+        "added": [],
+        "removed": [],
+        "documented": [],
+        "androidRemoved": true
+      }
+    },
+    "rn-webgpu": {
+      "platform": "rn",
+      "baseline": "rn-baseline",
+      "sharedMismatches": [],
+      "extraNestedCopies": [
+        {
+          "name": "fs-extra",
+          "baseline": [
+            "8.1.0"
+          ],
+          "app": [
+            "10.1.0",
+            "8.1.0"
+          ]
+        },
+        {
+          "name": "jsonfile",
+          "baseline": [
+            "4.0.0"
+          ],
+          "app": [
+            "4.0.0",
+            "6.2.1"
+          ]
+        },
+        {
+          "name": "slash",
+          "baseline": [
+            "3.0.0"
+          ],
+          "app": [
+            "2.0.0",
+            "3.0.0"
+          ]
+        },
+        {
+          "name": "universalify",
+          "baseline": [
+            "0.1.2"
+          ],
+          "app": [
+            "0.1.2",
+            "2.0.1"
+          ]
+        }
+      ],
+      "packageNamesApp": 759,
+      "instancesApp": 825,
+      "extraPackages": [
+        "@webgpu/types",
+        "@yarnpkg/lockfile",
+        "find-yarn-workspace-root",
+        "json-stable-stringify",
+        "jsonify",
+        "klaw-sync",
+        "minimist",
+        "patch-package",
+        "react-native-webgpu",
+        "react-native-wgpu",
+        "tmp"
+      ],
+      "extraInstances": 15,
+      "missingFromBaseline": [],
+      "pods": {
+        "baseline": 87,
+        "app": 88,
+        "extra": [
+          "react-native-webgpu"
+        ],
+        "missing": [],
+        "mismatches": []
+      },
+      "packageJson": {
+        "otherFieldsDiffer": [
+          "scripts"
+        ],
+        "dependencies": {
+          "added": {
+            "react-native-webgpu": "0.5.17",
+            "react-native-wgpu": "0.5.17"
+          },
+          "removed": {},
+          "changed": {}
+        },
+        "devDependencies": {
+          "added": {
+            "@webgpu/types": "0.1.65",
+            "patch-package": "8.0.1"
+          },
+          "removed": {},
+          "changed": {}
+        },
+        "nonExactRanges": []
+      },
+      "files": {
+        "expected": [
+          "README.md",
+          "ios/Podfile.lock",
+          "package-lock.json",
+          "package.json",
+          "src/Effect.tsx",
+          "src/shaders/silk.wgsl.ts"
+        ],
+        "renameOnly": [
+          "ios/RnBaseline.xcodeproj/project.pbxproj"
+        ],
+        "unexpected": [],
+        "added": [],
+        "removed": [],
+        "documented": [
+          "ios/Podfile",
+          "patches/react-native-webgpu+0.5.17.patch"
+        ],
+        "androidRemoved": true
+      }
+    },
+    "rn-native": {
+      "platform": "rn",
+      "baseline": "rn-baseline",
+      "sharedMismatches": [],
+      "extraNestedCopies": [],
+      "packageNamesApp": 748,
+      "instancesApp": 810,
+      "extraPackages": [],
+      "extraInstances": 0,
+      "missingFromBaseline": [],
+      "pods": {
+        "baseline": 87,
+        "app": 87,
+        "extra": [],
+        "missing": [],
+        "mismatches": []
+      },
+      "packageJson": {
+        "otherFieldsDiffer": [
+          "codegenConfig"
+        ],
+        "dependencies": {
+          "added": {},
+          "removed": {},
+          "changed": {}
+        },
+        "devDependencies": {
+          "added": {},
+          "removed": {},
+          "changed": {}
+        },
+        "nonExactRanges": []
+      },
+      "files": {
+        "expected": [
+          "README.md",
+          "ios/Podfile.lock",
+          "package.json",
+          "src/Effect.tsx"
+        ],
+        "renameOnly": [
+          "android/app/build.gradle",
+          "android/gradle.properties"
+        ],
+        "unexpected": [],
+        "added": [],
+        "removed": [
+          "android/app/src/main/java/com/effectstudy/baseline/MainActivity.kt",
+          "android/app/src/main/java/com/effectstudy/baseline/MainApplication.kt"
+        ],
+        "documented": [
+          "ios/RnBaseline.xcodeproj/project.pbxproj",
+          "src/FpsOverlay.tsx",
+          "package.json#codegenConfig",
+          "android/app/src/main/java/com/effectstudy/nativeapp/MainActivity.kt",
+          "android/app/src/main/java/com/effectstudy/nativeapp/MainApplication.kt",
+          "android/app/src/main/java/com/effectstudy/nativeapp/silk/SilkView.kt",
+          "android/app/src/main/java/com/effectstudy/nativeapp/silk/SilkViewManager.kt",
+          "android/app/src/main/res/raw/silk.agsl",
+          "ios/RnBaseline/SilkView/RCTSilkView.h",
+          "ios/RnBaseline/SilkView/RCTSilkView.mm",
+          "ios/RnBaseline/SilkView/silk.metal",
+          "src/nativeStats.ts",
+          "src/specs/SilkViewNativeComponent.ts"
+        ],
+        "androidRemoved": false
+      }
+    },
+    "rn-native-compatible-static": {
+      "platform": "rn",
+      "baseline": "rn-baseline",
+      "sharedMismatches": [],
+      "extraNestedCopies": [],
+      "packageNamesApp": 748,
+      "instancesApp": 810,
+      "extraPackages": [],
+      "extraInstances": 0,
+      "missingFromBaseline": [],
+      "pods": {
+        "baseline": 87,
+        "app": 87,
+        "extra": [],
+        "missing": [],
+        "mismatches": []
+      },
+      "packageJson": {
+        "otherFieldsDiffer": [
+          "codegenConfig"
+        ],
+        "dependencies": {
+          "added": {},
+          "removed": {},
+          "changed": {}
+        },
+        "devDependencies": {
+          "added": {},
+          "removed": {},
+          "changed": {}
+        },
+        "nonExactRanges": []
+      },
+      "files": {
+        "expected": [
+          "README.md",
+          "ios/Podfile.lock",
+          "package-lock.json",
+          "package.json",
+          "src/Effect.tsx"
+        ],
+        "renameOnly": [
+          "android/app/build.gradle",
+          "android/gradle.properties"
+        ],
+        "unexpected": [],
+        "added": [],
+        "removed": [
+          "android/app/src/main/java/com/effectstudy/baseline/MainActivity.kt",
+          "android/app/src/main/java/com/effectstudy/baseline/MainApplication.kt"
+        ],
+        "documented": [
+          "android/build.gradle",
+          "ios/RnBaseline.xcodeproj/project.pbxproj",
+          "src/FpsOverlay.tsx",
+          "package.json#codegenConfig",
+          "android/app/src/main/java/com/effectstudy/nativecompat/MainActivity.kt",
+          "android/app/src/main/java/com/effectstudy/nativecompat/MainApplication.kt",
+          "android/app/src/main/java/com/effectstudy/nativecompat/silk/SilkView.kt",
+          "android/app/src/main/java/com/effectstudy/nativecompat/silk/SilkViewManager.kt",
+          "android/app/src/main/res/raw/silk.glsl",
+          "ios/RnBaseline/SilkView/RCTSilkView.h",
+          "ios/RnBaseline/SilkView/RCTSilkView.mm",
+          "ios/RnBaseline/SilkView/silk.metal",
+          "screenshots/android25_landscape_t0.jpg",
+          "screenshots/android25_t0.jpg",
+          "screenshots/android34_t0.jpg",
+          "screenshots/ios_t0.jpg",
+          "src/nativeStats.ts",
+          "src/specs/SilkViewNativeComponent.ts"
+        ],
+        "androidRemoved": false
+      }
+    },
+    "rn-native-compatible-dynamic": {
+      "platform": "rn",
+      "baseline": "rn-baseline",
+      "sharedMismatches": [],
+      "extraNestedCopies": [],
+      "packageNamesApp": 748,
+      "instancesApp": 810,
+      "extraPackages": [],
+      "extraInstances": 0,
+      "missingFromBaseline": [],
+      "pods": {
+        "baseline": 87,
+        "app": 87,
+        "extra": [],
+        "missing": [],
+        "mismatches": []
+      },
+      "packageJson": {
+        "otherFieldsDiffer": [
+          "codegenConfig"
+        ],
+        "dependencies": {
+          "added": {},
+          "removed": {},
+          "changed": {}
+        },
+        "devDependencies": {
+          "added": {},
+          "removed": {},
+          "changed": {}
+        },
+        "nonExactRanges": []
+      },
+      "files": {
+        "expected": [
+          "README.md",
+          "ios/Podfile.lock",
+          "package-lock.json",
+          "package.json",
+          "src/Effect.tsx",
+          "src/shaders/silk.android.ts",
+          "src/shaders/silk.d.ts",
+          "src/shaders/silk.ios.ts"
+        ],
+        "renameOnly": [
+          "android/app/build.gradle",
+          "android/gradle.properties"
+        ],
+        "unexpected": [],
+        "added": [],
+        "removed": [
+          "android/app/src/main/java/com/effectstudy/baseline/MainActivity.kt",
+          "android/app/src/main/java/com/effectstudy/baseline/MainApplication.kt"
+        ],
+        "documented": [
+          "android/build.gradle",
+          "ios/RnBaseline.xcodeproj/project.pbxproj",
+          "src/FpsOverlay.tsx",
+          "package.json#codegenConfig",
+          "android/app/src/main/java/com/effectstudy/nativecompatdyn/MainActivity.kt",
+          "android/app/src/main/java/com/effectstudy/nativecompatdyn/MainApplication.kt",
+          "android/app/src/main/java/com/effectstudy/nativecompatdyn/silk/SilkView.kt",
+          "android/app/src/main/java/com/effectstudy/nativecompatdyn/silk/SilkViewManager.kt",
+          "ios/RnBaseline/SilkView/RCTSilkView.h",
+          "ios/RnBaseline/SilkView/RCTSilkView.mm",
+          "src/nativeStats.ts",
+          "src/specs/SilkViewNativeComponent.ts"
+        ],
+        "androidRemoved": false
+      }
+    }
+  }
+}

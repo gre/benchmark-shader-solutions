@@ -1,0 +1,1407 @@
+{
+  "generatedAt": "2026-10-04T15:46:16.014Z",
+  "device": "Samsung Galaxy S21 Ultra (SM-G998B, Exynos 2100 / Mali-G78, Android 15 / API 35), display 1080x2400",
+  "method": "perf-android.mjs, release APKs, 1 run of 20 s per key, runs interleaved (run 1 in app order, run 2 in reverse), 10 s pause between apps. CPU % of one core. 'first pass' PSS was polled every 2 s inside the CPU window (~5 points of binder overhead); the other passes use --pss-once.",
+  "apps": {
+    "rn-baseline": {
+      "adaptive (48-120 Hz)": {
+        "n": 2,
+        "cpu": 16.86,
+        "surfaceFlingerCpu": 11.88,
+        "pssMB": 100.89,
+        "firstFrameMs": 125.5,
+        "shaderSetupMs": null,
+        "hwuiFrames": 55,
+        "runs": [
+          {
+            "key": "rn-baseline@s21-a1",
+            "cpu": 16.93,
+            "surfaceFlingerCpu": 11.75,
+            "pssMB": 101.18,
+            "firstFrameMs": 80,
+            "shaderSetupMs": null,
+            "hwuiFrames": 56,
+            "refreshHz": 60,
+            "batteryTempC": 36.7,
+            "topThreads": [
+              {
+                "thread": "tstudy.baseline",
+                "cpu": 8.43
+              },
+              {
+                "thread": "mqt_v_js",
+                "cpu": 5.65
+              },
+              {
+                "thread": "RenderThread",
+                "cpu": 0.94
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 0.64
+              },
+              {
+                "thread": "mali-mem-purge",
+                "cpu": 0.47
+              }
+            ]
+          },
+          {
+            "key": "rn-baseline@s21-a2",
+            "cpu": 16.78,
+            "surfaceFlingerCpu": 12.02,
+            "pssMB": 100.6,
+            "firstFrameMs": 171,
+            "shaderSetupMs": null,
+            "hwuiFrames": 54,
+            "refreshHz": 60,
+            "batteryTempC": 39.7,
+            "topThreads": [
+              {
+                "thread": "tstudy.baseline",
+                "cpu": 8.63
+              },
+              {
+                "thread": "mqt_v_js",
+                "cpu": 5.54
+              },
+              {
+                "thread": "RenderThread",
+                "cpu": 0.89
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 0.68
+              },
+              {
+                "thread": "mali-mem-purge",
+                "cpu": 0.47
+              }
+            ]
+          }
+        ]
+      },
+      "60 Hz locked": {
+        "n": 2,
+        "cpu": 17.8,
+        "surfaceFlingerCpu": 12.08,
+        "pssMB": 101.1,
+        "firstFrameMs": 74,
+        "shaderSetupMs": null,
+        "hwuiFrames": 61.5,
+        "runs": [
+          {
+            "key": "rn-baseline@s21-60hz-1",
+            "cpu": 17.73,
+            "surfaceFlingerCpu": 12.03,
+            "pssMB": 101.24,
+            "firstFrameMs": 72,
+            "shaderSetupMs": null,
+            "hwuiFrames": 60,
+            "refreshHz": 60,
+            "batteryTempC": 39.5,
+            "topThreads": [
+              {
+                "thread": "tstudy.baseline",
+                "cpu": 8.79
+              },
+              {
+                "thread": "mqt_v_js",
+                "cpu": 6.01
+              },
+              {
+                "thread": "RenderThread",
+                "cpu": 1.09
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 0.76
+              },
+              {
+                "thread": "mali-mem-purge",
+                "cpu": 0.42
+              }
+            ]
+          },
+          {
+            "key": "rn-baseline@s21-60hz-2",
+            "cpu": 17.86,
+            "surfaceFlingerCpu": 12.13,
+            "pssMB": 100.97,
+            "firstFrameMs": 76,
+            "shaderSetupMs": null,
+            "hwuiFrames": 63,
+            "refreshHz": 60,
+            "batteryTempC": 40,
+            "topThreads": [
+              {
+                "thread": "tstudy.baseline",
+                "cpu": 8.82
+              },
+              {
+                "thread": "mqt_v_js",
+                "cpu": 5.98
+              },
+              {
+                "thread": "RenderThread",
+                "cpu": 1.06
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 0.64
+              },
+              {
+                "thread": "mali-mem-purge",
+                "cpu": 0.47
+              }
+            ]
+          }
+        ]
+      },
+      "first pass (PSS polled, adaptive)": {
+        "n": 2,
+        "cpu": 14.82,
+        "surfaceFlingerCpu": 6.17,
+        "pssMB": 106.68,
+        "firstFrameMs": 188.5,
+        "shaderSetupMs": null,
+        "hwuiFrames": 58.5,
+        "runs": [
+          {
+            "key": "rn-baseline@s21-r1",
+            "cpu": 10.84,
+            "surfaceFlingerCpu": 3.48,
+            "pssMB": 110,
+            "firstFrameMs": 285,
+            "shaderSetupMs": null,
+            "hwuiFrames": 58,
+            "refreshHz": null,
+            "batteryTempC": null,
+            "topThreads": [
+              {
+                "thread": "tstudy.baseline",
+                "cpu": 5.58
+              },
+              {
+                "thread": "mqt_v_js",
+                "cpu": 2.37
+              },
+              {
+                "thread": "binder:29053_",
+                "cpu": 1.88
+              },
+              {
+                "thread": "RenderThread",
+                "cpu": 0.45
+              },
+              {
+                "thread": "HeapTaskDaemon",
+                "cpu": 0.31
+              }
+            ]
+          },
+          {
+            "key": "rn-baseline@s21-r2",
+            "cpu": 18.81,
+            "surfaceFlingerCpu": 8.85,
+            "pssMB": 103.36,
+            "firstFrameMs": 92,
+            "shaderSetupMs": null,
+            "hwuiFrames": 59,
+            "refreshHz": null,
+            "batteryTempC": null,
+            "topThreads": [
+              {
+                "thread": "tstudy.baseline",
+                "cpu": 8.44
+              },
+              {
+                "thread": "mqt_v_js",
+                "cpu": 5.57
+              },
+              {
+                "thread": "binder:22210_",
+                "cpu": 2.45
+              },
+              {
+                "thread": "RenderThread",
+                "cpu": 1.01
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 0.59
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "rn-gl-react": {
+      "adaptive (48-120 Hz)": {
+        "n": 2,
+        "cpu": 92.22,
+        "surfaceFlingerCpu": 49.84,
+        "pssMB": 159.49,
+        "firstFrameMs": 82,
+        "shaderSetupMs": null,
+        "hwuiFrames": 3097,
+        "runs": [
+          {
+            "key": "rn-gl-react@s21-a1",
+            "cpu": 91.19,
+            "surfaceFlingerCpu": 50.19,
+            "pssMB": 157.27,
+            "firstFrameMs": 72,
+            "shaderSetupMs": null,
+            "hwuiFrames": 3082,
+            "refreshHz": 120,
+            "batteryTempC": 38.3,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 23.34
+              },
+              {
+                "thread": "mqt_v_js",
+                "cpu": 19.41
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 18.96
+              },
+              {
+                "thread": "Thread",
+                "cpu": 13.53
+              },
+              {
+                "thread": "ctstudy.glreact",
+                "cpu": 11.13
+              }
+            ]
+          },
+          {
+            "key": "rn-gl-react@s21-a2",
+            "cpu": 93.25,
+            "surfaceFlingerCpu": 49.49,
+            "pssMB": 161.7,
+            "firstFrameMs": 92,
+            "shaderSetupMs": null,
+            "hwuiFrames": 3112,
+            "refreshHz": 120,
+            "batteryTempC": 38.8,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 24.12
+              },
+              {
+                "thread": "mqt_v_js",
+                "cpu": 19.8
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 18.5
+              },
+              {
+                "thread": "Thread",
+                "cpu": 13.95
+              },
+              {
+                "thread": "ctstudy.glreact",
+                "cpu": 11.51
+              }
+            ]
+          }
+        ]
+      },
+      "60 Hz locked": {
+        "n": 2,
+        "cpu": 69,
+        "surfaceFlingerCpu": 40.95,
+        "pssMB": 159.47,
+        "firstFrameMs": 75,
+        "shaderSetupMs": null,
+        "hwuiFrames": 1534,
+        "runs": [
+          {
+            "key": "rn-gl-react@s21-60hz-1",
+            "cpu": 68.84,
+            "surfaceFlingerCpu": 41.29,
+            "pssMB": 160.68,
+            "firstFrameMs": 73,
+            "shaderSetupMs": null,
+            "hwuiFrames": 1546,
+            "refreshHz": 60,
+            "batteryTempC": 39.8,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 19.55
+              },
+              {
+                "thread": "mqt_v_js",
+                "cpu": 15.33
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 13.71
+              },
+              {
+                "thread": "Thread",
+                "cpu": 9.28
+              },
+              {
+                "thread": "ctstudy.glreact",
+                "cpu": 8
+              }
+            ]
+          },
+          {
+            "key": "rn-gl-react@s21-60hz-2",
+            "cpu": 69.16,
+            "surfaceFlingerCpu": 40.6,
+            "pssMB": 158.25,
+            "firstFrameMs": 77,
+            "shaderSetupMs": null,
+            "hwuiFrames": 1522,
+            "refreshHz": 60,
+            "batteryTempC": 40,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 19.52
+              },
+              {
+                "thread": "mqt_v_js",
+                "cpu": 15.19
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 13.93
+              },
+              {
+                "thread": "Thread",
+                "cpu": 9.35
+              },
+              {
+                "thread": "ctstudy.glreact",
+                "cpu": 8.18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "rn-skia": {
+      "adaptive (48-120 Hz)": {
+        "n": 2,
+        "cpu": 37.7,
+        "surfaceFlingerCpu": 54.81,
+        "pssMB": 161.31,
+        "firstFrameMs": 47.5,
+        "shaderSetupMs": null,
+        "hwuiFrames": 0,
+        "runs": [
+          {
+            "key": "rn-skia@s21-a1",
+            "cpu": 37.85,
+            "surfaceFlingerCpu": 52.83,
+            "pssMB": 162.31,
+            "firstFrameMs": 49,
+            "shaderSetupMs": null,
+            "hwuiFrames": 0,
+            "refreshHz": 120,
+            "batteryTempC": 37.9,
+            "topThreads": [
+              {
+                "thread": "ffectstudy.skia",
+                "cpu": 24.13
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 9.61
+              },
+              {
+                "thread": "binder:31994_",
+                "cpu": 3.43
+              },
+              {
+                "thread": "HeapTaskDaemon",
+                "cpu": 0.17
+              },
+              {
+                "thread": "mali-mem-purge",
+                "cpu": 0.17
+              }
+            ]
+          },
+          {
+            "key": "rn-skia@s21-a2",
+            "cpu": 37.54,
+            "surfaceFlingerCpu": 56.8,
+            "pssMB": 160.31,
+            "firstFrameMs": 46,
+            "shaderSetupMs": null,
+            "hwuiFrames": 0,
+            "refreshHz": 120,
+            "batteryTempC": 39.3,
+            "topThreads": [
+              {
+                "thread": "ffectstudy.skia",
+                "cpu": 23.7
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 9.54
+              },
+              {
+                "thread": "binder:3480_",
+                "cpu": 3.89
+              },
+              {
+                "thread": "mali-mem-purge",
+                "cpu": 0.17
+              },
+              {
+                "thread": "HeapTaskDaemon",
+                "cpu": 0.13
+              }
+            ]
+          }
+        ]
+      },
+      "60 Hz locked": {
+        "n": 2,
+        "cpu": 26.46,
+        "surfaceFlingerCpu": 39.67,
+        "pssMB": 162.12,
+        "firstFrameMs": 68,
+        "shaderSetupMs": null,
+        "hwuiFrames": 0,
+        "runs": [
+          {
+            "key": "rn-skia@s21-60hz-1",
+            "cpu": 26.32,
+            "surfaceFlingerCpu": 39.85,
+            "pssMB": 162.08,
+            "firstFrameMs": 76,
+            "shaderSetupMs": null,
+            "hwuiFrames": 0,
+            "refreshHz": 60,
+            "batteryTempC": 39.7,
+            "topThreads": [
+              {
+                "thread": "ffectstudy.skia",
+                "cpu": 16.87
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 6.6
+              },
+              {
+                "thread": "binder:7392_",
+                "cpu": 2.4
+              },
+              {
+                "thread": "mali-mem-purge",
+                "cpu": 0.21
+              },
+              {
+                "thread": "HeapTaskDaemon",
+                "cpu": 0.17
+              }
+            ]
+          },
+          {
+            "key": "rn-skia@s21-60hz-2",
+            "cpu": 26.61,
+            "surfaceFlingerCpu": 39.49,
+            "pssMB": 162.16,
+            "firstFrameMs": 60,
+            "shaderSetupMs": null,
+            "hwuiFrames": 0,
+            "refreshHz": 60,
+            "batteryTempC": 40.1,
+            "topThreads": [
+              {
+                "thread": "ffectstudy.skia",
+                "cpu": 17.16
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 6.51
+              },
+              {
+                "thread": "binder:9125_",
+                "cpu": 2.37
+              },
+              {
+                "thread": "mali-mem-purge",
+                "cpu": 0.21
+              },
+              {
+                "thread": "HeapTaskDaemon",
+                "cpu": 0.17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "rn-webgpu": {
+      "adaptive (48-120 Hz)": {
+        "n": 2,
+        "cpu": 41.59,
+        "surfaceFlingerCpu": 55.98,
+        "pssMB": 142.88,
+        "firstFrameMs": 119,
+        "shaderSetupMs": null,
+        "hwuiFrames": 0,
+        "runs": [
+          {
+            "key": "rn-webgpu@s21-a1",
+            "cpu": 41.22,
+            "surfaceFlingerCpu": 56.2,
+            "pssMB": 142.63,
+            "firstFrameMs": 105,
+            "shaderSetupMs": null,
+            "hwuiFrames": 0,
+            "refreshHz": 120,
+            "batteryTempC": 38.2,
+            "topThreads": [
+              {
+                "thread": "ectstudy.webgpu",
+                "cpu": 28.12
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 9.18
+              },
+              {
+                "thread": "binder:32468_",
+                "cpu": 3.58
+              },
+              {
+                "thread": "HeapTaskDaemon",
+                "cpu": 0.16
+              },
+              {
+                "thread": "mali-mem-purge",
+                "cpu": 0.16
+              }
+            ]
+          },
+          {
+            "key": "rn-webgpu@s21-a2",
+            "cpu": 41.97,
+            "surfaceFlingerCpu": 55.77,
+            "pssMB": 143.12,
+            "firstFrameMs": 133,
+            "shaderSetupMs": null,
+            "hwuiFrames": 0,
+            "refreshHz": 120,
+            "batteryTempC": 39,
+            "topThreads": [
+              {
+                "thread": "ectstudy.webgpu",
+                "cpu": 28.43
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 9.63
+              },
+              {
+                "thread": "binder:2750_",
+                "cpu": 3.61
+              },
+              {
+                "thread": "mali-mem-purge",
+                "cpu": 0.2
+              },
+              {
+                "thread": "HeapTaskDaemon",
+                "cpu": 0.16
+              }
+            ]
+          }
+        ]
+      },
+      "60 Hz locked": {
+        "n": 2,
+        "cpu": 27.87,
+        "surfaceFlingerCpu": 39.63,
+        "pssMB": 144.41,
+        "firstFrameMs": 128.5,
+        "shaderSetupMs": null,
+        "hwuiFrames": 0,
+        "runs": [
+          {
+            "key": "rn-webgpu@s21-60hz-1",
+            "cpu": 27.94,
+            "surfaceFlingerCpu": 40.24,
+            "pssMB": 146.66,
+            "firstFrameMs": 114,
+            "shaderSetupMs": null,
+            "hwuiFrames": 0,
+            "refreshHz": 60,
+            "batteryTempC": 39.8,
+            "topThreads": [
+              {
+                "thread": "ectstudy.webgpu",
+                "cpu": 18.8
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 5.75
+              },
+              {
+                "thread": "binder:7715_",
+                "cpu": 2.77
+              },
+              {
+                "thread": "mali-mem-purge",
+                "cpu": 0.21
+              },
+              {
+                "thread": "HeapTaskDaemon",
+                "cpu": 0.17
+              }
+            ]
+          },
+          {
+            "key": "rn-webgpu@s21-60hz-2",
+            "cpu": 27.8,
+            "surfaceFlingerCpu": 39.02,
+            "pssMB": 142.16,
+            "firstFrameMs": 143,
+            "shaderSetupMs": null,
+            "hwuiFrames": 0,
+            "refreshHz": 60,
+            "batteryTempC": 40,
+            "topThreads": [
+              {
+                "thread": "ectstudy.webgpu",
+                "cpu": 18.71
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 5.79
+              },
+              {
+                "thread": "binder:8772_",
+                "cpu": 2.67
+              },
+              {
+                "thread": "HeapTaskDaemon",
+                "cpu": 0.21
+              },
+              {
+                "thread": "mali-mem-purge",
+                "cpu": 0.21
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "rn-native": {
+      "adaptive (48-120 Hz)": {
+        "n": 2,
+        "cpu": 59.08,
+        "surfaceFlingerCpu": 45.2,
+        "pssMB": 110.59,
+        "firstFrameMs": 54,
+        "shaderSetupMs": null,
+        "hwuiFrames": 4698,
+        "runs": [
+          {
+            "key": "rn-native@s21-a1",
+            "cpu": 58.54,
+            "surfaceFlingerCpu": 44.56,
+            "pssMB": 109.45,
+            "firstFrameMs": 48,
+            "shaderSetupMs": null,
+            "hwuiFrames": 4619,
+            "refreshHz": 120,
+            "batteryTempC": 36.6,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 26.46
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 14.32
+              },
+              {
+                "thread": "ectstudy.native",
+                "cpu": 9.2
+              },
+              {
+                "thread": "SilkRender",
+                "cpu": 5.84
+              },
+              {
+                "thread": "binder:30604_",
+                "cpu": 2.14
+              }
+            ]
+          },
+          {
+            "key": "rn-native@s21-a2",
+            "cpu": 59.62,
+            "surfaceFlingerCpu": 45.83,
+            "pssMB": 111.73,
+            "firstFrameMs": 60,
+            "shaderSetupMs": null,
+            "hwuiFrames": 4777,
+            "refreshHz": 120,
+            "batteryTempC": 39.7,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 27.02
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 14.73
+              },
+              {
+                "thread": "ectstudy.native",
+                "cpu": 9.36
+              },
+              {
+                "thread": "SilkRender",
+                "cpu": 5.94
+              },
+              {
+                "thread": "binder:4682_",
+                "cpu": 2.08
+              }
+            ]
+          }
+        ]
+      },
+      "60 Hz locked": {
+        "n": 2,
+        "cpu": 40.09,
+        "surfaceFlingerCpu": 31.49,
+        "pssMB": 111.84,
+        "firstFrameMs": 76,
+        "shaderSetupMs": null,
+        "hwuiFrames": 2349.5,
+        "runs": [
+          {
+            "key": "rn-native@s21-60hz-1",
+            "cpu": 40.12,
+            "surfaceFlingerCpu": 30.72,
+            "pssMB": 110.84,
+            "firstFrameMs": 70,
+            "shaderSetupMs": null,
+            "hwuiFrames": 2361,
+            "refreshHz": 60,
+            "batteryTempC": 39.3,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 18.19
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 9.59
+              },
+              {
+                "thread": "ectstudy.native",
+                "cpu": 6.35
+              },
+              {
+                "thread": "SilkRender",
+                "cpu": 3.7
+              },
+              {
+                "thread": "binder:6152_",
+                "cpu": 1.5
+              }
+            ]
+          },
+          {
+            "key": "rn-native@s21-60hz-2",
+            "cpu": 40.06,
+            "surfaceFlingerCpu": 32.26,
+            "pssMB": 112.83,
+            "firstFrameMs": 82,
+            "shaderSetupMs": null,
+            "hwuiFrames": 2338,
+            "refreshHz": 60,
+            "batteryTempC": 40.1,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 18.05
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 9.7
+              },
+              {
+                "thread": "ectstudy.native",
+                "cpu": 6.38
+              },
+              {
+                "thread": "SilkRender",
+                "cpu": 3.78
+              },
+              {
+                "thread": "binder:10104_",
+                "cpu": 1.26
+              }
+            ]
+          }
+        ]
+      },
+      "first pass (PSS polled, adaptive)": {
+        "n": 2,
+        "cpu": 59.72,
+        "surfaceFlingerCpu": 40.63,
+        "pssMB": 119.75,
+        "firstFrameMs": 62,
+        "shaderSetupMs": null,
+        "hwuiFrames": 4677.5,
+        "runs": [
+          {
+            "key": "rn-native@s21-r1",
+            "cpu": 59.66,
+            "surfaceFlingerCpu": 41.59,
+            "pssMB": 125.69,
+            "firstFrameMs": 77,
+            "shaderSetupMs": null,
+            "hwuiFrames": 4559,
+            "refreshHz": null,
+            "batteryTempC": null,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 26.46
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 14.09
+              },
+              {
+                "thread": "ectstudy.native",
+                "cpu": 8.79
+              },
+              {
+                "thread": "SilkRender",
+                "cpu": 5.64
+              },
+              {
+                "thread": "binder:6423_",
+                "cpu": 4.67
+              }
+            ]
+          },
+          {
+            "key": "rn-native@s21-r2",
+            "cpu": 59.79,
+            "surfaceFlingerCpu": 39.67,
+            "pssMB": 113.8,
+            "firstFrameMs": 47,
+            "shaderSetupMs": null,
+            "hwuiFrames": 4796,
+            "refreshHz": null,
+            "batteryTempC": null,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 25.85
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 14.17
+              },
+              {
+                "thread": "ectstudy.native",
+                "cpu": 9.23
+              },
+              {
+                "thread": "SilkRender",
+                "cpu": 5.62
+              },
+              {
+                "thread": "binder:21338_",
+                "cpu": 4.3
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "rn-native-compatible-static": {
+      "adaptive (48-120 Hz)": {
+        "n": 2,
+        "cpu": 73.29,
+        "surfaceFlingerCpu": 55.12,
+        "pssMB": 119.15,
+        "firstFrameMs": 55.5,
+        "shaderSetupMs": 0.75,
+        "hwuiFrames": 2978,
+        "runs": [
+          {
+            "key": "rn-native-compatible-static@s21-a1",
+            "cpu": 72.35,
+            "surfaceFlingerCpu": 53.13,
+            "pssMB": 116.94,
+            "firstFrameMs": 53,
+            "shaderSetupMs": 0.7,
+            "hwuiFrames": 2970,
+            "refreshHz": 120,
+            "batteryTempC": 37.1,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 24.56
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 17.67
+              },
+              {
+                "thread": "SilkGL",
+                "cpu": 14.61
+              },
+              {
+                "thread": "dy.nativecompat",
+                "cpu": 11.26
+              },
+              {
+                "thread": "binder:30926_",
+                "cpu": 3.96
+              }
+            ]
+          },
+          {
+            "key": "rn-native-compatible-static@s21-a2",
+            "cpu": 74.24,
+            "surfaceFlingerCpu": 57.1,
+            "pssMB": 121.36,
+            "firstFrameMs": 58,
+            "shaderSetupMs": 0.8,
+            "hwuiFrames": 2986,
+            "refreshHz": 120,
+            "batteryTempC": 39.5,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 25.31
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 17.92
+              },
+              {
+                "thread": "SilkGL",
+                "cpu": 15.12
+              },
+              {
+                "thread": "dy.nativecompat",
+                "cpu": 11.5
+              },
+              {
+                "thread": "binder:4180_",
+                "cpu": 4.02
+              }
+            ]
+          }
+        ]
+      },
+      "60 Hz locked": {
+        "n": 2,
+        "cpu": 49.4,
+        "surfaceFlingerCpu": 41.25,
+        "pssMB": 119.88,
+        "firstFrameMs": 85.5,
+        "shaderSetupMs": 1.6,
+        "hwuiFrames": 1501,
+        "runs": [
+          {
+            "key": "rn-native-compatible-static@s21-60hz-1",
+            "cpu": 48.88,
+            "surfaceFlingerCpu": 40.47,
+            "pssMB": 119.03,
+            "firstFrameMs": 82,
+            "shaderSetupMs": 1.6,
+            "hwuiFrames": 1485,
+            "refreshHz": 60,
+            "batteryTempC": 39.4,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 17.54
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 11.82
+              },
+              {
+                "thread": "SilkGL",
+                "cpu": 8.94
+              },
+              {
+                "thread": "dy.nativecompat",
+                "cpu": 7.52
+              },
+              {
+                "thread": "binder:6508_",
+                "cpu": 2.34
+              }
+            ]
+          },
+          {
+            "key": "rn-native-compatible-static@s21-60hz-2",
+            "cpu": 49.92,
+            "surfaceFlingerCpu": 42.02,
+            "pssMB": 120.72,
+            "firstFrameMs": 89,
+            "shaderSetupMs": 1.6,
+            "hwuiFrames": 1517,
+            "refreshHz": 60,
+            "batteryTempC": 40.1,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 18.13
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 12.06
+              },
+              {
+                "thread": "SilkGL",
+                "cpu": 9
+              },
+              {
+                "thread": "dy.nativecompat",
+                "cpu": 7.43
+              },
+              {
+                "thread": "binder:9786_",
+                "cpu": 2.44
+              }
+            ]
+          }
+        ]
+      },
+      "first pass (PSS polled, adaptive)": {
+        "n": 2,
+        "cpu": 72.71,
+        "surfaceFlingerCpu": 50.77,
+        "pssMB": 126.51,
+        "firstFrameMs": 76.5,
+        "shaderSetupMs": 18.8,
+        "hwuiFrames": 2862.5,
+        "runs": [
+          {
+            "key": "rn-native-compatible-static@s21-r1",
+            "cpu": 72.94,
+            "surfaceFlingerCpu": 51.15,
+            "pssMB": 128.45,
+            "firstFrameMs": 98,
+            "shaderSetupMs": 36.8,
+            "hwuiFrames": 2880,
+            "refreshHz": null,
+            "batteryTempC": null,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 24.33
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 17.53
+              },
+              {
+                "thread": "SilkGL",
+                "cpu": 14.43
+              },
+              {
+                "thread": "dy.nativecompat",
+                "cpu": 10.74
+              },
+              {
+                "thread": "binder:16081_",
+                "cpu": 5.83
+              }
+            ]
+          },
+          {
+            "key": "rn-native-compatible-static@s21-r2",
+            "cpu": 72.48,
+            "surfaceFlingerCpu": 50.39,
+            "pssMB": 124.58,
+            "firstFrameMs": 55,
+            "shaderSetupMs": 0.8,
+            "hwuiFrames": 2845,
+            "refreshHz": null,
+            "batteryTempC": null,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 23.24
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 16.52
+              },
+              {
+                "thread": "SilkGL",
+                "cpu": 13.51
+              },
+              {
+                "thread": "dy.nativecompat",
+                "cpu": 11.44
+              },
+              {
+                "thread": "binder:20754_",
+                "cpu": 6.15
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "rn-native-compatible-dynamic": {
+      "adaptive (48-120 Hz)": {
+        "n": 2,
+        "cpu": 73.75,
+        "surfaceFlingerCpu": 55.39,
+        "pssMB": 119.69,
+        "firstFrameMs": 63.5,
+        "shaderSetupMs": 1.2,
+        "hwuiFrames": 2983.5,
+        "runs": [
+          {
+            "key": "rn-native-compatible-dynamic@s21-a1",
+            "cpu": 73.77,
+            "surfaceFlingerCpu": 54.37,
+            "pssMB": 121.79,
+            "firstFrameMs": 72,
+            "shaderSetupMs": 1.6,
+            "hwuiFrames": 2975,
+            "refreshHz": 120,
+            "batteryTempC": 37.3,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 25.3
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 17.71
+              },
+              {
+                "thread": "SilkGL",
+                "cpu": 14.77
+              },
+              {
+                "thread": "nativecompatdyn",
+                "cpu": 11.26
+              },
+              {
+                "thread": "binder:31645_",
+                "cpu": 4.2
+              }
+            ]
+          },
+          {
+            "key": "rn-native-compatible-dynamic@s21-a2",
+            "cpu": 73.72,
+            "surfaceFlingerCpu": 56.42,
+            "pssMB": 117.58,
+            "firstFrameMs": 55,
+            "shaderSetupMs": 0.8,
+            "hwuiFrames": 2992,
+            "refreshHz": 120,
+            "batteryTempC": 39.4,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 25.21
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 17.89
+              },
+              {
+                "thread": "SilkGL",
+                "cpu": 14.92
+              },
+              {
+                "thread": "nativecompatdyn",
+                "cpu": 11.31
+              },
+              {
+                "thread": "binder:3816_",
+                "cpu": 4.07
+              }
+            ]
+          }
+        ]
+      },
+      "60 Hz locked": {
+        "n": 2,
+        "cpu": 49.73,
+        "surfaceFlingerCpu": 41.85,
+        "pssMB": 116.66,
+        "firstFrameMs": 74,
+        "shaderSetupMs": 0.75,
+        "hwuiFrames": 1518.5,
+        "runs": [
+          {
+            "key": "rn-native-compatible-dynamic@s21-60hz-1",
+            "cpu": 49.83,
+            "surfaceFlingerCpu": 41.2,
+            "pssMB": 118.45,
+            "firstFrameMs": 64,
+            "shaderSetupMs": 0.8,
+            "hwuiFrames": 1499,
+            "refreshHz": 60,
+            "batteryTempC": 39.5,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 17.89
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 12.08
+              },
+              {
+                "thread": "SilkGL",
+                "cpu": 9.03
+              },
+              {
+                "thread": "nativecompatdyn",
+                "cpu": 7.61
+              },
+              {
+                "thread": "binder:6992_",
+                "cpu": 2.38
+              }
+            ]
+          },
+          {
+            "key": "rn-native-compatible-dynamic@s21-60hz-2",
+            "cpu": 49.64,
+            "surfaceFlingerCpu": 42.5,
+            "pssMB": 114.87,
+            "firstFrameMs": 84,
+            "shaderSetupMs": 0.7,
+            "hwuiFrames": 1538,
+            "refreshHz": 60,
+            "batteryTempC": 40.1,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 17.99
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 12.04
+              },
+              {
+                "thread": "SilkGL",
+                "cpu": 8.89
+              },
+              {
+                "thread": "nativecompatdyn",
+                "cpu": 7.38
+              },
+              {
+                "thread": "binder:9436_",
+                "cpu": 2.33
+              }
+            ]
+          }
+        ]
+      },
+      "first pass (PSS polled, adaptive)": {
+        "n": 2,
+        "cpu": 73.62,
+        "surfaceFlingerCpu": 52.01,
+        "pssMB": 128.03,
+        "firstFrameMs": 85,
+        "shaderSetupMs": 14.35,
+        "hwuiFrames": 2967.5,
+        "runs": [
+          {
+            "key": "rn-native-compatible-dynamic@s21-r1",
+            "cpu": 73.8,
+            "surfaceFlingerCpu": 52.84,
+            "pssMB": 132.78,
+            "firstFrameMs": 78,
+            "shaderSetupMs": 27.1,
+            "hwuiFrames": 2884,
+            "refreshHz": null,
+            "batteryTempC": null,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 24.45
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 17.74
+              },
+              {
+                "thread": "SilkGL",
+                "cpu": 14.3
+              },
+              {
+                "thread": "nativecompatdyn",
+                "cpu": 10.82
+              },
+              {
+                "thread": "binder:16703_",
+                "cpu": 6.38
+              }
+            ]
+          },
+          {
+            "key": "rn-native-compatible-dynamic@s21-r2",
+            "cpu": 73.44,
+            "surfaceFlingerCpu": 51.18,
+            "pssMB": 123.27,
+            "firstFrameMs": 92,
+            "shaderSetupMs": 1.6,
+            "hwuiFrames": 3051,
+            "refreshHz": null,
+            "batteryTempC": null,
+            "topThreads": [
+              {
+                "thread": "RenderThread",
+                "cpu": 24.34
+              },
+              {
+                "thread": "mali-cmar-backe",
+                "cpu": 17.4
+              },
+              {
+                "thread": "SilkGL",
+                "cpu": 14.04
+              },
+              {
+                "thread": "nativecompatdyn",
+                "cpu": 10.77
+              },
+              {
+                "thread": "binder:20225_",
+                "cpu": 6.19
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

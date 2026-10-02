@@ -1,0 +1,14 @@
+{"app":"rn-baseline","run":1,"result":{"bundle": "com.effectstudy.baseline", "process": "RnBaseline (6053)", "seconds": 30.3, "cpuPercent": 1.1, "memFootprintMB": 21.2}}
+{"app":"rn-native","run":1,"result":{"bundle": "com.effectstudy.native", "process": "RnBaseline (6054)", "seconds": 30.4, "cpuPercent": 16.1, "memFootprintMB": 54.8}}
+{"app":"rn-native-compatible-static","run":1,"result":{"bundle": "com.effectstudy.nativecompat", "process": "RnBaseline (6055)", "seconds": 30.0, "cpuPercent": 16.3, "memFootprintMB": 55.0}}
+{"app":"rn-native-compatible-dynamic","run":1,"result":{"bundle": "com.effectstudy.nativecompatdyn", "process": "RnBaseline (6056)", "seconds": 30.1, "cpuPercent": 15.7, "memFootprintMB": 55.2}}
+{"app":"rn-skia","run":1,"result":{"bundle": "com.effectstudy.skia", "process": "RnBaseline (6057)", "seconds": 30.3, "cpuPercent": 20.1, "memFootprintMB": 86.0}}
+{"app":"rn-webgpu","run":1,"result":{"bundle": "com.effectstudy.webgpu", "process": "RnBaseline (6061)", "seconds": 30.1, "cpuPercent": 21.3, "memFootprintMB": 60.6}}
+{"app":"rn-gl-react","run":1,"result":{"bundle": "com.effectstudy.glreact", "process": "RnBaseline (6064)", "seconds": 30.1, "cpuPercent": 19.3, "memFootprintMB": 191.5}}
+{"app":"rn-gl-react","run":2,"result":{"bundle": "com.effectstudy.glreact", "process": "RnBaseline (6201)", "seconds": 29.6, "cpuPercent": 19.2, "memFootprintMB": 198.9}}
+{"app":"rn-webgpu","run":2,"result":{"bundle": "com.effectstudy.webgpu", "process": "RnBaseline (6242)", "seconds": 29.4, "cpuPercent": 21.2, "memFootprintMB": 60.6}}
+{"app":"rn-skia","run":2,"result":{"bundle": "com.effectstudy.skia", "process": "RnBaseline (6247)", "seconds": 29.3, "cpuPercent": 19.9, "memFootprintMB": 86.1}}
+{"app":"rn-native-compatible-dynamic","run":2,"result":{"bundle": "com.effectstudy.nativecompatdyn", "process": "RnBaseline (6279)", "seconds": 29.7, "cpuPercent": 16.0, "memFootprintMB": 54.8}}
+{"app":"rn-native-compatible-static","run":2,"result":{"bundle": "com.effectstudy.nativecompat", "process": "RnBaseline (6283)", "seconds": 30.8, "cpuPercent": 15.9, "memFootprintMB": 54.9}}
+{"app":"rn-native","run":2,"result":{"bundle": "com.effectstudy.native", "process": "RnBaseline (6284)", "seconds": 29.5, "cpuPercent": 16.1, "memFootprintMB": 55.1}}
+{"app":"rn-baseline","run":2,"result":{"bundle": "com.effectstudy.baseline", "process": "RnBaseline (6285)", "seconds": 29.6, "cpuPercent": 1.1, "memFootprintMB": 21.0}}

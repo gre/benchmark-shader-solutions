@@ -1,0 +1,14 @@
+{"app":"rn-baseline","run":1,"result":{"bundle": "com.effectstudy.baseline", "pid": 6444, "fps": 0.0, "gpuBusyPercent": 0.0, "gpuMsPerFrame": 0.0, "compositorGpuBusyPercent": 1.2, "displayFps": 7.0}}
+{"app":"rn-native","run":1,"result":{"bundle": "com.effectstudy.native", "pid": 6445, "fps": 60.2, "gpuBusyPercent": 23.0, "gpuMsPerFrame": 3.82, "compositorGpuBusyPercent": 6.9, "displayFps": 60.0}}
+{"app":"rn-native-compatible-static","run":1,"result":{"bundle": "com.effectstudy.nativecompat", "pid": 6446, "fps": 60.2, "gpuBusyPercent": 22.9, "gpuMsPerFrame": 3.81, "compositorGpuBusyPercent": 7.0, "displayFps": 60.0}}
+{"app":"rn-native-compatible-dynamic","run":1,"result":{"bundle": "com.effectstudy.nativecompatdyn", "pid": 6447, "fps": 60.2, "gpuBusyPercent": 22.9, "gpuMsPerFrame": 3.81, "compositorGpuBusyPercent": 6.6, "displayFps": 60.0}}
+{"app":"rn-skia","run":1,"result":{"bundle": "com.effectstudy.skia", "pid": 6448, "fps": 60.2, "gpuBusyPercent": 63.1, "gpuMsPerFrame": 10.49, "compositorGpuBusyPercent": 21.2, "displayFps": 59.5}}
+{"app":"rn-webgpu","run":1,"result":{"bundle": "com.effectstudy.webgpu", "pid": 6449, "fps": 61.7, "gpuBusyPercent": 23.4, "gpuMsPerFrame": 3.79, "compositorGpuBusyPercent": 5.7, "displayFps": 60.0}}
+{"app":"rn-gl-react","run":1,"result":{"bundle": "com.effectstudy.glreact", "pid": 6451, "fps": 60.1, "gpuBusyPercent": 76.2, "gpuMsPerFrame": 12.68, "compositorGpuBusyPercent": 16.9, "displayFps": 60.0}}
+{"app":"rn-baseline","run":2,"result":{"bundle": "com.effectstudy.baseline", "error": "no GPU intervals for the app"}}
+{"app":"rn-native","run":2,"result":{"bundle": "com.effectstudy.native", "pid": 6480, "fps": 60.2, "gpuBusyPercent": 23.0, "gpuMsPerFrame": 3.82, "compositorGpuBusyPercent": 6.6, "displayFps": 60.2}}
+{"app":"rn-native-compatible-static","run":2,"result":{"bundle": "com.effectstudy.nativecompat", "pid": 6491, "fps": 60.3, "gpuBusyPercent": 23.0, "gpuMsPerFrame": 3.81, "compositorGpuBusyPercent": 7.1, "displayFps": 60.0}}
+{"app":"rn-native-compatible-dynamic","run":2,"result":{"bundle": "com.effectstudy.nativecompatdyn", "pid": 6492, "fps": 60.3, "gpuBusyPercent": 23.0, "gpuMsPerFrame": 3.81, "compositorGpuBusyPercent": 6.6, "displayFps": 60.0}}
+{"app":"rn-skia","run":2,"result":{"bundle": "com.effectstudy.skia", "pid": 6494, "fps": 60.2, "gpuBusyPercent": 63.3, "gpuMsPerFrame": 10.52, "compositorGpuBusyPercent": 21.3, "displayFps": 60.0}}
+{"app":"rn-webgpu","run":2,"result":{"bundle": "com.effectstudy.webgpu", "pid": 6495, "fps": 63.0, "gpuBusyPercent": 23.4, "gpuMsPerFrame": 3.71, "compositorGpuBusyPercent": 5.7, "displayFps": 60.0}}
+{"app":"rn-gl-react","run":2,"result":{"bundle": "com.effectstudy.glreact", "pid": 6496, "fps": 59.9, "gpuBusyPercent": 76.3, "gpuMsPerFrame": 12.74, "compositorGpuBusyPercent": 16.9, "displayFps": 60.0}}
